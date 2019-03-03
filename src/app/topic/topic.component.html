@@ -1,7 +1,50 @@
 <nav mat-tab-nav-bar>
-  <a mat-tab-link *ngFor="let link of links" (click)="activeLink = link" [active]="activeLink == link"> {{link}} </a>
+  <a
+    mat-tab-link
+    class="noselect"
+    *ngFor="let link of links"
+    (click)="activeLink = link"
+    [active]="activeLink == link"
+  >
+    <mat-icon class="tab-icon">{{
+      link === links[0] ? "list" : "insert_chart_outlined"
+    }}</mat-icon>
+    {{ link }}
+  </a>
 </nav>
 
-<app-questions *ngIf="activeLink === links[0]" [questions]="topic.questions"></app-questions>
+<div>
+  <app-questions
+    *ngIf="activeLink === links[0]"
+    [questions]="topic.questions"
+  ></app-questions>
 
-<app-quiz *ngIf="activeLink === links[1]" [questions]="topic.questions"></app-quiz>
+  <app-quiz
+    *ngIf="activeLink === links[1]"
+    [questions]="topic.questions"
+  ></app-quiz>
+</div>
+
+<!-- 
+<mat-tab-group >
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon">list</mat-icon>
+      Wszystkie pytania
+    </ng-template>
+
+      <app-questions  [questions]="topic.questions"></app-questions>
+
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon">insert_chart_outlined</mat-icon>
+      Quiz
+    </ng-template>
+    <div class="wrapper">
+
+      <app-quiz  [questions]="topic.questions"></app-quiz> 
+
+    </div>
+  </mat-tab>
+</mat-tab-group> -->

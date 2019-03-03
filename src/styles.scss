@@ -63,3 +63,15 @@ $wrong-accent: mat-palette($mat-red, 300);
   //   );
 }
 
+.noselect {
+  user-select: none;
+}
+
+::selection {
+  background: #bdbdbd; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #bdbdbd; /* Gecko Browsers */
+  color: white;
+}

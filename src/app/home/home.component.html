@@ -2,8 +2,8 @@
   <mat-grid-list [cols]="mobileQuery.matches ? 1 : 2" rowHeight="7:2" 
   [gutterSize]="mobileQuery.matches ? '4px' : '0.75rem'">
     <mat-grid-tile style="overflow: visible" *ngFor="let i of questionsService.getModules(); index as idx">
-      <mat-card matRipple (click)="topicPicked(idx)">
-        <p class="mat-body-strong module-label">
+      <mat-card matRipple (click)="topicPicked(i)">
+        <p class="mat-body-strong module-label noselect">
           <span>
             <mat-icon [svgIcon]="i.category === 'windows' ? 'windows' : 'ubuntu'"></mat-icon>
           </span>

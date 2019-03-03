@@ -1,7 +1,5 @@
 import { Component, OnInit, Input, HostListener, Inject } from "@angular/core";
-import { QuestionsService } from "../core/questions.service";
 import { IQuestion } from "../core/types";
-import { DOCUMENT } from "@angular/common";
 
 @Component({
   selector: "app-questions",
@@ -13,9 +11,8 @@ export class QuestionsComponent implements OnInit {
 
   fabVisible = false;
 
-  windowScrolled;
-
   constructor() {}
 
   ngOnInit() {}
+
 }

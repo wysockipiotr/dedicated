@@ -18,13 +18,20 @@ export class TopicComponent implements OnInit {
   constructor(
     private questions: QuestionsService,
     private route: ActivatedRoute,
+    private router: Router,
     private title: TitleService
   ) {}
 
   ngOnInit() {
-    this.topic = this.questions.fromModule(
-      this.questions.getModules()[this.route.snapshot.params.id].name
-    );
+    // this.topic = this.questions.fromModule(
+    //   this.questions.getModules()[this.route.snapshot.params.id].name
+    // );
+
+    this.topic = this.questions.getTopicBySlug(this.route.snapshot.params.slug);
+
+    if (!this.topic) {
+      this.router.navigate(['/']);
+    }
 
     this.title.title$.next(this.topic.name);
   }

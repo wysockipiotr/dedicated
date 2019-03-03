@@ -1,10 +1,21 @@
-<mat-list class="list">
-  <mat-list-item *ngFor="let q of questions">
-    <h4 mat-line>{{ q.question }}</h4>
-    <p [style.color]="a.answer ? '#81C784' : '#e57373'" mat-line *ngFor="let a of q.answers">{{ a.sentence }}</p>
-  </mat-list-item>
-</mat-list>
+<div class="wrapper">
+  <mat-card class="card">
+    <div class="question" *ngFor="let q of questions">
+      <h4 class="question-contents mat-body-strong">
+        {{ q.question }}
+      </h4>
 
-<button *ngIf="windowScrolled" class="fab" mat-fab  (click)="scrollUp()">
-    <mat-icon >vertical_align_top</mat-icon>
-</button>
+      <p
+        class="answer mat-body"
+        *ngFor="let a of q.answers"
+        [style.color]="a.answer ? '#81C784' : '#e57373'"
+      >
+        {{ a.sentence }}
+      </p>
+    </div>
+  </mat-card>
+</div>
+<!-- 
+<button *ngIf="fabVisible" class="fab" mat-fab (click)="scrollToTop()">
+  <mat-icon>vertical_align_top</mat-icon>
+</button> -->

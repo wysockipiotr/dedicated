@@ -1,12 +1,12 @@
-<div
+<!-- <div
   class="example-container mat-app-background"
   [class.example-is-mobile]="mobileQuery.matches"
 >
   <mat-toolbar class="example-toolbar">
-    <h1 class="app-name" (click)="navigateHome()">
+    <h1 class="app-name noselect" (click)="navigateHome()">
       dedicated
     </h1>
-    <span class="mat-small">{{ title$ | async }}</span>
+    <span class="mat-small noselect">{{ title$ | async }}</span>
   </mat-toolbar>
 
   <mat-sidenav-container
@@ -14,5 +14,21 @@
     [style.marginTop.px]="mobileQuery.matches ? 56 : 0"
   >
     <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+  </mat-sidenav-container>
+  
+</div> -->
+
+<div class="toolbar">
+  <mat-toolbar>
+    <h1 class="app-name noselect" (click)="navigateHome()">
+      dedicated
+    </h1>
+    <span class="mat-small noselect">{{ title$ | async }}</span>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

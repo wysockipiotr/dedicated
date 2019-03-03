@@ -7,11 +7,11 @@ import { QuestionsComponent } from "./questions/questions.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "topic/:id", component: TopicComponent, children: [
-    { path: "questions", component: QuestionsComponent },
-    { path: "quiz", component: QuizComponent }
-  ] }
-  // { path: '**', component: PageNotFoundComponent },
+  {
+    path: ":slug",
+    component: TopicComponent,
+  },
+  { path: "**", redirectTo: "" }
 ];
 
 @NgModule({

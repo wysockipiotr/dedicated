@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from "@angular/core";
 import { QuestionsService } from "../core/questions.service";
-import { IQuestion } from "../core/types";
+import { IQuestion, IModule } from "../core/types";
 import { DomSanitizer } from "@angular/platform-browser";
 import { MatIconRegistry } from "@angular/material";
 import { MediaMatcher } from "@angular/cdk/layout";
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       this.questionsService.getModules()[0].name
     ).questions;
 
-    this.title.title$.next("");
+    this.title.title$.next('');
   }
 
   constructor(
@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  topicPicked(index: number) {
-    this.router.navigate([`/topic/${index}`]);
+  topicPicked(topic: any) {
+    this.router.navigate([`/${topic.slug}`]);
   }
 }
