@@ -28,6 +28,8 @@ import { RouterModule } from "@angular/router";
 import { QuizComponent } from './quiz/quiz.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { FormsModule } from "@angular/forms";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, TopicComponent, HomeComponent, QuizComponent, QuestionsComponent],
@@ -50,7 +52,8 @@ import { FormsModule } from "@angular/forms";
     MatCardModule,
     MatSelectModule,
     MatSidenavModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
