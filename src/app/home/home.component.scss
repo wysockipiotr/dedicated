@@ -1,0 +1,37 @@
+nav {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0rem auto;
+}
+
+@media only screen and (min-width: 425px) {
+  nav {
+    margin-top: 2rem;
+  }
+
+  mat-grid-list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.module-label {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  & mat-icon {
+    margin-right: 0.8rem;
+  }
+}
+
+mat-card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // z-index: 1000;
+  cursor: pointer;
+}

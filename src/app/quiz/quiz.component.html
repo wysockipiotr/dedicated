@@ -1,0 +1,32 @@
+<main class="wrapper">
+  <mat-card class="card">
+    <mat-card-content>
+      <section class="question" *ngFor="let q of displayedQuestions">
+        <h4 class="mat-h4">{{ q.question }}</h4>
+        <section class="answers-section">
+          <span
+            *ngFor="let a of q.answers"
+            [ngClass]="getColorClassForCheckResult(a.userAnswer, a.answer)"
+          >
+            <mat-checkbox
+              class="mat-body"
+              [color]="'primary'"
+              [(ngModel)]="a.userAnswer"
+            >
+              {{ a.sentence }}
+            </mat-checkbox>
+          </span>
+        </section>
+      </section>
+
+      <mat-card-actions align="end">
+        <button *ngIf="quizState === 'answer'" mat-button (click)="checkAnswers()">
+          <mat-icon>playlist_add_check</mat-icon> Sprawdź
+        </button>
+        <button mat-button (click)="pickNext()">
+          <mat-icon>autorenew</mat-icon> Wylosuj
+        </button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+</main>

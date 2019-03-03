@@ -1,0 +1,7 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link *ngFor="let link of links" (click)="activeLink = link" [active]="activeLink == link"> {{link}} </a>
+</nav>
+
+<app-questions *ngIf="activeLink === links[0]" [questions]="topic.questions"></app-questions>
+
+<app-quiz *ngIf="activeLink === links[1]" [questions]="topic.questions"></app-quiz>

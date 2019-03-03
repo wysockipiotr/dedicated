@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  max-width: 40rem;
+  flex: 1;
+  margin: 0;
+  // margin-top: 0rem;
+}
+
+@media only screen and (min-width: 425px) {
+  .card {
+    margin: 1rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+}
+
+.answers-section {
+  display: flex;
+  flex-flow: column nowrap;
+
+  & > *:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+mat-checkbox {
+  word-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+.question:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+
+.question-text {
+}
+
+// .correct {
+//   color: green;
+// }
+
+// .wrong {
+//   color: red;
+// }

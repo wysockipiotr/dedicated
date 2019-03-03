@@ -1,0 +1,68 @@
+import { Component, OnInit, Input } from "@angular/core";
+import { IQuestion, IAnswer } from "../core/types";
+import * as _ from "lodash";
+import {
+  MAT_CHECKBOX_CLICK_ACTION,
+  MatCheckboxChange
+} from "@angular/material";
+
+interface IAnsweredQuestion extends IQuestion {
+  userAnswer: boolean;
+}
+
+type QuizState = "answer" | "check";
+
+@Component({
+  selector: "app-quiz",
+  templateUrl: "./quiz.component.html",
+  styleUrls: ["./quiz.component.scss"],
+  providers: [{ provide: MAT_CHECKBOX_CLICK_ACTION, useValue: "check" }]
+})
+export class QuizComponent implements OnInit {
+  @Input() questions: IQuestion[];
+
+  private questionPool_: IQuestion[];
+
+  displayedQuestions: IQuestion[];
+
+  quizState: QuizState = "answer";
+
+  constructor() {}
+
+  ngOnInit() {
+    this.reloadAllQuestions_();
+    this.pickNext();
+  }
+
+  private reloadAllQuestions_() {
+    this.questionPool_ = _.shuffle([...this.questions]);
+  }
+
+  checkAnswers() {
+    this.quizState = "check";
+  }
+
+  getColorClassForCheckResult(answer: boolean, userAnswer: boolean) {
+    return this.quizState === "check"
+      ? answer === userAnswer
+        ? "correct"
+        : "wrong"
+      : null;
+  }
+
+  pickNext() {
+    this.quizState = "answer";
+
+    if (this.questionPool_.length < 2) {
+      this.reloadAllQuestions_();
+    } else {
+      this.questionPool_ = _.shuffle(this.questionPool_);
+    }
+
+    this.displayedQuestions = this.questionPool_.splice(0, 2).map(q => ({
+      ...q,
+      answers: q.answers.map(a => ({ ...a, userAnswer: false }))
+    }));
+  }
+
+}
