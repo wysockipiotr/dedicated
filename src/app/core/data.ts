@@ -5436,7 +5436,7 @@ const data: IModule[] = [
   },
   {
     category: "windows",
-    name: 'Obiekty Zasad Grup (GPO)',
+    name: 'Obiekty Zasad Grup',
     questions: [
       {
         question:

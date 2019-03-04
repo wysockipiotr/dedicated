@@ -6,16 +6,16 @@ import { QuizComponent } from "./quiz/quiz.component";
 import { QuestionsComponent } from "./questions/questions.component";
 
 const routes: Routes = [
-  { path: "", component: HomeComponent, data: { animation: 'HomeComponent' } },
+  { path: "", component: HomeComponent, data: { animation: "HomeComponent" } },
   {
     path: ":slug",
-    component: TopicComponent,
+    component: TopicComponent
   },
   { path: "**", redirectTo: "" }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: "top" })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

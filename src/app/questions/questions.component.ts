@@ -4,6 +4,7 @@ import {
   Input,
 } from "@angular/core";
 import { IQuestion } from "../core/types";
+import { ViewportScroller } from "@angular/common";
 
 @Component({
   selector: "app-questions",
@@ -13,7 +14,9 @@ import { IQuestion } from "../core/types";
 export class QuestionsComponent implements OnInit {
   @Input() questions: IQuestion[];
 
-  constructor() {}
+  constructor(private scroller: ViewportScroller) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.scroller.scrollToPosition([0,0]);
+  }
 }

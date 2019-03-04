@@ -1,16 +1,23 @@
 <nav>
-  <mat-grid-list [cols]="mobileQuery.matches ? 1 : 2" rowHeight="7:2" 
-  [gutterSize]="mobileQuery.matches ? '4px' : '0.75rem'">
-    <mat-grid-tile style="overflow: visible" *ngFor="let i of questionsService.getModules(); index as idx">
+  <mat-grid-list
+    [cols]="mobileQuery.matches ? 1 : 2"
+    [rowHeight]="mobileQuery.matches ? '14:2' : '7:2'"
+    [gutterSize]="mobileQuery.matches ? '2px' : '0.75rem'"
+  >
+    <mat-grid-tile
+      style="overflow: visible"
+      *ngFor="let i of questionsService.getModules(); index as idx"
+    >
       <mat-card matRipple (click)="topicPicked(i)">
         <p class="mat-body-strong module-label noselect">
           <span>
-            <mat-icon [svgIcon]="i.category === 'windows' ? 'windows' : 'ubuntu'"></mat-icon>
+            <mat-icon
+              [svgIcon]="i.category === 'windows' ? 'windows' : 'ubuntu'"
+            ></mat-icon>
           </span>
 
-          <span>{{i.name}}</span>
+          <span>{{ i.name }}</span>
         </p>
-
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>

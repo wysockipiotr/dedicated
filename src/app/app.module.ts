@@ -1,4 +1,10 @@
-import { BrowserModule } from "@angular/platform-browser";
+import "hammerjs";
+
+import {
+  BrowserModule,
+  HAMMER_GESTURE_CONFIG,
+  HammerGestureConfig
+} from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
@@ -20,21 +26,27 @@ import {
   MatTabsModule,
   MatBadgeModule,
   MatCheckboxModule,
-  MatTooltipModule,
   MatDialogModule,
   MatRadioModule
 } from "@angular/material";
-import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 import { TopicComponent } from "./topic/topic.component";
 import { HomeComponent } from "./home/home.component";
-import { RouterModule } from "@angular/router";
 import { QuizComponent } from "./quiz/quiz.component";
 import { QuestionsComponent } from "./questions/questions.component";
 import { FormsModule } from "@angular/forms";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
-import { ScrollDispatchModule } from "@angular/cdk/scrolling";
 
+declare var Hammer: any;
+export class MyHammerConfig extends HammerGestureConfig {
+  buildHammer(element: HTMLElement) {
+    let mc = new Hammer(element, {
+      touchAction: "pan-y"
+    });
+    return mc;
+  }
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +74,6 @@ import { ScrollDispatchModule } from "@angular/cdk/scrolling";
     MatDialogModule,
     MatCardModule,
     MatRadioModule,
-    MatTooltipModule,
     MatSelectModule,
     MatSidenavModule,
     MatButtonToggleModule,
@@ -70,7 +81,12 @@ import { ScrollDispatchModule } from "@angular/cdk/scrolling";
       enabled: environment.production
     })
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: MyHammerConfig
+    }
+  ],
   entryComponents: [],
   bootstrap: [AppComponent]
 })

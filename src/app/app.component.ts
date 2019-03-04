@@ -43,9 +43,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   constructor(
-    // private dialog: MatDialog,
     private router: Router,
-    private route: ActivatedRoute,
     private title: TitleService,
     private questionsService: QuestionsService,
     changeDetectorRef: ChangeDetectorRef,
@@ -79,38 +77,5 @@ export class AppComponent implements OnInit, OnDestroy {
 
   navigateHome() {
     this.router.navigate(["/"]);
-  }
-
-  // public prepareOutlet(outlet) {
-  //   return outlet.isActivated ? outlet.activatedRoute : '';
-  // }
-  // openDialog(): void {
-  //   const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-  //     width: '350px',
-  //     data: { name: 'this.name', animal: 'this.animal' }
-  //   });
-
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     console.log('The dialog was closed');
-      
-  //   });
-  // }
- 
+  } 
 }
-
-
-// @Component({
-//   selector: 'dialog-overview-example-dialog',
-//   templateUrl: 'dialog.html',
-// })
-// export class DialogOverviewExampleDialog {
-
-//   constructor(
-//     public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
-//     @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
-
-//   onNoClick(): void {
-//     this.dialogRef.close();
-//   }
-
-// }
