@@ -19,20 +19,30 @@ import {
   MatRippleModule,
   MatTabsModule,
   MatBadgeModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatTooltipModule,
+  MatDialogModule,
+  MatRadioModule
 } from "@angular/material";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
-import { TopicComponent } from './topic/topic.component';
-import { HomeComponent } from './home/home.component';
+import { TopicComponent } from "./topic/topic.component";
+import { HomeComponent } from "./home/home.component";
 import { RouterModule } from "@angular/router";
-import { QuizComponent } from './quiz/quiz.component';
-import { QuestionsComponent } from './questions/questions.component';
+import { QuizComponent } from "./quiz/quiz.component";
+import { QuestionsComponent } from "./questions/questions.component";
 import { FormsModule } from "@angular/forms";
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { ServiceWorkerModule } from "@angular/service-worker";
+import { environment } from "../environments/environment";
+import { ScrollDispatchModule } from "@angular/cdk/scrolling";
 
 @NgModule({
-  declarations: [AppComponent, TopicComponent, HomeComponent, QuizComponent, QuestionsComponent],
+  declarations: [
+    AppComponent,
+    TopicComponent,
+    HomeComponent,
+    QuizComponent,
+    QuestionsComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -49,13 +59,19 @@ import { environment } from '../environments/environment';
     MatDividerModule,
     MatGridListModule,
     MatListModule,
+    MatDialogModule,
     MatCardModule,
+    MatRadioModule,
+    MatTooltipModule,
     MatSelectModule,
     MatSidenavModule,
     MatButtonToggleModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      enabled: environment.production
+    })
   ],
   providers: [],
+  entryComponents: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

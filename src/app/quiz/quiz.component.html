@@ -1,5 +1,7 @@
 <main class="wrapper">
   <mat-card class="card">
+
+   
     <mat-card-content>
       <section class="question" *ngFor="let q of displayedQuestions">
         <h4 class="question-content mat-body-strong">{{ q.question }}</h4>
@@ -19,21 +21,25 @@
         </section>
       </section>
 
-      <!-- <mat-card-actions align="end"> -->
       <div class="actions">
         <button
           *ngIf="quizState === 'answer'"
           mat-button
           (click)="checkAnswers()"
+          matTooltip="Podświetl niepoprawne odpowiedzi na czerwono"
+          matTooltipShowDelay="1500"
         >
           <mat-icon>playlist_add_check</mat-icon> Sprawdź
         </button>
-        <button mat-button (click)="pickNext()">
+
+        <button mat-button (click)="pickNext()" >
           <mat-icon>autorenew</mat-icon> Wylosuj
         </button>
       </div>
 
-      <!-- </mat-card-actions> -->
     </mat-card-content>
   </mat-card>
 </main>
+
+
+

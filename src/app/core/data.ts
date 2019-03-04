@@ -2337,10 +2337,6 @@ const data: IModule[] = [
             sentence:
               "Kod w PHP wymaga kompilacji zanim zostanie umieszczony na serwerze.\n",
             answer: false
-          },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
           }
         ]
       },
@@ -2489,14 +2485,6 @@ const data: IModule[] = [
           {
             sentence: "Używając tablicy $_RESPONSE\n",
             answer: false
-          },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
-          },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
           }
         ]
       },
@@ -2551,18 +2539,6 @@ const data: IModule[] = [
             sentence: "Linux, Access, MySQL, PHP\n",
             answer: false
           },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
-          },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
-          },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
-          }
         ]
       },
       {
@@ -2775,18 +2751,6 @@ const data: IModule[] = [
               "Skorzystanie z polecenia /etc/init.d/apache2 force-reload\n",
             answer: false
           },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
-          },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
-          },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
-          }
         ]
       },
       {
@@ -4111,10 +4075,6 @@ const data: IModule[] = [
               "Jądro Linuxa zarządza pamięcią operacyjną (przydziały/zwolnienia).\n",
             answer: true
           },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
-          }
         ]
       },
       {
@@ -4228,14 +4188,6 @@ const data: IModule[] = [
           {
             sentence:
               "Do kontroli pracy systemu można wykorzystać polecenia sysctl oraz zawartość katalogu /var\n",
-            answer: false
-          },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
-            answer: false
-          },
-          {
-            sentence: "ZOSTAWIĆ PUSTE\n",
             answer: false
           }
         ]
@@ -7134,17 +7086,9 @@ const data: IModule[] = [
             answer: false
           },
           {
-            sentence: 'Odporność na awarię ',
+            sentence: 'Odporność na awarię 1 dysków w dyskowej macierzy.\n',
             answer: true
           },
-          {
-            sentence: '1 dysków w ',
-            answer: false
-          },
-          {
-            sentence: 'dyskowej macierzy.\n',
-            answer: false
-          }
         ]
       },
       {

@@ -1,4 +1,8 @@
-import { Component, OnInit, Input, HostListener, Inject } from "@angular/core";
+import {
+  Component,
+  OnInit,
+  Input,
+} from "@angular/core";
 import { IQuestion } from "../core/types";
 
 @Component({
@@ -9,10 +13,7 @@ import { IQuestion } from "../core/types";
 export class QuestionsComponent implements OnInit {
   @Input() questions: IQuestion[];
 
-  fabVisible = false;
-
   constructor() {}
 
   ngOnInit() {}
-
 }

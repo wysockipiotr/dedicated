@@ -6,7 +6,7 @@ import { QuizComponent } from "./quiz/quiz.component";
 import { QuestionsComponent } from "./questions/questions.component";
 
 const routes: Routes = [
-  { path: "", component: HomeComponent },
+  { path: "", component: HomeComponent, data: { animation: 'HomeComponent' } },
   {
     path: ":slug",
     component: TopicComponent,
@@ -15,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
