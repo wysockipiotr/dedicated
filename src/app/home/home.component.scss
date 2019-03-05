@@ -4,6 +4,8 @@ nav {
   margin: 0rem auto;
 }
 
+
+
 @media only screen and (min-width: 425px) {
   nav {
     margin-top: 2rem;
@@ -34,4 +36,10 @@ mat-card {
   right: 0;
   // z-index: 1000;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 424px) {
+  mat-card {
+    border-radius: 0;
+  }
 }

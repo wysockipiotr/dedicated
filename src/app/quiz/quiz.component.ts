@@ -35,7 +35,10 @@ export class QuizComponent implements OnInit {
   }
 
   private reloadAllQuestions_() {
-    this.questionPool_ = _.shuffle([...this.questions]);
+    this.questionPool_ = _.shuffle([...this.questions]).map(q => ({
+      ...q,
+      answers: _.shuffle(q.answers)
+    }));
   }
 
   checkAnswers() {
@@ -64,5 +67,4 @@ export class QuizComponent implements OnInit {
       answers: q.answers.map(a => ({ ...a, userAnswer: false }))
     }));
   }
-
 }
