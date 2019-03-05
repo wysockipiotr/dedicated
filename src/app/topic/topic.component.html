@@ -20,7 +20,7 @@
   ></app-questions>
 
   <app-quiz
-    [style.visibility]="activeLink === links[1] ? 'visible' : 'hidden'"
+    *ngIf="activeLink === links[1]"
     [questions]="topic.questions"
   ></app-quiz>
 </div>
