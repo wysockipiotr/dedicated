@@ -40,7 +40,13 @@ $wrong-accent: mat-palette($mat-red, 300);
 
 .correct {
   color: mat-color($correct-accent);
-  @include angular-material-theme(
+  // @include angular-material-theme(
+  //   mat-dark-theme($correct-accent, $correct-accent, $correct-accent)
+  // );
+}
+
+.correct-border {
+    @include angular-material-theme(
     mat-dark-theme($correct-accent, $correct-accent, $correct-accent)
   );
    & .mat-checkbox .mat-checkbox-frame {
@@ -48,9 +54,7 @@ $wrong-accent: mat-palette($mat-red, 300);
   }
 }
 
-.wrong {
-  color: mat-color($wrong-accent);
-
+.wrong-border {
   @include mat-checkbox-theme(
     mat-dark-theme($wrong-accent, $wrong-accent, $wrong-accent)
   );
@@ -58,6 +62,14 @@ $wrong-accent: mat-palette($mat-red, 300);
   & .mat-checkbox .mat-checkbox-frame {
     border-color: mat-color($wrong-accent);
   }
+}
+
+.wrong {
+  color: mat-color($wrong-accent);
+
+  // @include mat-checkbox-theme(
+  //   mat-dark-theme($wrong-accent, $wrong-accent, $wrong-accent)
+  // );
 }
 
 .noselect {

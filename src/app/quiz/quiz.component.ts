@@ -48,8 +48,8 @@ export class QuizComponent implements OnInit {
   getColorClassForCheckResult(answer: boolean, userAnswer: boolean) {
     return this.quizState === "check"
       ? answer === userAnswer
-        ? "correct"
-        : "wrong"
+        ? "correct-border"
+        : "wrong-border"
       : null;
   }
 
