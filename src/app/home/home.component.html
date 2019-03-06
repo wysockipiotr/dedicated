@@ -9,15 +9,18 @@
       *ngFor="let i of questionsService.getModules(); index as idx"
     >
       <mat-card matRipple (click)="topicPicked(i)">
-        <p class="mat-body-strong module-label noselect">
+        <div class="mat-body-strong module-label noselect">
           <span>
             <mat-icon
               [svgIcon]="i.category === 'windows' ? 'windows' : 'ubuntu'"
             ></mat-icon>
           </span>
 
-          <span>{{ i.name }}</span>
-        </p>
+          <div class="topic-info">
+            <span>{{ i.name }}</span>
+            <span class="mat-caption">{{ i | topicInfo }}</span>
+          </div>
+        </div>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>

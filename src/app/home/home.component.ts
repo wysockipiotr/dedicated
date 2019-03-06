@@ -1,16 +1,15 @@
-import { Component, OnInit, ChangeDetectorRef, OnDestroy } from "@angular/core";
-import { QuestionsService } from "../core/questions.service";
-import { IQuestion, IModule } from "../core/types";
-import { DomSanitizer } from "@angular/platform-browser";
-import { MatIconRegistry } from "@angular/material";
-import { MediaMatcher } from "@angular/cdk/layout";
-import { Router } from "@angular/router";
-import { TitleService } from "../core/title.service";
+import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
+import { QuestionsService } from '../core/questions.service';
+import { IQuestion } from '../core/types';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MediaMatcher } from '@angular/cdk/layout';
+import { Router } from '@angular/router';
+import { TitleService } from '../core/title.service';
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.scss"]
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, OnDestroy {
   questions: IQuestion[] = [];
@@ -35,7 +34,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     media: MediaMatcher,
     sanitizer: DomSanitizer
   ) {
-    this.mobileQuery = media.matchMedia("(max-width: 425px)");
+    this.mobileQuery = media.matchMedia('(max-width: 425px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }

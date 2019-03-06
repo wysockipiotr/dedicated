@@ -16,3 +16,10 @@ export interface IModule {
   category: Category;
   questions: IQuestion[];
 }
+
+export interface IModuleInfo {
+  name: string;
+  category: Category;
+  slug: string;
+  numberOfQuestions: number;
+}

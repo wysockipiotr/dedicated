@@ -6,9 +6,7 @@ import { startWith } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class TitleService {
-
   title$ = new BehaviorSubject<string>(undefined);
 
-  constructor() {
-  }
+  constructor() {}
 }

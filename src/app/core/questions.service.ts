@@ -1,25 +1,25 @@
-import { Injectable } from "@angular/core";
-
-import DATA from "./data";
-import { IModule } from "./types";
+import DATA from './data';
+import { Injectable } from '@angular/core';
+import { IModule, Category, IModuleInfo } from './types';
 
 const slugify = (topic: IModule) =>
   topic.name
     .toLowerCase()
-    .split(" ")
-    .join("-");
+    .split(' ')
+    .join('-');
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class QuestionsService {
   constructor() {}
 
-  getModules() {
+  getModules(): IModuleInfo[] {
     return DATA.map(m => ({
       name: m.name,
       category: m.category,
-      slug: slugify(m)
+      slug: slugify(m),
+      numberOfQuestions: m.questions.length
     }));
   }
 

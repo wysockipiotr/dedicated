@@ -1,9 +1,9 @@
-import { IModule } from "./types";
+import { IModule } from './types';
 
 const data: IModule[] = [
   {
-    category: "linux",
-    name: "Usługi graficzne X Window",
+    category: 'linux',
+    name: 'Usługi graficzne X Window',
     questions: [
       {
         question:
@@ -11,87 +11,87 @@ const data: IModule[] = [
         answers: [
           {
             sentence:
-              "Został on zaprojektowany w architekturze klient-serwer\n",
+              'Został on zaprojektowany w architekturze klient-serwer\n',
             answer: true
           },
           {
             sentence:
-              "Jest to zbiór funkcji i protokołów wyświetlających informacje graficzne na ekranie\n",
+              'Jest to zbiór funkcji i protokołów wyświetlających informacje graficzne na ekranie\n',
             answer: true
           },
           {
-            sentence: "Odpowiada za wygląd okien wyświetlanych w systemie\n",
+            sentence: 'Odpowiada za wygląd okien wyświetlanych w systemie\n',
             answer: false
           },
           {
             sentence:
-              "Pozwala na zdalną pracę na odległym komputerze, wykorzystując komputer lokalny jako serwer X\n",
+              'Pozwala na zdalną pracę na odległym komputerze, wykorzystując komputer lokalny jako serwer X\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Które z podanych komponentów NIE wchodzi w skład X Window System\n",
+          'Które z podanych komponentów NIE wchodzi w skład X Window System\n',
         answers: [
           {
-            sentence: "Serwer Apache\n",
+            sentence: 'Serwer Apache\n',
             answer: true
           },
           {
-            sentence: "Menadżer okien\n",
+            sentence: 'Menadżer okien\n',
             answer: false
           },
           {
-            sentence: "Baza danych\n",
+            sentence: 'Baza danych\n',
             answer: true
           },
           {
-            sentence: "X serwer\n",
+            sentence: 'X serwer\n',
             answer: false
           }
         ]
       },
       {
-        question: "Czym różnią się xdm/gdm/lightdm i startx?\n",
+        question: 'Czym różnią się xdm/gdm/lightdm i startx?\n',
         answers: [
           {
             sentence:
-              "Gdy X zostanie opuszczony za pomocą polecenia zakończenia menadżera okna Xdm ponownie pokazuje ekran logowania\n",
+              'Gdy X zostanie opuszczony za pomocą polecenia zakończenia menadżera okna Xdm ponownie pokazuje ekran logowania\n',
             answer: true
           },
           {
-            sentence: "Xdm/Gdm/lightdm uruchamia ekran logowania\n",
+            sentence: 'Xdm/Gdm/lightdm uruchamia ekran logowania\n',
             answer: true
           },
           {
-            sentence: "Startx uruchamia ekran logowania\n",
+            sentence: 'Startx uruchamia ekran logowania\n',
             answer: false
           },
           {
             sentence:
-              "Gdy X zostanie opuszczony za pomocą polecenia zakończenia menadżera okna startx ponownie pokazuje ekran logowania\n",
+              'Gdy X zostanie opuszczony za pomocą polecenia zakończenia menadżera okna startx ponownie pokazuje ekran logowania\n',
             answer: false
           }
         ]
       },
       {
-        question: "Polecenie Xorg -configure\n",
+        question: 'Polecenie Xorg -configure\n',
         answers: [
           {
-            sentence: "Jest narzędziem graficznym\n",
+            sentence: 'Jest narzędziem graficznym\n',
             answer: false
           },
           {
-            sentence: "Pracuje w trybie tekstowym\n",
+            sentence: 'Pracuje w trybie tekstowym\n',
             answer: true
           },
           {
-            sentence: "Służy do konfiguracji X-serwera\n",
+            sentence: 'Służy do konfiguracji X-serwera\n',
             answer: true
           },
           {
-            sentence: "Modyfikuje/Generuje domyślny plik Xorg.conf\n",
+            sentence: 'Modyfikuje/Generuje domyślny plik Xorg.conf\n',
             answer: true
           }
         ]
@@ -102,71 +102,71 @@ const data: IModule[] = [
         answers: [
           {
             sentence:
-              "wykorzysta sterownik nvidia do obsługi pierwszej karty graficznej\n",
+              'wykorzysta sterownik nvidia do obsługi pierwszej karty graficznej\n',
             answer: true
           },
           {
-            sentence: "jest niepoprawnym wpisem\n",
+            sentence: 'jest niepoprawnym wpisem\n',
             answer: false
           },
           {
-            sentence: "utworzy nową wirtualną kartę graficzną\n",
+            sentence: 'utworzy nową wirtualną kartę graficzną\n',
             answer: false
           },
           {
             sentence:
-              "nic nie zmieni, bo plik konfiguracyjny Xorg znajduje się w innej lokalizacji\n",
+              'nic nie zmieni, bo plik konfiguracyjny Xorg znajduje się w innej lokalizacji\n',
             answer: false
           }
         ]
       },
       {
-        question: "Manager okien w systemie Linux\n",
+        question: 'Manager okien w systemie Linux\n',
         answers: [
           {
-            sentence: "Jest X-Serwerem\n",
+            sentence: 'Jest X-Serwerem\n',
             answer: false
           },
           {
-            sentence: "zarządza pamięcią X-serwera\n",
+            sentence: 'zarządza pamięcią X-serwera\n',
             answer: false
           },
           {
             sentence:
-              "Jest odpowiedzialny za wygląd i funkcjonalność pulpitu\n",
+              'Jest odpowiedzialny za wygląd i funkcjonalność pulpitu\n',
             answer: true
           },
           {
-            sentence: "Jest odpowiedzialny za wygląd okien\n",
+            sentence: 'Jest odpowiedzialny za wygląd okien\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Wartości domyślne używane przez standardowe aplikacje Systemu X mogą zostać zmienione. Służą do tego pliki w katalogu:\n",
+          'Wartości domyślne używane przez standardowe aplikacje Systemu X mogą zostać zmienione. Służą do tego pliki w katalogu:\n',
         answers: [
           {
-            sentence: "~app-defaults/˜\n",
+            sentence: '~app-defaults/˜\n',
             answer: false
           },
           {
-            sentence: "/etc/X11/app-defaults/\n",
+            sentence: '/etc/X11/app-defaults/\n',
             answer: true
           },
           {
-            sentence: "~defaults-app-values/\n",
+            sentence: '~defaults-app-values/\n',
             answer: false
           },
           {
-            sentence: "/etc/X11/default-app-values\n",
+            sentence: '/etc/X11/default-app-values\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Dostępne są 2 komputery, serwer - saturn, oraz klient - jupiter. Po wykonaniu komend na komputerze saturn: \n $ xhost +jupiter \n na komputerze jupiter: \n $ export DISPLAY=saturn:0 \n $ xeyes \n Efektem będzie:\n",
+          'Dostępne są 2 komputery, serwer - saturn, oraz klient - jupiter. Po wykonaniu komend na komputerze saturn: \n $ xhost +jupiter \n na komputerze jupiter: \n $ export DISPLAY=saturn:0 \n $ xeyes \n Efektem będzie:\n',
         answers: [
           {
             sentence:
@@ -191,541 +191,541 @@ const data: IModule[] = [
         ]
       },
       {
-        question: "Menadżerem okien jest:\n",
+        question: 'Menadżerem okien jest:\n',
         answers: [
           {
-            sentence: "gdm\n",
+            sentence: 'gdm\n',
             answer: false
           },
           {
-            sentence: "lightdm\n",
+            sentence: 'lightdm\n',
             answer: false
           },
           {
-            sentence: "KDE\n",
+            sentence: 'KDE\n',
             answer: true
           },
           {
-            sentence: "Gnome\n",
+            sentence: 'Gnome\n',
             answer: true
           }
         ]
       },
       {
-        question: "X11 (X Window System) to:\n",
+        question: 'X11 (X Window System) to:\n',
         answers: [
           {
-            sentence: "Graficzny system komputerowy\n",
+            sentence: 'Graficzny system komputerowy\n',
             answer: true
           },
           {
-            sentence: "Manager okien\n",
+            sentence: 'Manager okien\n',
             answer: false
           },
           {
-            sentence: "Aplikacja pozwalająca na zalogowanie się do systemu\n",
+            sentence: 'Aplikacja pozwalająca na zalogowanie się do systemu\n',
             answer: false
           },
           {
-            sentence: "żadna z powyższych\n",
+            sentence: 'żadna z powyższych\n',
             answer: false
           }
         ]
       },
       {
-        question: "System X\n",
+        question: 'System X\n',
         answers: [
           {
-            sentence: "jest zaprojektowany w architekturze klient-serwer\n",
+            sentence: 'jest zaprojektowany w architekturze klient-serwer\n',
             answer: true
           },
           {
-            sentence: "odpowiada za obsługę okien\n",
+            sentence: 'odpowiada za obsługę okien\n',
             answer: false
           },
           {
-            sentence: "odpowiada za obsługę urządzeń wejścia\n",
+            sentence: 'odpowiada za obsługę urządzeń wejścia\n',
             answer: true
           },
           {
-            sentence: "odpowiada za zamykanie/otwieranie programów\n",
+            sentence: 'odpowiada za zamykanie/otwieranie programów\n',
             answer: false
           }
         ]
       },
       {
-        question: "X Window Server\n",
+        question: 'X Window Server\n',
         answers: [
           {
             sentence:
-              "...zajmuje się obsługą urządzeń wejściowych (myszki, klawiatury, tabletu).\n",
+              '...zajmuje się obsługą urządzeń wejściowych (myszki, klawiatury, tabletu).\n',
             answer: true
           },
           {
-            sentence: "...dostarcza rozbudowany interfejs użytkownika.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "...zajmuje się obsługą okien, dostarcza wbudowane mechanizmy do ich przesuwania, zmiany rozmiaru, zamykania i uruchamiania programów itd.\n",
+            sentence: '...dostarcza rozbudowany interfejs użytkownika.\n',
             answer: false
           },
           {
             sentence:
-              "...udostępnia interfejs graficzny i pozwala rysować nieskomplikowane elementy na ekranie.\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Zaznacz implementacje X Window System\n",
-        answers: [
-          {
-            sentence: "XFree86\n",
-            answer: true
-          },
-          {
-            sentence: "Gnome\n",
+              '...zajmuje się obsługą okien, dostarcza wbudowane mechanizmy do ich przesuwania, zmiany rozmiaru, zamykania i uruchamiania programów itd.\n',
             answer: false
-          },
-          {
-            sentence: "KDE\n",
-            answer: false
-          },
-          {
-            sentence: "X.Org\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "Dodatkowe skrypty startowe Systemu X Window mogą być zdefiniowane w\n",
-        answers: [
-          {
-            sentence: "~.xinitrc\n",
-            answer: true
-          },
-          {
-            sentence: "/etc/X11/xinit/xinitrc\n",
-            answer: true
-          },
-          {
-            sentence: "/etc/xorgrc\n",
-            answer: false
-          },
-          {
-            sentence: "~.xorgrc\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Podaj polececenie potrzebne o uruchomienia Xwindow\n",
-        answers: [
-          {
-            sentence: "startx\n",
-            answer: true
-          },
-          {
-            sentence: "/etc/init.d/gdm start\n",
-            answer: false
-          },
-          {
-            sentence: "/etc/X11/xorg start\n",
-            answer: false
-          },
-          {
-            sentence: "setx start\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Domyślne skróty klawiszowe dla serwera X, to:\n",
-        answers: [
-          {
-            sentence:
-              "Alt+[Ctrl]+[FX], gdzie X={1,2...7 - przełączanie się między konsolami tekstowymi. Zazwyczaj [Alt] + [F7] pozwala na przełączenie z trybu tekstowego  w tryb graficzny.\n",
-            answer: true
           },
           {
             sentence:
-              "Alt + [Ctrl] + [F12] - otwiera tekstowy menadżer konfiguracji serwera X.\n",
+              '...udostępnia interfejs graficzny i pozwala rysować nieskomplikowane elementy na ekranie.\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Zaznacz implementacje X Window System\n',
+        answers: [
+          {
+            sentence: 'XFree86\n',
+            answer: true
+          },
+          {
+            sentence: 'Gnome\n',
             answer: false
           },
           {
-            sentence: "Alt + [Esc] - restart serwera X\n",
+            sentence: 'KDE\n',
             answer: false
           },
           {
-            sentence: "Ctrl + [Alt] + [Backspace] - wyłączenie serwera X.\n",
+            sentence: 'X.Org\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "W jaki sposób można uruchomić powłokę graficzną w systemie Linux?\n",
+          'Dodatkowe skrypty startowe Systemu X Window mogą być zdefiniowane w\n',
         answers: [
           {
-            sentence: "Skorzystać z menadżera wyświetlania, np. xdm\n",
+            sentence: '~.xinitrc\n',
             answer: true
           },
           {
-            sentence:
-              "Uruchomić aplikację startową dostarczaną wraz ze środowiskiem graficznym, np startxfce4\n",
+            sentence: '/etc/X11/xinit/xinitrc\n',
             answer: true
           },
           {
-            sentence:
-              "Może być skonfigurowany do uruchomienia na odpowiednim poziomie uruchomieniowym\n",
-            answer: true
+            sentence: '/etc/xorgrc\n',
+            answer: false
           },
           {
-            sentence: "Skorzystać ze skryptu startowego startx/xinit\n",
-            answer: true
+            sentence: '~.xorgrc\n',
+            answer: false
           }
         ]
       },
       {
-        question: "Plik /etc/X11/Xorg.conf pozwala na zmianę:\n",
+        question: 'Podaj polececenie potrzebne o uruchomienia Xwindow\n',
         answers: [
           {
-            sentence: "Ustawień myszy i klawiatury.\n",
+            sentence: 'startx\n',
             answer: true
           },
           {
-            sentence: "Modelu używanej karty graficznej i jej parametrów.\n",
-            answer: true
+            sentence: '/etc/init.d/gdm start\n',
+            answer: false
           },
           {
-            sentence:
-              "Rozdzielczości ekranu oraz częstotliwości odświeżania.\n",
-            answer: true
+            sentence: '/etc/X11/xorg start\n',
+            answer: false
           },
           {
-            sentence: "Zakres odświeżania pionowego dla używanego monitora.\n",
-            answer: true
+            sentence: 'setx start\n',
+            answer: false
           }
         ]
       },
       {
-        question:
-          "Uruchomienie w konsoli któregoś z menadżerów ekranu (ang. Display Manager, np gdm, xdm, lightdm) przez użytkownika root, przy założeniu, że X nie jest uruchomiony, spowoduje:\n",
+        question: 'Domyślne skróty klawiszowe dla serwera X, to:\n',
         answers: [
           {
-            sentence: "nie można uruchomić menadżera ekranu z konsoli\n",
-            answer: false
+            sentence:
+              'Alt+[Ctrl]+[FX], gdzie X={1,2...7 - przełączanie się między konsolami tekstowymi. Zazwyczaj [Alt] + [F7] pozwala na przełączenie z trybu tekstowego  w tryb graficzny.\n',
+            answer: true
           },
           {
             sentence:
-              "uruchomienie sesji X użytkownika, który uruchamiał polecenie\n",
+              'Alt + [Ctrl] + [F12] - otwiera tekstowy menadżer konfiguracji serwera X.\n',
             answer: false
           },
           {
-            sentence:
-              "zakończenie sesji użytkownika root, w której wykonał polecenie\n",
+            sentence: 'Alt + [Esc] - restart serwera X\n',
             answer: false
           },
           {
-            sentence: "wyświetlenie ekranu logowania\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "W skład X-Window wchodzi:\n",
-        answers: [
-          {
-            sentence: "Menadżer Okien\n",
-            answer: true
-          },
-          {
-            sentence: "X-Writer\n",
-            answer: false
-          },
-          {
-            sentence: "X-Serwer\n",
-            answer: true
-          },
-          {
-            sentence: "X-klient\n",
+            sentence: 'Ctrl + [Alt] + [Backspace] - wyłączenie serwera X.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Zaznacz zdania prawidzwe na temat podsystemu graficznego X Windows:\n",
+          'W jaki sposób można uruchomić powłokę graficzną w systemie Linux?\n',
         answers: [
           {
-            sentence: "Jego implementacją jest np. Gnome lub KDE.\n",
-            answer: false
-          },
-          {
-            sentence: "Jego implementacją jest X.org oraz XFree86\n",
+            sentence: 'Skorzystać z menadżera wyświetlania, np. xdm\n',
             answer: true
           },
           {
             sentence:
-              "Po jego uruchomieniu oraz systemu Linux istnieje możliwość przejścia z trybu graficznego do konsoli tekstowej za pomocą skrótu ALT+CTRL+1\n",
-            answer: false
+              'Uruchomić aplikację startową dostarczaną wraz ze środowiskiem graficznym, np startxfce4\n',
+            answer: true
           },
           {
             sentence:
-              "Po jego uruchomieniu oraz systemu Linux istnieje możliwość przejścia z trybu graficznego do konsoli tekstowej za pomocą skrótu ALT+CTRL+F1\n",
+              'Może być skonfigurowany do uruchomienia na odpowiednim poziomie uruchomieniowym\n',
+            answer: true
+          },
+          {
+            sentence: 'Skorzystać ze skryptu startowego startx/xinit\n',
             answer: true
           }
         ]
       },
       {
-        question: "Plik /etx/X11/xorg.conf\n",
+        question: 'Plik /etc/X11/Xorg.conf pozwala na zmianę:\n',
         answers: [
           {
-            sentence:
-              "(Nie wiadomo co jest tu napisane, zdaniem starszych roczników fałsz)\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Zawiera ustawienia menadżera okien, takie jak np. ułożenie ikon na pulpicie, kolory, style obramowania okien itp.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Zawiera konfigurację urządzeń wejścia/wyjścia podłączonych do komputera\n",
+            sentence: 'Ustawień myszy i klawiatury.\n',
             answer: true
           },
           {
-            sentence: "Jest plikiem wykonywalnym\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question:
-          "Wskaż poprawne zdania dotyczące pliku konfiguracyjnego Xorg.conf\n",
-        answers: [
-          {
-            sentence:
-              "W pliku Xorg.conf może znaleźć się tylko jedna sekcja Device\n",
-            answer: false
-          },
-          {
-            sentence: "Rozdzielczość monitora definiuje się po słowie Modes\n",
+            sentence: 'Modelu używanej karty graficznej i jej parametrów.\n',
             answer: true
           },
           {
             sentence:
-              "W jednej sekcji Display może zdefiniować maksymalnie jedną rozdzielczość monitora.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "W jednej sekcji Display może zdefiniować maksymalnie jedną głębię kolorów monitora.\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Zaznacz prawidłowe stwierdzenia:\n",
-        answers: [
-          {
-            sentence: "xinit wywołuje xterm\n",
+              'Rozdzielczości ekranu oraz częstotliwości odświeżania.\n',
             answer: true
           },
           {
-            sentence: "xterm wywołuje xinit\n",
-            answer: false
-          },
-          {
-            sentence: "startx wywołuje xinit\n",
-            answer: true
-          },
-          {
-            sentence: "xinit wywołuje xstart\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Plik konfiguracyjny X-Serwera (w systemie X.org)\n",
-        answers: [
-          {
-            sentence:
-              "nie jest wymagany (x-serwer wykona wtedy konfigurację dynamiczną)\n",
-            answer: true
-          },
-          {
-            sentence:
-              "musi zawierać sekcje Device, Monitor, Screen, Keyboard, Mouse\n",
-            answer: false
-          },
-          {
-            sentence: "musi zawierać przynajmniej sekcję Device\n",
-            answer: false
-          },
-          {
-            sentence:
-              "musi zawierać skecje Device, Monitor, Screen oraz Display\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "W pliku /etx/X1/xorg.conf mamy możliwość skonfigurowania:\n",
-        answers: [
-          {
-            sentence: "rozdzielczości, z jaką startuje system graficzny\n",
-            answer: true
-          },
-          {
-            sentence: "myszy\n",
-            answer: true
-          },
-          {
-            sentence: "drukarek, które są dostępne w systemie\n",
-            answer: false
-          },
-          {
-            sentence: "sterownika grafiki, z którego skorzystać ma system\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "X Window System:\n",
-        answers: [
-          {
-            sentence: "zawiera mechanizmy obsługi klawiatury i myszy\n",
-            answer: true
-          },
-          {
-            sentence:
-              "dostarcza graficzny interfejs użytkownika (okna, przyciski itd.)\n",
-            answer: false
-          },
-          {
-            sentence: "Jest rozbudowanym serwerem VNC\n",
-            answer: false
-          },
-          {
-            sentence:
-              "zawiera protokoły sieciowe umożliwiające wykonywanie programów X w jednym komputerze i wyświetlanie rezultatu ich pracy na drugim\n",
+            sentence: 'Zakres odświeżania pionowego dla używanego monitora.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Które z podanych zdań prawidłowo opisują architekturę X Widnow System?\n",
+          'Uruchomienie w konsoli któregoś z menadżerów ekranu (ang. Display Manager, np gdm, xdm, lightdm) przez użytkownika root, przy założeniu, że X nie jest uruchomiony, spowoduje:\n',
         answers: [
           {
-            sentence:
-              "Serwer X jest lokalny i działa na komputerze użytkownika.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Klienci zawsze działają lokalnie, natomiast serwer X może działać na innej maszynie.\n",
-            answer: false
-          },
-          {
-            sentence: "Klienci mogą działać na różnych maszynach.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Zarówno serwer X, jak i klienci muszą działać lokalnie, na komputerze użytkownika.\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Zaznacz zdania prawdziwe dotyczące systemu Linux\n",
-        answers: [
-          {
-            sentence:
-              "Środowisko graficzne X jest uruchamiane zawsze przy starcie systemu, niezależnie od konfiguracji.\n",
+            sentence: 'nie można uruchomić menadżera ekranu z konsoli\n',
             answer: false
           },
           {
             sentence:
-              "W czasie pracy w sieci z wykorzystaniem Xwindow: X-Serwer jest uruchomiony na lokalnym komputerze, z którego odbywa się sterowanie, natomiast X-Klient na serwerze zdalnym, gdzie odbywa się przetwarzanie danych.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Xwindow pozwala pracować jedynie w trybie z jednym użytkownikiem.\n",
+              'uruchomienie sesji X użytkownika, który uruchamiał polecenie\n',
             answer: false
           },
           {
             sentence:
-              "Przejścia między konsolami tekstowymi odbywa się przy pomocy klawiszów [Alt]+[Ctrl]+[F1] do [F6]\n",
+              'zakończenie sesji użytkownika root, w której wykonał polecenie\n',
+            answer: false
+          },
+          {
+            sentence: 'wyświetlenie ekranu logowania\n',
             answer: true
           }
         ]
       },
       {
-        question: "Co jest dodatkowym elementem systemu X Window\n",
+        question: 'W skład X-Window wchodzi:\n',
         answers: [
           {
-            sentence: "Serwer czcionek\n",
+            sentence: 'Menadżer Okien\n',
             answer: true
           },
           {
-            sentence: "Zarządca okien (window manager)\n",
-            answer: true
-          },
-          {
-            sentence: "Serwer plików tekstowych\n",
+            sentence: 'X-Writer\n',
             answer: false
           },
           {
-            sentence: "Zarządca sieci (network-manager)\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Jakie sekcje może zawierać plik Xorg.conf\n",
-        answers: [
-          {
-            sentence: "WindowManager\n",
-            answer: false
-          },
-          {
-            sentence: "Device\n",
+            sentence: 'X-Serwer\n',
             answer: true
           },
           {
-            sentence: "Screen\n",
-            answer: true
-          },
-          {
-            sentence: "Monitor\n",
+            sentence: 'X-klient\n',
             answer: true
           }
         ]
       },
       {
-        question: "Jakie programy mogą być klientami Xwindow?\n",
+        question:
+          'Zaznacz zdania prawidzwe na temat podsystemu graficznego X Windows:\n',
         answers: [
           {
-            sentence: "aptitude z interfejsem tekstowym (jakoś tak)\n",
+            sentence: 'Jego implementacją jest np. Gnome lub KDE.\n',
             answer: false
           },
           {
-            sentence: "gimp\n",
+            sentence: 'Jego implementacją jest X.org oraz XFree86\n',
             answer: true
           },
           {
-            sentence: "xterms\n",
+            sentence:
+              'Po jego uruchomieniu oraz systemu Linux istnieje możliwość przejścia z trybu graficznego do konsoli tekstowej za pomocą skrótu ALT+CTRL+1\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Po jego uruchomieniu oraz systemu Linux istnieje możliwość przejścia z trybu graficznego do konsoli tekstowej za pomocą skrótu ALT+CTRL+F1\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Plik /etx/X11/xorg.conf\n',
+        answers: [
+          {
+            sentence:
+              '(Nie wiadomo co jest tu napisane, zdaniem starszych roczników fałsz)\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Zawiera ustawienia menadżera okien, takie jak np. ułożenie ikon na pulpicie, kolory, style obramowania okien itp.\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Zawiera konfigurację urządzeń wejścia/wyjścia podłączonych do komputera\n',
             answer: true
           },
           {
-            sentence: "firefox",
+            sentence: 'Jest plikiem wykonywalnym\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question:
+          'Wskaż poprawne zdania dotyczące pliku konfiguracyjnego Xorg.conf\n',
+        answers: [
+          {
+            sentence:
+              'W pliku Xorg.conf może znaleźć się tylko jedna sekcja Device\n',
+            answer: false
+          },
+          {
+            sentence: 'Rozdzielczość monitora definiuje się po słowie Modes\n',
+            answer: true
+          },
+          {
+            sentence:
+              'W jednej sekcji Display może zdefiniować maksymalnie jedną rozdzielczość monitora.\n',
+            answer: false
+          },
+          {
+            sentence:
+              'W jednej sekcji Display może zdefiniować maksymalnie jedną głębię kolorów monitora.\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Zaznacz prawidłowe stwierdzenia:\n',
+        answers: [
+          {
+            sentence: 'xinit wywołuje xterm\n',
+            answer: true
+          },
+          {
+            sentence: 'xterm wywołuje xinit\n',
+            answer: false
+          },
+          {
+            sentence: 'startx wywołuje xinit\n',
+            answer: true
+          },
+          {
+            sentence: 'xinit wywołuje xstart\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Plik konfiguracyjny X-Serwera (w systemie X.org)\n',
+        answers: [
+          {
+            sentence:
+              'nie jest wymagany (x-serwer wykona wtedy konfigurację dynamiczną)\n',
+            answer: true
+          },
+          {
+            sentence:
+              'musi zawierać sekcje Device, Monitor, Screen, Keyboard, Mouse\n',
+            answer: false
+          },
+          {
+            sentence: 'musi zawierać przynajmniej sekcję Device\n',
+            answer: false
+          },
+          {
+            sentence:
+              'musi zawierać skecje Device, Monitor, Screen oraz Display\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'W pliku /etx/X1/xorg.conf mamy możliwość skonfigurowania:\n',
+        answers: [
+          {
+            sentence: 'rozdzielczości, z jaką startuje system graficzny\n',
+            answer: true
+          },
+          {
+            sentence: 'myszy\n',
+            answer: true
+          },
+          {
+            sentence: 'drukarek, które są dostępne w systemie\n',
+            answer: false
+          },
+          {
+            sentence: 'sterownika grafiki, z którego skorzystać ma system\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'X Window System:\n',
+        answers: [
+          {
+            sentence: 'zawiera mechanizmy obsługi klawiatury i myszy\n',
+            answer: true
+          },
+          {
+            sentence:
+              'dostarcza graficzny interfejs użytkownika (okna, przyciski itd.)\n',
+            answer: false
+          },
+          {
+            sentence: 'Jest rozbudowanym serwerem VNC\n',
+            answer: false
+          },
+          {
+            sentence:
+              'zawiera protokoły sieciowe umożliwiające wykonywanie programów X w jednym komputerze i wyświetlanie rezultatu ich pracy na drugim\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Które z podanych zdań prawidłowo opisują architekturę X Widnow System?\n',
+        answers: [
+          {
+            sentence:
+              'Serwer X jest lokalny i działa na komputerze użytkownika.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Klienci zawsze działają lokalnie, natomiast serwer X może działać na innej maszynie.\n',
+            answer: false
+          },
+          {
+            sentence: 'Klienci mogą działać na różnych maszynach.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Zarówno serwer X, jak i klienci muszą działać lokalnie, na komputerze użytkownika.\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Zaznacz zdania prawdziwe dotyczące systemu Linux\n',
+        answers: [
+          {
+            sentence:
+              'Środowisko graficzne X jest uruchamiane zawsze przy starcie systemu, niezależnie od konfiguracji.\n',
+            answer: false
+          },
+          {
+            sentence:
+              'W czasie pracy w sieci z wykorzystaniem Xwindow: X-Serwer jest uruchomiony na lokalnym komputerze, z którego odbywa się sterowanie, natomiast X-Klient na serwerze zdalnym, gdzie odbywa się przetwarzanie danych.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Xwindow pozwala pracować jedynie w trybie z jednym użytkownikiem.\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Przejścia między konsolami tekstowymi odbywa się przy pomocy klawiszów [Alt]+[Ctrl]+[F1] do [F6]\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Co jest dodatkowym elementem systemu X Window\n',
+        answers: [
+          {
+            sentence: 'Serwer czcionek\n',
+            answer: true
+          },
+          {
+            sentence: 'Zarządca okien (window manager)\n',
+            answer: true
+          },
+          {
+            sentence: 'Serwer plików tekstowych\n',
+            answer: false
+          },
+          {
+            sentence: 'Zarządca sieci (network-manager)\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Jakie sekcje może zawierać plik Xorg.conf\n',
+        answers: [
+          {
+            sentence: 'WindowManager\n',
+            answer: false
+          },
+          {
+            sentence: 'Device\n',
+            answer: true
+          },
+          {
+            sentence: 'Screen\n',
+            answer: true
+          },
+          {
+            sentence: 'Monitor\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Jakie programy mogą być klientami Xwindow?\n',
+        answers: [
+          {
+            sentence: 'aptitude z interfejsem tekstowym (jakoś tak)\n',
+            answer: false
+          },
+          {
+            sentence: 'gimp\n',
+            answer: true
+          },
+          {
+            sentence: 'xterms\n',
+            answer: true
+          },
+          {
+            sentence: 'firefox',
             answer: true
           }
         ]
@@ -733,145 +733,145 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "linux",
-    name: "Linux ACL",
+    category: 'linux',
+    name: 'Linux ACL',
     questions: [
       {
         question:
-          "Efekt polecenia ls -l file.txt jest następujący: \n -rw-r----- 1 me students 0 2010-02-20 23:10 file.txt  \n W następnym kroku powyższemu plikowi nadano pewne uprawnienia ACL, a następnie wykonano polecenie getfacl file.txt uzyskując następujący wynik:  \n #file: file.txt \n #owner: me \n #group: students \n user::rw- \n user:friend:r-- \n group::r-- \n group: class:rw- \n mask::rw- \n other::--- \n  Zaznacz poprawne polecenia, które mogłyby zostać wykonane w celu uzyskania powyższych uprawnieć ACL:\n",
+          'Efekt polecenia ls -l file.txt jest następujący: \n -rw-r----- 1 me students 0 2010-02-20 23:10 file.txt  \n W następnym kroku powyższemu plikowi nadano pewne uprawnienia ACL, a następnie wykonano polecenie getfacl file.txt uzyskując następujący wynik:  \n #file: file.txt \n #owner: me \n #group: students \n user::rw- \n user:friend:r-- \n group::r-- \n group: class:rw- \n mask::rw- \n other::--- \n  Zaznacz poprawne polecenia, które mogłyby zostać wykonane w celu uzyskania powyższych uprawnieć ACL:\n',
         answers: [
           {
-            sentence: "setfacl -m u:friend:4, g:class:6 file.txt\n",
+            sentence: 'setfacl -m u:friend:4, g:class:6 file.txt\n',
             answer: true
           },
           {
-            sentence: "setfacl -m u:friend:r, g:class:rw file.txt\n",
+            sentence: 'setfacl -m u:friend:r, g:class:rw file.txt\n',
             answer: true
           },
           {
-            sentence: "setfacl -m u:r:friend, g:rw:class file.txt\n",
+            sentence: 'setfacl -m u:r:friend, g:rw:class file.txt\n',
             answer: false
           },
           {
-            sentence: "setfacl -x u:friend:4, g:class6 file.txt\n",
+            sentence: 'setfacl -x u:friend:4, g:class6 file.txt\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Efekt polecenia ls -l test jest następujący: \n drw-r----- 1 so1 students 0 2011-06-10 23:10 test  \n W następnym kroku powyższemu plikowi nadano pewne uprawnienia ACL, a następnie wykonano polecenie getfacl test uzyskując następujący wynik:  \n #file: test \n #owner: so1 \n #group: students \n user::rwx \n group::r-x \n other::r-x \n default:user::rwx \n default:group::r-x \n default:grup:teachers:rwx \n default:mask::rwx \n default:other::r-x \n  Zaznacz poprawne polecenia, które mogłyby zostać wykonane w celu uzyskania powyższych uprawnieć ACL:\n",
+          'Efekt polecenia ls -l test jest następujący: \n drw-r----- 1 so1 students 0 2011-06-10 23:10 test  \n W następnym kroku powyższemu plikowi nadano pewne uprawnienia ACL, a następnie wykonano polecenie getfacl test uzyskując następujący wynik:  \n #file: test \n #owner: so1 \n #group: students \n user::rwx \n group::r-x \n other::r-x \n default:user::rwx \n default:group::r-x \n default:grup:teachers:rwx \n default:mask::rwx \n default:other::r-x \n  Zaznacz poprawne polecenia, które mogłyby zostać wykonane w celu uzyskania powyższych uprawnieć ACL:\n',
         answers: [
           {
-            sentence: "setfacl -d -m g:teacher:rwx test\n",
+            sentence: 'setfacl -d -m g:teacher:rwx test\n',
             answer: true
           },
           {
-            sentence: "brak poprawnej odpowiedzi\n",
+            sentence: 'brak poprawnej odpowiedzi\n',
             answer: false
           },
           {
-            sentence: "setacl -m g:teacher:rwx test\n",
+            sentence: 'setacl -m g:teacher:rwx test\n',
             answer: false
           },
           {
             sentence:
-              "nie istnieje żadne polecenie, które pozwalałoby uzyskać podany wynik\n",
+              'nie istnieje żadne polecenie, które pozwalałoby uzyskać podany wynik\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Którym poleceniem można zmienić ustawienia pliku file, tak aby użytkownik user1 miał pełne uprawnienia, a grupa group1 mogła czytać i modyfikować, ale nie mogła go wykonać jako skryptu?\n",
+          'Którym poleceniem można zmienić ustawienia pliku file, tak aby użytkownik user1 miał pełne uprawnienia, a grupa group1 mogła czytać i modyfikować, ale nie mogła go wykonać jako skryptu?\n',
         answers: [
           {
-            sentence: "setfacl -m u:user1:7, g:group1:6 file\n",
+            sentence: 'setfacl -m u:user1:7, g:group1:6 file\n',
             answer: true
           },
           {
-            sentence: "setfacl -m u:user1:r-x, g:group1:rw- file\n",
+            sentence: 'setfacl -m u:user1:r-x, g:group1:rw- file\n',
             answer: false
           },
           {
-            sentence: "setfacl -m u:user1:6, g:group1:7 file\n",
+            sentence: 'setfacl -m u:user1:6, g:group1:7 file\n',
             answer: false
           },
           {
-            sentence: "setfacl -m u:user1:rwx, g:group1:rw- file\n",
+            sentence: 'setfacl -m u:user1:rwx, g:group1:rw- file\n',
             answer: true
           }
         ]
       },
       {
-        question: "Polecenie getfacl:\n",
+        question: 'Polecenie getfacl:\n',
         answers: [
           {
             sentence:
-              "zwraca informacje na temat aktualnych uprawnień zdefiniowanych na liście ACL\n",
+              'zwraca informacje na temat aktualnych uprawnień zdefiniowanych na liście ACL\n',
             answer: true
           },
           {
-            sentence: "usuwa uprawnienia zdefiniowane na liście ACL\n",
+            sentence: 'usuwa uprawnienia zdefiniowane na liście ACL\n',
             answer: false
           },
           {
-            sentence: "zwraca informację na temat właściciela pliku\n",
+            sentence: 'zwraca informację na temat właściciela pliku\n',
             answer: true
           },
           {
             sentence:
-              "Pozwala wyświetlić informacje na temat uprawnień zdefiniowanych w ACL dla kilku plików na raz\n",
+              'Pozwala wyświetlić informacje na temat uprawnień zdefiniowanych w ACL dla kilku plików na raz\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Zaznacz odpowiadające sobie mapowanie typów ACL na standardowe Linuxowe klasy użytkowników:\n",
+          'Zaznacz odpowiadające sobie mapowanie typów ACL na standardowe Linuxowe klasy użytkowników:\n',
         answers: [
           {
-            sentence: "named user - owner\n",
+            sentence: 'named user - owner\n',
             answer: false
           },
           {
-            sentence: "owner - owner\n",
+            sentence: 'owner - owner\n',
             answer: true
           },
           {
-            sentence: "mask - group\n",
+            sentence: 'mask - group\n',
             answer: true
           },
           {
-            sentence: "owning group - group\n",
+            sentence: 'owning group - group\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Polecenie, w wyniku którego każdy nowoutworzony PLIK będzie miał uprawnienia -rwxr-x--- to:\n",
+          'Polecenie, w wyniku którego każdy nowoutworzony PLIK będzie miał uprawnienia -rwxr-x--- to:\n',
         answers: [
           {
-            sentence: "umask 027\n",
+            sentence: 'umask 027\n',
             answer: false
           },
           {
-            sentence: "umask 750\n",
+            sentence: 'umask 750\n',
             answer: false
           },
           {
-            sentence: "umask 750\n",
+            sentence: 'umask 750\n',
             answer: false
           },
           {
-            sentence: "brak poprawnej odpowiedzi\n",
+            sentence: 'brak poprawnej odpowiedzi\n',
             answer: true
           }
         ]
       },
       {
-        question: "Polecenie setfacl -m u:user1:6, g:group1:7 file.txt:\n",
+        question: 'Polecenie setfacl -m u:user1:6, g:group1:7 file.txt:\n',
         answers: [
           {
             sentence:
@@ -897,276 +897,276 @@ const data: IModule[] = [
       },
       {
         question:
-          "W systemie Linux Debian użytkownik wykonał sekwencję poleceń: \n umask 075; touch test; ls -l |grep test; \n Zaznacz poprawny wynik dla podanej sekwencji poleceń:\n",
+          'W systemie Linux Debian użytkownik wykonał sekwencję poleceń: \n umask 075; touch test; ls -l |grep test; \n Zaznacz poprawny wynik dla podanej sekwencji poleceń:\n',
         answers: [
           {
-            sentence: "---rwxr-x 1 labso labso 0 2010-06-11 16:30 test\n",
+            sentence: '---rwxr-x 1 labso labso 0 2010-06-11 16:30 test\n',
             answer: false
           },
           {
-            sentence: "-rw----w- labso labso 0 2010-06-11 16:30 test\n",
+            sentence: '-rw----w- labso labso 0 2010-06-11 16:30 test\n',
             answer: true
           },
           {
-            sentence: "-rwx----wx 1 labso labso 0 2010-06-11 16:30 test\n",
+            sentence: '-rwx----wx 1 labso labso 0 2010-06-11 16:30 test\n',
             answer: false
           },
           {
-            sentence: "-rw-rw-r-- 1 labso labso 0 2010-06-11 16:30 test\n",
+            sentence: '-rw-rw-r-- 1 labso labso 0 2010-06-11 16:30 test\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Wskaż poprawną odpowiedź dotyczącą instalacji ACL na komputerze z systemem ubuntu/debian:\n",
+          'Wskaż poprawną odpowiedź dotyczącą instalacji ACL na komputerze z systemem ubuntu/debian:\n',
         answers: [
           {
             sentence:
-              "ACL nie znajduje się oficjalnie w repozytorium. Należy pobrać źródła z internetu oraz samodzielnie przeprowadzić kompilację oraz konfigurację.\n",
+              'ACL nie znajduje się oficjalnie w repozytorium. Należy pobrać źródła z internetu oraz samodzielnie przeprowadzić kompilację oraz konfigurację.\n',
             answer: false
           },
           {
             sentence:
-              "Nie jest wymagana instalacja ACL. Systemy te zawierają preinstalowane paczki związane z ACL.\n",
+              'Nie jest wymagana instalacja ACL. Systemy te zawierają preinstalowane paczki związane z ACL.\n',
             answer: false
           },
           {
             sentence:
-              "Należy zainstalować acl komendą sudo apt-get install acl. Instalator automatycznie skonfiguruje system do pracy z ACL.\n",
+              'Należy zainstalować acl komendą sudo apt-get install acl. Instalator automatycznie skonfiguruje system do pracy z ACL.\n',
             answer: false
           },
           {
             sentence:
-              "Należy zainstalować acl komendą sudo apt-get install acl, a następnie manualnie przeprowadzić konfigurację systemów plików w pliku /etc/fstav podłączając ACL.\n",
+              'Należy zainstalować acl komendą sudo apt-get install acl, a następnie manualnie przeprowadzić konfigurację systemów plików w pliku /etc/fstav podłączając ACL.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Uprawnienia dla nowo tworzonych plików przy masce 066 wyglądają następująco:\n",
+          'Uprawnienia dla nowo tworzonych plików przy masce 066 wyglądają następująco:\n',
         answers: [
           {
-            sentence: "-rwxrwxrwx\n",
+            sentence: '-rwxrwxrwx\n',
             answer: false
           },
           {
-            sentence: "-rw-rw-r--\n",
+            sentence: '-rw-rw-r--\n',
             answer: false
           },
           {
-            sentence: "---rw-rw-\n",
+            sentence: '---rw-rw-\n',
             answer: false
           },
           {
-            sentence: "-rw------\n",
+            sentence: '-rw------\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "W stosunku do chmod, lista ACL rozszerzyła możliwości przyznawania praw o:\n",
+          'W stosunku do chmod, lista ACL rozszerzyła możliwości przyznawania praw o:\n',
         answers: [
           {
-            sentence: "Określenie praw do pliku dla dowolnej grupy.\n",
+            sentence: 'Określenie praw do pliku dla dowolnej grupy.\n',
             answer: true
           },
           {
-            sentence: "Określenie praw do pliku dla dowolnego użytkownika.\n",
+            sentence: 'Określenie praw do pliku dla dowolnego użytkownika.\n',
             answer: true
           },
           {
-            sentence: "Określenie praw do pliku dla innych - other.\n",
+            sentence: 'Określenie praw do pliku dla innych - other.\n',
             answer: false
           },
           {
-            sentence: "Określenie praw do pliku dla właściciela - owner.\n",
+            sentence: 'Określenie praw do pliku dla właściciela - owner.\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "W systemie Linux z działającym systemem ACL wydano polecenie getfacl mySong.bin. Otrzymano następujący wynik: \n #file: mySong.bin \n #owner: jan \n #group: homegroup \n user::rw- \n user:maria:r-- \n group::r-- \n group:dzieci:rw- \n mask::rwx \n other::---\n  W tym przypadku: \n",
+          'W systemie Linux z działającym systemem ACL wydano polecenie getfacl mySong.bin. Otrzymano następujący wynik: \n #file: mySong.bin \n #owner: jan \n #group: homegroup \n user::rw- \n user:maria:r-- \n group::r-- \n group:dzieci:rw- \n mask::rwx \n other::---\n  W tym przypadku: \n',
         answers: [
           {
             sentence:
-              "użytkownik z grupy dzieci może odczytywać plik mySong.bin\n",
+              'użytkownik z grupy dzieci może odczytywać plik mySong.bin\n',
             answer: true
           },
           {
-            sentence: "użytkownik maria może odczytywać plik mySong.bin\n",
+            sentence: 'użytkownik maria może odczytywać plik mySong.bin\n',
             answer: true
           },
           {
-            sentence: "użytkownik maria może modyfikować plik mySong.bin\n",
+            sentence: 'użytkownik maria może modyfikować plik mySong.bin\n',
             answer: false
           },
           {
             sentence:
-              "uzytkowik z grupy dzieci może modyfikować plik mySong.bin\n",
+              'uzytkowik z grupy dzieci może modyfikować plik mySong.bin\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Zaznacz poprawne odpowiedzi dotyczące maski oraz wyznaczania uprawnień dla wpisów ACL powiązanych z klasą grupy:\n",
+          'Zaznacz poprawne odpowiedzi dotyczące maski oraz wyznaczania uprawnień dla wpisów ACL powiązanych z klasą grupy:\n',
         answers: [
           {
             sentence:
-              "Maska definiuje maksymalne efektywne uprawnienia dla wszystkich wpisów ACL powiązanych z klasą grupy\n",
+              'Maska definiuje maksymalne efektywne uprawnienia dla wszystkich wpisów ACL powiązanych z klasą grupy\n',
             answer: true
           },
           {
             sentence:
-              "Uprawnienia efektywne powstają przez zsumowanie uprawnień maski z uprawnieniami odpowiedniej klasy ACL\n",
+              'Uprawnienia efektywne powstają przez zsumowanie uprawnień maski z uprawnieniami odpowiedniej klasy ACL\n',
             answer: false
           },
           {
             sentence:
-              "Maska definiuje minimalne efektywne uprawnienia dla wszystkich wpisów ACL powiązanych z klasą grupy\n",
+              'Maska definiuje minimalne efektywne uprawnienia dla wszystkich wpisów ACL powiązanych z klasą grupy\n',
             answer: false
           },
           {
             sentence:
-              "Uprawnienia efektywne powstają przez przecięcie uprawnień maski z uprawnieniami odpowiedniej klasy ACL\n",
+              'Uprawnienia efektywne powstają przez przecięcie uprawnień maski z uprawnieniami odpowiedniej klasy ACL\n',
             answer: true
           }
         ]
       },
       {
-        question: "Wskaż poprawne stwierdzenia dotyczące Linux ACL\n",
+        question: 'Wskaż poprawne stwierdzenia dotyczące Linux ACL\n',
         answers: [
           {
-            sentence: "Uprawnienie typu named-group można zamaskować\n",
+            sentence: 'Uprawnienie typu named-group można zamaskować\n',
             answer: true
           },
           {
-            sentence: "Maska w Linux ACL określa maksymalne uprawnienia\n",
+            sentence: 'Maska w Linux ACL określa maksymalne uprawnienia\n',
             answer: true
           },
           {
-            sentence: "Uprawnienie wpisu ACL other można zamaskować\n",
+            sentence: 'Uprawnienie wpisu ACL other można zamaskować\n',
             answer: false
           },
           {
-            sentence: "Uprawnienie typu named-user można zamaskować\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "Aby korzystać w systemie Linux z Acces Control List (ACL) należy:\n",
-        answers: [
-          {
-            sentence:
-              "ACL jest domyślnie włączony zaraz po instalacji dystrybucji systemu Linux.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Dodać obsługę ACL do wszytskich systemów plików w pliku /etc/fstab.\n",
-            answer: true
-          },
-          {
-            sentence: "Żadna odpowiedź nie jest poprawna.\n",
-            answer: false
-          },
-          {
-            sentence: "Zainstalować pakiet acl.\n",
+            sentence: 'Uprawnienie typu named-user można zamaskować\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Efekt polecenia ls -l test.txt jest następujący: \n -rw-r----- 1 so1 students 0 2011-06-10 23:10 test  \n W następnym kroku powyższemu plikowi nadano pewne uprawnienia ACL, a następnie wykonano polecenie getfacl test.txt uzyskując następujący wynik:  \n #file: test \n #owner: so1 \n #group: students \n user::rwx \n group::r-x \n other::r-x \n default:user::rwx \n default:group::r-x \n default:group:teachers:rwx \n default:mask::rwx \n default:other::r-x \n default:other::---\n  Zaznacz poprawne polecenia, które mogłyby zostać wykonane w celu uzyskania powyższych uprawnieć ACL:\n",
+          'Aby korzystać w systemie Linux z Acces Control List (ACL) należy:\n',
         answers: [
           {
-            sentence: "brak poprawnej odpowiedzi\n",
-            answer: false
-          },
-          {
-            sentence: "setfacl -d -m g:teachers:rwx test\n",
-            answer: false
-          },
-          {
-            sentence: "setfacl -m g:teachers:rwx test\n",
+            sentence:
+              'ACL jest domyślnie włączony zaraz po instalacji dystrybucji systemu Linux.\n',
             answer: false
           },
           {
             sentence:
-              "Nie istnieje żadne polecenie, które pozwalałoby uzyskać podany wynik\n",
+              'Dodać obsługę ACL do wszytskich systemów plików w pliku /etc/fstab.\n',
+            answer: true
+          },
+          {
+            sentence: 'Żadna odpowiedź nie jest poprawna.\n',
+            answer: false
+          },
+          {
+            sentence: 'Zainstalować pakiet acl.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "W jaki sposób można sprawdzić, czy dany plik ma zdefiniowane dodatkowe uprawnienia ACL?\n",
+          'Efekt polecenia ls -l test.txt jest następujący: \n -rw-r----- 1 so1 students 0 2011-06-10 23:10 test  \n W następnym kroku powyższemu plikowi nadano pewne uprawnienia ACL, a następnie wykonano polecenie getfacl test.txt uzyskując następujący wynik:  \n #file: test \n #owner: so1 \n #group: students \n user::rwx \n group::r-x \n other::r-x \n default:user::rwx \n default:group::r-x \n default:group:teachers:rwx \n default:mask::rwx \n default:other::r-x \n default:other::---\n  Zaznacz poprawne polecenia, które mogłyby zostać wykonane w celu uzyskania powyższych uprawnieć ACL:\n',
         answers: [
           {
-            sentence: "Poprzez użycie polecenia getfacl\n",
-            answer: true
-          },
-          {
-            sentence: "Poprzez użycie polecenia filefrag\n",
+            sentence: 'brak poprawnej odpowiedzi\n',
             answer: false
           },
           {
-            sentence: "Korzystając z polecenia ps z argumentem -aux\n",
+            sentence: 'setfacl -d -m g:teachers:rwx test\n',
             answer: false
           },
           {
-            sentence: "Używając polecenia ls\n",
+            sentence: 'setfacl -m g:teachers:rwx test\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Nie istnieje żadne polecenie, które pozwalałoby uzyskać podany wynik\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Polecenie, wyniku którego każdy nowoutworzony KATALOG w systemie Debian będzie miał uprawnienia 644 to:\n",
+          'W jaki sposób można sprawdzić, czy dany plik ma zdefiniowane dodatkowe uprawnienia ACL?\n',
         answers: [
           {
-            sentence: "umask 644\n",
-            answer: false
-          },
-          {
-            sentence: "brak poprawnej odpowiedzi\n",
-            answer: false
-          },
-          {
-            sentence: "umask 133\n",
+            sentence: 'Poprzez użycie polecenia getfacl\n',
             answer: true
           },
           {
-            sentence: "umask 022\n",
+            sentence: 'Poprzez użycie polecenia filefrag\n',
+            answer: false
+          },
+          {
+            sentence: 'Korzystając z polecenia ps z argumentem -aux\n',
+            answer: false
+          },
+          {
+            sentence: 'Używając polecenia ls\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Polecenie, wyniku którego każdy nowoutworzony KATALOG w systemie Debian będzie miał uprawnienia 644 to:\n',
+        answers: [
+          {
+            sentence: 'umask 644\n',
+            answer: false
+          },
+          {
+            sentence: 'brak poprawnej odpowiedzi\n',
+            answer: false
+          },
+          {
+            sentence: 'umask 133\n',
+            answer: true
+          },
+          {
+            sentence: 'umask 022\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Efekt polecenia ls -l file.txt jest następujący: \n -rw-r----- 1 so1 students 0 2010-02-20 23:10 test.txt  \n W następnym kroku powyższemu plikowi nadano pewne uprawnienia ACL, a następnie wykonano polecenie getfacl test.txt uzyskując następujący wynik:  \n #file: test.txt \n #owner: so1 \n #group: students \n user::rw- \n user:so2:rw- \n group::r-- \n group: teachers:rwx \n mask::rwx \n other::--- \n  Zaznacz poprawne polecenia, które mogłyby zostać wykonane w celu uzyskania powyższych uprawnieć ACL:\n",
+          'Efekt polecenia ls -l file.txt jest następujący: \n -rw-r----- 1 so1 students 0 2010-02-20 23:10 test.txt  \n W następnym kroku powyższemu plikowi nadano pewne uprawnienia ACL, a następnie wykonano polecenie getfacl test.txt uzyskując następujący wynik:  \n #file: test.txt \n #owner: so1 \n #group: students \n user::rw- \n user:so2:rw- \n group::r-- \n group: teachers:rwx \n mask::rwx \n other::--- \n  Zaznacz poprawne polecenia, które mogłyby zostać wykonane w celu uzyskania powyższych uprawnieć ACL:\n',
         answers: [
           {
-            sentence: "setfacl -m u:so2:rw, g:teachers:rwx test.txt\n",
+            sentence: 'setfacl -m u:so2:rw, g:teachers:rwx test.txt\n',
             answer: true
           },
           {
-            sentence: "setfacl -m u:so2:6, g:teachers:7 test.txt\n",
+            sentence: 'setfacl -m u:so2:6, g:teachers:7 test.txt\n',
             answer: true
           },
           {
-            sentence: "setfacl -x u:so2:rw, g:teachers:rwx test.txt\n",
+            sentence: 'setfacl -x u:so2:rw, g:teachers:rwx test.txt\n',
             answer: false
           },
           {
-            sentence: "setfacl -m user:rw:so2, group:rwx:teachers test.txt",
+            sentence: 'setfacl -m user:rw:so2, group:rwx:teachers test.txt',
             answer: false
           }
         ]
@@ -1174,69 +1174,69 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "linux",
-    name: "Linux RAID",
+    category: 'linux',
+    name: 'Linux RAID',
     questions: [
       {
         question:
-          "Macierz typu raid 5 złożona z 3 dysków o jednakowej pojemności i parametrach:\n",
+          'Macierz typu raid 5 złożona z 3 dysków o jednakowej pojemności i parametrach:\n',
         answers: [
           {
             sentence:
-              "ma pojemność 2 dysków i nie jest odporna na awarię ani jednego dysku\n",
+              'ma pojemność 2 dysków i nie jest odporna na awarię ani jednego dysku\n',
             answer: false
           },
           {
-            sentence: "oferuje spowolniony odczyt w przypadku awarii 1 dysku\n",
+            sentence: 'oferuje spowolniony odczyt w przypadku awarii 1 dysku\n',
             answer: true
           },
           {
             sentence:
-              "ma pojemność 1 dysku i jest odporna na awarię maksymalnie 2 dysków\n",
+              'ma pojemność 1 dysku i jest odporna na awarię maksymalnie 2 dysków\n',
             answer: false
           },
           {
             sentence:
-              "ma pojemność 2 dysków i jest odporna na awarię maksymalnie 1 dysku\n",
+              'ma pojemność 2 dysków i jest odporna na awarię maksymalnie 1 dysku\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "W systemie Ubuntu, zakładając, że pliki blokowe /dev/sdb1 i /dev/sdb2 reprezentują partycje o rozmiarze 50MB, bezpośrednio po utworzeniu woluminu /dev/md0 poleceniem:\n mdadm  --create  --verbose /dev/md0  --level=linear  --raid-devices=2\n /dev/sdb1/dev/sdb2:\n",
+          'W systemie Ubuntu, zakładając, że pliki blokowe /dev/sdb1 i /dev/sdb2 reprezentują partycje o rozmiarze 50MB, bezpośrednio po utworzeniu woluminu /dev/md0 poleceniem:\n mdadm  --create  --verbose /dev/md0  --level=linear  --raid-devices=2\n /dev/sdb1/dev/sdb2:\n',
         answers: [
           {
-            sentence: "wolumin /dev/md0 będzie miał wielkość 100MB\n",
+            sentence: 'wolumin /dev/md0 będzie miał wielkość 100MB\n',
             answer: true
           },
           {
-            sentence: "wolumin /dev/md0 będzie miał wielkość 50MB\n",
+            sentence: 'wolumin /dev/md0 będzie miał wielkość 50MB\n',
             answer: false
           },
           {
             sentence:
-              "wolumin /dev/md0 będzie można zamontować poleceniem mount /dev/md0 /mnt\n",
+              'wolumin /dev/md0 będzie można zamontować poleceniem mount /dev/md0 /mnt\n',
             answer: false
           },
           {
             sentence:
-              "uszkodzenie dokładnie jednego spośród urządzeń /dev/sdb1 oraz /dev/sdb2 może spowodować utratę danych w woluminie /dev/md0\n",
+              'uszkodzenie dokładnie jednego spośród urządzeń /dev/sdb1 oraz /dev/sdb2 może spowodować utratę danych w woluminie /dev/md0\n',
             answer: true
           }
         ]
       },
       {
-        question: "Zaznacz prawdziwe stwierdzenia:\n",
+        question: 'Zaznacz prawdziwe stwierdzenia:\n',
         answers: [
           {
             sentence:
-              "Sprzętowy RAID oferuje większą wydajność poprzez zmniejszenie obciążenia CPU, gdyż przeliczaniem sum kontrolnych zajmuje się wówczas dedykowany kontroler.\n",
+              'Sprzętowy RAID oferuje większą wydajność poprzez zmniejszenie obciążenia CPU, gdyż przeliczaniem sum kontrolnych zajmuje się wówczas dedykowany kontroler.\n',
             answer: true
           },
           {
             sentence:
-              "RAID sprzętowy jest niekompatybilny z dużą liczbą systemów operacyjnych, ze względu na zachowanie odróżniające taki RAID od pojedynczego dysku twardego.\n",
+              'RAID sprzętowy jest niekompatybilny z dużą liczbą systemów operacyjnych, ze względu na zachowanie odróżniające taki RAID od pojedynczego dysku twardego.\n',
             answer: false
           },
           {
@@ -1246,251 +1246,251 @@ const data: IModule[] = [
           },
           {
             sentence:
-              "Dla takich samych dysków RAID 6 oferuje większą szybkość zapisu niż RAID 0.\n",
+              'Dla takich samych dysków RAID 6 oferuje większą szybkość zapisu niż RAID 0.\n',
             answer: false
           }
         ]
       },
       {
-        question: "RAID5 może składać się z następującej ilości dysków:\n",
+        question: 'RAID5 może składać się z następującej ilości dysków:\n',
         answers: [
           {
-            sentence: "2\n",
+            sentence: '2\n',
             answer: false
           },
           {
-            sentence: "3\n",
+            sentence: '3\n',
             answer: true
           },
           {
-            sentence: "4\n",
+            sentence: '4\n',
             answer: true
           },
           {
-            sentence: "5\n",
+            sentence: '5\n',
             answer: true
           }
         ]
       },
       {
-        question: "RAID inaczej zwanym lustrzanym (mirroringiem) to:\n",
+        question: 'RAID inaczej zwanym lustrzanym (mirroringiem) to:\n',
         answers: [
           {
-            sentence: "RAID1\n",
+            sentence: 'RAID1\n',
             answer: true
           },
           {
-            sentence: "RAID2\n",
+            sentence: 'RAID2\n',
             answer: false
           },
           {
-            sentence: "RAID3\n",
+            sentence: 'RAID3\n',
             answer: false
           },
           {
-            sentence: "RAID5\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question:
-          "Jakie polecenie pozwoli na rozpoczęcie procedury tworzenia partycji:\n",
-        answers: [
-          {
-            sentence: "fdisk /dev/hda\n",
-            answer: true
-          },
-          {
-            sentence: "mkdir /dev/sda\n",
-            answer: false
-          },
-          {
-            sentence: "fdisk /dev/sdb\n",
-            answer: true
-          },
-          {
-            sentence: "mdadd /dev/sdb\n",
+            sentence: 'RAID5\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Jaka ilość dysków jest wystarczająca, aby zastosować RAID 5:\n",
+          'Jakie polecenie pozwoli na rozpoczęcie procedury tworzenia partycji:\n',
         answers: [
           {
-            sentence: "1\n",
+            sentence: 'fdisk /dev/hda\n',
+            answer: true
+          },
+          {
+            sentence: 'mkdir /dev/sda\n',
             answer: false
           },
           {
-            sentence: "2\n",
-            answer: false
-          },
-          {
-            sentence: "3\n",
+            sentence: 'fdisk /dev/sdb\n',
             answer: true
           },
           {
-            sentence: "4\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "Mając do dyspozycji 3 identyczne dyski twarde można stworzyć macierz RAID w konfiguracji:\n",
-        answers: [
-          {
-            sentence: "RAID 0\n",
-            answer: true
-          },
-          {
-            sentence: "RAID 5\n",
-            answer: true
-          },
-          {
-            sentence: "RAID 6\n",
-            answer: false
-          },
-          {
-            sentence: "RAID 10\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Trzy dyski zostały połączone w macierz RAID 0.\n",
-        answers: [
-          {
-            sentence:
-              "Łączna przestrzeń dyskowa jest równa sumie przestrzeni, każdego z dysków\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Łączna przestrzeń dyskowa jest równa potrojonej przestrzeni dyskowej najmniejszego dysku\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Szybkość jest równa potrojonej szybkości najwolniejszego z dysków\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Szybkość jest równa szybkości najwolniejszego z dysków\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Zaznacz cele zastosowania macierzy RAID:\n",
-        answers: [
-          {
-            sentence: "Zwiększenie odporności na awarie\n",
-            answer: true
-          },
-          {
-            sentence: "Zwiększenie wydajności transmisji danych\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Powiększenie przestrzeni dyskowej, dostępnej jako jedna całość\n",
-            answer: true
-          },
-          {
-            sentence: "Dwukrotne zwiększenie całkowitej przestrzeni dyskowej\n",
+            sentence: 'mdadd /dev/sdb\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Administrator podłączył do komputera dwa dyski twarde o pojemności 200GB każdy i połączył je w macierz RAID 1. Do komputera nie zostały podłączone żadne inne dyski. Które z poniższych twierdzeń są prawidłowe?\n",
+          'Jaka ilość dysków jest wystarczająca, aby zastosować RAID 5:\n',
         answers: [
           {
-            sentence:
-              "Całkowita pojemność partycji dostępnych w systemie nie przekracza 200GB.\n",
+            sentence: '1\n',
+            answer: false
+          },
+          {
+            sentence: '2\n',
+            answer: false
+          },
+          {
+            sentence: '3\n',
             answer: true
           },
           {
+            sentence: '4\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Mając do dyspozycji 3 identyczne dyski twarde można stworzyć macierz RAID w konfiguracji:\n',
+        answers: [
+          {
+            sentence: 'RAID 0\n',
+            answer: true
+          },
+          {
+            sentence: 'RAID 5\n',
+            answer: true
+          },
+          {
+            sentence: 'RAID 6\n',
+            answer: false
+          },
+          {
+            sentence: 'RAID 10\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Trzy dyski zostały połączone w macierz RAID 0.\n',
+        answers: [
+          {
             sentence:
-              "Rozwiązanie takie zapewnia o wiele większą prędkość odczytu i zapisu danych niż macierz RAID 0.\n",
+              'Łączna przestrzeń dyskowa jest równa sumie przestrzeni, każdego z dysków\n',
             answer: false
           },
           {
             sentence:
-              "Rozwiązanie takie zapewnia o wiele większe bezpieczeństwo danych niż macierz RAID 0.\n",
+              'Łączna przestrzeń dyskowa jest równa potrojonej przestrzeni dyskowej najmniejszego dysku\n',
             answer: true
           },
           {
             sentence:
-              "W przypadku awarii jednego dysku użytkownik straci wszystkie swoje dane\n",
+              'Szybkość jest równa potrojonej szybkości najwolniejszego z dysków\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Szybkość jest równa szybkości najwolniejszego z dysków\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Zaznacz cele zastosowania macierzy RAID:\n',
+        answers: [
+          {
+            sentence: 'Zwiększenie odporności na awarie\n',
+            answer: true
+          },
+          {
+            sentence: 'Zwiększenie wydajności transmisji danych\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Powiększenie przestrzeni dyskowej, dostępnej jako jedna całość\n',
+            answer: true
+          },
+          {
+            sentence: 'Dwukrotne zwiększenie całkowitej przestrzeni dyskowej\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Zaznacz zdania prawdziwe dotyczące sprzętowej macierzy RAID:\n",
+          'Administrator podłączył do komputera dwa dyski twarde o pojemności 200GB każdy i połączył je w macierz RAID 1. Do komputera nie zostały podłączone żadne inne dyski. Które z poniższych twierdzeń są prawidłowe?\n',
         answers: [
           {
             sentence:
-              "Macierz jest zupełnie przezroczysta, przez co z punktu widzenia Systemu Operacyjnego zachowuje się ona jak każdy inny dysk twardy\n",
+              'Całkowita pojemność partycji dostępnych w systemie nie przekracza 200GB.\n',
             answer: true
           },
           {
-            sentence: "mniejsza wydajność poprzez zwiększenie obciążenia CPU\n",
+            sentence:
+              'Rozwiązanie takie zapewnia o wiele większą prędkość odczytu i zapisu danych niż macierz RAID 0.\n',
             answer: false
           },
           {
             sentence:
-              "Minimalna liczba dysków potrzebna do stworzenia macierzy to 2\n",
+              'Rozwiązanie takie zapewnia o wiele większe bezpieczeństwo danych niż macierz RAID 0.\n',
             answer: true
           },
           {
             sentence:
-              "Sprzętowa macierz RAID zawsze umożliwia przywrócenie danych w razie awarii jednego z dysków\n",
+              'W przypadku awarii jednego dysku użytkownik straci wszystkie swoje dane\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Zaznacz zdania prawdziwe dotyczące programowej macierzy RAID:\n",
+          'Zaznacz zdania prawdziwe dotyczące sprzętowej macierzy RAID:\n',
         answers: [
           {
             sentence:
-              "Macierz jest zupełnie przezroczysta, przez co z punktu widzenia Systemu Operacyjnego zachowuje się ona jak każdy inny dysk twardy\n",
+              'Macierz jest zupełnie przezroczysta, przez co z punktu widzenia Systemu Operacyjnego zachowuje się ona jak każdy inny dysk twardy\n',
+            answer: true
+          },
+          {
+            sentence: 'mniejsza wydajność poprzez zwiększenie obciążenia CPU\n',
             answer: false
           },
           {
-            sentence: "mniejsza wydajność poprzez zwiększenie obciążenia CPU\n",
+            sentence:
+              'Minimalna liczba dysków potrzebna do stworzenia macierzy to 2\n',
             answer: true
           },
           {
             sentence:
-              "Minimalna liczba dysków potrzebna do stworzenia macierzy to 2\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Programowa macierz RAID zawsze umożliwia przywrócenie danych w razie awarii jednego z dysków\n",
+              'Sprzętowa macierz RAID zawsze umożliwia przywrócenie danych w razie awarii jednego z dysków\n',
             answer: false
           }
         ]
       },
       {
-        question: "System Linux pozwala na:\n",
+        question:
+          'Zaznacz zdania prawdziwe dotyczące programowej macierzy RAID:\n',
         answers: [
           {
-            sentence: "Tworzenie programowych macierzy RAID.\n",
+            sentence:
+              'Macierz jest zupełnie przezroczysta, przez co z punktu widzenia Systemu Operacyjnego zachowuje się ona jak każdy inny dysk twardy\n',
+            answer: false
+          },
+          {
+            sentence: 'mniejsza wydajność poprzez zwiększenie obciążenia CPU\n',
             answer: true
           },
           {
-            sentence: "Tworzenie wolumenów liniowych.\n",
+            sentence:
+              'Minimalna liczba dysków potrzebna do stworzenia macierzy to 2\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Programowa macierz RAID zawsze umożliwia przywrócenie danych w razie awarii jednego z dysków\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'System Linux pozwala na:\n',
+        answers: [
+          {
+            sentence: 'Tworzenie programowych macierzy RAID.\n',
+            answer: true
+          },
+          {
+            sentence: 'Tworzenie wolumenów liniowych.\n',
             answer: true
           },
           {
@@ -1498,147 +1498,147 @@ const data: IModule[] = [
             answer: false
           },
           {
-            sentence: "Tworzenie macierzy RAID 5.\n",
+            sentence: 'Tworzenie macierzy RAID 5.\n',
             answer: true
           }
         ]
       },
       {
-        question: "Woluminy liniowe w katalogu dev oznaczone są jako:\n",
+        question: 'Woluminy liniowe w katalogu dev oznaczone są jako:\n',
         answers: [
           {
-            sentence: "md0,md1,...\n",
+            sentence: 'md0,md1,...\n',
             answer: true
           },
           {
-            sentence: "ma0,ma1,...,mb0,mb1,...\n",
+            sentence: 'ma0,ma1,...,mb0,mb1,...\n',
             answer: false
           },
           {
-            sentence: "raid0,raid1,...\n",
+            sentence: 'raid0,raid1,...\n',
             answer: false
           },
           {
-            sentence: "rda0,rda1,...,rdb0,rdb1,...\n",
+            sentence: 'rda0,rda1,...,rdb0,rdb1,...\n',
             answer: false
           }
         ]
       },
       {
-        question: "Za pomocą polecenia mdadm można:\n",
+        question: 'Za pomocą polecenia mdadm można:\n',
         answers: [
           {
-            sentence: "utworzyć wolumin liniowy\n",
+            sentence: 'utworzyć wolumin liniowy\n',
             answer: true
           },
           {
-            sentence: "Sformatować partycję\n",
+            sentence: 'Sformatować partycję\n',
             answer: false
           },
           {
-            sentence: "Sprawdzić konfigurację macierzy\n",
+            sentence: 'Sprawdzić konfigurację macierzy\n',
             answer: true
           },
           {
-            sentence: "Zasymulować awarię woluminu\n",
+            sentence: 'Zasymulować awarię woluminu\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Która z aplikacji umożliwia stworzenie partycji na twardym dysku?\n",
+          'Która z aplikacji umożliwia stworzenie partycji na twardym dysku?\n',
         answers: [
           {
-            sentence: "/etc/fstab\n",
+            sentence: '/etc/fstab\n',
             answer: false
           },
           {
-            sentence: "/sbin/fdisk\n",
+            sentence: '/sbin/fdisk\n',
             answer: true
           },
           {
-            sentence: "/sbin/cfdisk\n",
+            sentence: '/sbin/cfdisk\n',
             answer: true
           },
           {
-            sentence: "/etc/mtab\n",
+            sentence: '/etc/mtab\n',
             answer: false
           }
         ]
       },
       {
-        question: "Wskaż poprawne zdania dotyczące RAID.\n",
+        question: 'Wskaż poprawne zdania dotyczące RAID.\n',
         answers: [
           {
             sentence:
-              "Polecenie „mdadm -C -v /dev/md0 --level=0 -n 2 /dev/sda1 /dev/sdb1” służy do stworzenia wolumenu liniowego na partycjach sda1 i sdb1.\n",
+              'Polecenie „mdadm -C -v /dev/md0 --level=0 -n 2 /dev/sda1 /dev/sdb1” służy do stworzenia wolumenu liniowego na partycjach sda1 i sdb1.\n',
             answer: false
           },
           {
             sentence:
-              "Polecenie „mdadm -C -v /dev/md0 --level=1 -n 2 /dev/sda1 /dev/sdb1” służy do stworzenia mirroru.\n",
+              'Polecenie „mdadm -C -v /dev/md0 --level=1 -n 2 /dev/sda1 /dev/sdb1” służy do stworzenia mirroru.\n',
             answer: true
           },
           {
             sentence:
-              "Polecenie „mkfs -t ext3 /dev/md0” służy do sformatowania urządzenia.\n",
+              'Polecenie „mkfs -t ext3 /dev/md0” służy do sformatowania urządzenia.\n',
             answer: true
           },
           {
             sentence:
-              "Wolumenu liniowego /dev/md0 nie można dodać do pliku /etc/fstab, aby była montowana przy starcie systemu operacyjnego.\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question:
-          "Które z wymienionych rodzajów macierzy RAID zapewniają mirroring:\n",
-        answers: [
-          {
-            sentence: "RAID 0\n",
-            answer: false
-          },
-          {
-            sentence: "RAID 1\n",
-            answer: true
-          },
-          {
-            sentence: "RAID 5\n",
-            answer: true
-          },
-          {
-            sentence: "RAID 10\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "Które z wymienionych poleceń umożliwia zarządzanie macierzami RAID w systemie GNU/Linux:\n",
-        answers: [
-          {
-            sentence: "hdparm\n",
-            answer: false
-          },
-          {
-            sentence: "mdadm\n",
-            answer: true
-          },
-          {
-            sentence: "fdisk\n",
-            answer: false
-          },
-          {
-            sentence: "parted\n",
+              'Wolumenu liniowego /dev/md0 nie można dodać do pliku /etc/fstab, aby była montowana przy starcie systemu operacyjnego.\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Celem wyłączenia automatycznego montowania urządzenia cdrom w systemie Linux należy:\n",
+          'Które z wymienionych rodzajów macierzy RAID zapewniają mirroring:\n',
+        answers: [
+          {
+            sentence: 'RAID 0\n',
+            answer: false
+          },
+          {
+            sentence: 'RAID 1\n',
+            answer: true
+          },
+          {
+            sentence: 'RAID 5\n',
+            answer: true
+          },
+          {
+            sentence: 'RAID 10\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Które z wymienionych poleceń umożliwia zarządzanie macierzami RAID w systemie GNU/Linux:\n',
+        answers: [
+          {
+            sentence: 'hdparm\n',
+            answer: false
+          },
+          {
+            sentence: 'mdadm\n',
+            answer: true
+          },
+          {
+            sentence: 'fdisk\n',
+            answer: false
+          },
+          {
+            sentence: 'parted\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question:
+          'Celem wyłączenia automatycznego montowania urządzenia cdrom w systemie Linux należy:\n',
         answers: [
           {
             sentence: "Odpowiednio zmodyfikować plik '/etc/fstab'.\n",
@@ -1662,317 +1662,317 @@ const data: IModule[] = [
         question: "Polecenie 'fdisk' w systemie Linux można wykorzystać do:\n",
         answers: [
           {
-            sentence: "tworzenia partycji.\n",
+            sentence: 'tworzenia partycji.\n',
             answer: true
           },
           {
-            sentence: "wypisania informacji o dysku.\n",
+            sentence: 'wypisania informacji o dysku.\n',
             answer: true
           },
           {
-            sentence: "montowania dysku.\n",
+            sentence: 'montowania dysku.\n',
             answer: false
           },
           {
-            sentence: "tworzenia kopii zapasowej danych.\n",
+            sentence: 'tworzenia kopii zapasowej danych.\n',
             answer: false
           }
         ]
       },
       {
-        question: "Wskaż poprawne odpowiedzi dotyczące RAID5:\n",
+        question: 'Wskaż poprawne odpowiedzi dotyczące RAID5:\n',
         answers: [
           {
             sentence:
-              "Umożliwia odzyskanie danych w razie awarii jednego z dysków\n",
+              'Umożliwia odzyskanie danych w razie awarii jednego z dysków\n',
             answer: true
           },
           {
-            sentence: "Składa się z minimum 2 dysków\n",
+            sentence: 'Składa się z minimum 2 dysków\n',
             answer: false
           },
           {
             sentence:
-              "Odzyskiwanie danych w razie awarii odbywa się przy wykorzystaniu danych i kodów korekcyjnych zapisanych na jednym, specjalnie do tego przeznaczonym dysku\n",
+              'Odzyskiwanie danych w razie awarii odbywa się przy wykorzystaniu danych i kodów korekcyjnych zapisanych na jednym, specjalnie do tego przeznaczonym dysku\n',
             answer: false
           },
           {
             sentence:
-              "W przypadku awarii dysku dostęp do danych jest spowolniony\n",
+              'W przypadku awarii dysku dostęp do danych jest spowolniony\n',
             answer: true
           }
         ]
       },
       {
-        question: "Wskaż poprawne odpowiedzi dotyczące mirroring-u:\n",
+        question: 'Wskaż poprawne odpowiedzi dotyczące mirroring-u:\n',
         answers: [
           {
             sentence:
-              "Polega na zapisywaniu tych samych danych na dwóch lub więcej dyskach jednocześnie\n",
+              'Polega na zapisywaniu tych samych danych na dwóch lub więcej dyskach jednocześnie\n',
             answer: true
           },
           {
             sentence:
-              "W przypadku awarii co najmniej połowy z dysków nie ma możliwości odzyskania wszystkich danych\n",
+              'W przypadku awarii co najmniej połowy z dysków nie ma możliwości odzyskania wszystkich danych\n',
             answer: false
           },
           {
-            sentence: "Dostępna przestrzeń ma rozmiar najmniejszego nośnika\n",
+            sentence: 'Dostępna przestrzeń ma rozmiar najmniejszego nośnika\n',
             answer: true
           },
           {
             sentence:
-              "Czas równoległego zapisu jest równy czasowi zapisu na najwolniejszym dysku\n",
+              'Czas równoległego zapisu jest równy czasowi zapisu na najwolniejszym dysku\n',
             answer: true
           }
         ]
       },
       {
-        question: "Wskaż poprawne zdania dotyczące RAID5 w systemie Linux:\n",
+        question: 'Wskaż poprawne zdania dotyczące RAID5 w systemie Linux:\n',
         answers: [
           {
             sentence:
-              "Do utworzenia RAID5 potrzebne są co najmniej dwie partycje.\n",
+              'Do utworzenia RAID5 potrzebne są co najmniej dwie partycje.\n',
             answer: false
           },
           {
             sentence:
-              "Do utworzenia RAID5 można użyć maksymalnie trzech partycji.\n",
+              'Do utworzenia RAID5 można użyć maksymalnie trzech partycji.\n',
             answer: false
           },
           {
             sentence:
-              "Do odtworzenia danych z uszkodzonej partycji zawsze wykorzystywana jest jedna, specjalnie do tego przygotowanej partycja.\n",
+              'Do odtworzenia danych z uszkodzonej partycji zawsze wykorzystywana jest jedna, specjalnie do tego przygotowanej partycja.\n',
             answer: false
           },
           {
             sentence:
-              "RAID5 jest całkowicie odporny na uszkodzenie jednej partycji (dane można w pełni odtworzyć).\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "Wskaż poprawne zdania dotyczące RAID1 (mirror) w systemie Linux.\n",
-        answers: [
-          {
-            sentence:
-              "Całkowita pojemność partycji połączonych w RAID1 jest taka jak pojemność najmniejszej z tych partycji.\n",
-            answer: true
-          },
-          {
-            sentence: "Do utworzenia RAID1 można wykorzystać trzy partycje.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Zastosowanie RAID1 pozwala na zwiększenie szybkości zapisu i odczytu danych.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "RAID1 jest całkowicie odporny na uszkodzenie jednej partycji (dane można w pełni odtworzyć).\n",
+              'RAID5 jest całkowicie odporny na uszkodzenie jednej partycji (dane można w pełni odtworzyć).\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Które z poniższych funkcji macierzy RAID zwiększają bezpieczeństwo danych?\n",
+          'Wskaż poprawne zdania dotyczące RAID1 (mirror) w systemie Linux.\n',
         answers: [
           {
-            sentence: "mirroring (lustrzane odbicie)\n",
+            sentence:
+              'Całkowita pojemność partycji połączonych w RAID1 jest taka jak pojemność najmniejszej z tych partycji.\n',
             answer: true
           },
           {
-            sentence: "stripping (paskowanie)\n",
+            sentence: 'Do utworzenia RAID1 można wykorzystać trzy partycje.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Zastosowanie RAID1 pozwala na zwiększenie szybkości zapisu i odczytu danych.\n',
             answer: false
           },
           {
-            sentence: "macierze liniowe\n",
-            answer: false
-          },
-          {
-            sentence: "kontrola parzystości\n",
+            sentence:
+              'RAID1 jest całkowicie odporny na uszkodzenie jednej partycji (dane można w pełni odtworzyć).\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Trzy dyski, każdy o pojemności 1TB, połączyliśmy w macierz RAID5. Jaką pojemnośd ma uzyskany wolumien?\n",
+          'Które z poniższych funkcji macierzy RAID zwiększają bezpieczeństwo danych?\n',
         answers: [
           {
-            sentence: "0.5 TB\n",
-            answer: false
-          },
-          {
-            sentence: "1 TB\n",
-            answer: false
-          },
-          {
-            sentence: "2 TB\n",
+            sentence: 'mirroring (lustrzane odbicie)\n',
             answer: true
           },
           {
-            sentence: "3 TB\n",
+            sentence: 'stripping (paskowanie)\n',
+            answer: false
+          },
+          {
+            sentence: 'macierze liniowe\n',
+            answer: false
+          },
+          {
+            sentence: 'kontrola parzystości\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Trzy dyski, każdy o pojemności 1TB, połączyliśmy w macierz RAID5. Jaką pojemnośd ma uzyskany wolumien?\n',
+        answers: [
+          {
+            sentence: '0.5 TB\n',
+            answer: false
+          },
+          {
+            sentence: '1 TB\n',
+            answer: false
+          },
+          {
+            sentence: '2 TB\n',
+            answer: true
+          },
+          {
+            sentence: '3 TB\n',
             answer: false
           }
         ]
       },
       {
-        question: "Zaznacz poprawną odpowiedz dotyczącą RAID:\n",
+        question: 'Zaznacz poprawną odpowiedz dotyczącą RAID:\n',
         answers: [
           {
             sentence:
-              "RAID pozwala łączyć ze sobą dyski celem stworzenia pamięci masowej o dużej pojemności I niezawodności\n",
-            answer: true
-          },
-          {
-            sentence:
-              "macierz RAID można stworzyć za pomocą sprzętowych kontrolerów oraz systemowych narzędzi\n",
-            answer: true
-          },
-          {
-            sentence: "do utworzenia RAID5 wystarczą dwa dyski\n",
-            answer: false
-          },
-          {
-            sentence: "nie da stworzyć się macierzy dyskowej z dwóch dysków\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Skrót RAID oznacza:\n",
-        answers: [
-          {
-            sentence: "Redundant Array of Independent Disks\n",
-            answer: true
-          },
-          {
-            sentence: "Redundant Array of Independent Drives\n",
-            answer: false
-          },
-          {
-            sentence: "Remote Array of Independent Disks\n",
-            answer: false
-          },
-          {
-            sentence: "Reserved Array of Independent Disks\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Macierz RAID 5 charakteryzuje się\n",
-        answers: [
-          {
-            sentence: "Zastosowaniem minimum 2 dysków\n",
-            answer: false
-          },
-          {
-            sentence: "Zastosowaniem minimum 3 dysków\n",
-            answer: true
-          },
-          {
-            sentence: "Odpornością na awarię dwóch dysków\n",
-            answer: false
-          },
-          {
-            sentence: "Zmniejszoną szybkością zapisu\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Macierz RAID 0 używana jest do:\n",
-        answers: [
-          {
-            sentence: "Poprawy wydajności zapisu\n",
+              'RAID pozwala łączyć ze sobą dyski celem stworzenia pamięci masowej o dużej pojemności I niezawodności\n',
             answer: true
           },
           {
             sentence:
-              "Zabezpieczeniem danych przed awarią dysku kosztem dostępnego miejsca\n",
+              'macierz RAID można stworzyć za pomocą sprzętowych kontrolerów oraz systemowych narzędzi\n',
+            answer: true
+          },
+          {
+            sentence: 'do utworzenia RAID5 wystarczą dwa dyski\n',
             answer: false
           },
           {
-            sentence:
-              "Zabezpieczeniem danych przed awarią dysku kosztem czasu dostępu\n",
-            answer: false
-          },
-          {
-            sentence: "Skrócenia czasu odbudowy macierzy\n",
+            sentence: 'nie da stworzyć się macierzy dyskowej z dwóch dysków\n',
             answer: false
           }
         ]
       },
       {
-        question: "Co jest zawartością pliku /proc/mdstat ?\n",
+        question: 'Skrót RAID oznacza:\n',
         answers: [
           {
-            sentence: "Konfiguracje RAID\n",
+            sentence: 'Redundant Array of Independent Disks\n',
             answer: true
           },
           {
-            sentence: "Aktualny stan macierzy\n",
-            answer: true
-          },
-          {
-            sentence: "Standardowe procery obsługi RAID\n",
+            sentence: 'Redundant Array of Independent Drives\n',
             answer: false
           },
           {
-            sentence: "Listę uruchomionych procesów\n",
+            sentence: 'Remote Array of Independent Disks\n',
+            answer: false
+          },
+          {
+            sentence: 'Reserved Array of Independent Disks\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Macierz RAID 5 charakteryzuje się\n',
+        answers: [
+          {
+            sentence: 'Zastosowaniem minimum 2 dysków\n',
+            answer: false
+          },
+          {
+            sentence: 'Zastosowaniem minimum 3 dysków\n',
+            answer: true
+          },
+          {
+            sentence: 'Odpornością na awarię dwóch dysków\n',
+            answer: false
+          },
+          {
+            sentence: 'Zmniejszoną szybkością zapisu\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Macierz RAID 0 używana jest do:\n',
+        answers: [
+          {
+            sentence: 'Poprawy wydajności zapisu\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Zabezpieczeniem danych przed awarią dysku kosztem dostępnego miejsca\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Zabezpieczeniem danych przed awarią dysku kosztem czasu dostępu\n',
+            answer: false
+          },
+          {
+            sentence: 'Skrócenia czasu odbudowy macierzy\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Co jest zawartością pliku /proc/mdstat ?\n',
+        answers: [
+          {
+            sentence: 'Konfiguracje RAID\n',
+            answer: true
+          },
+          {
+            sentence: 'Aktualny stan macierzy\n',
+            answer: true
+          },
+          {
+            sentence: 'Standardowe procery obsługi RAID\n',
+            answer: false
+          },
+          {
+            sentence: 'Listę uruchomionych procesów\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Aby połączyć dwa wolumeny w wolumen liniowy użyjemy instrukcji:\n",
+          'Aby połączyć dwa wolumeny w wolumen liniowy użyjemy instrukcji:\n',
         answers: [
           {
             sentence:
-              "mdadm –create –verbose /dev/md0/  --level=linear –raid-dervices=2 /dev/sdb1 /dev/sdb2\n",
+              'mdadm –create –verbose /dev/md0/  --level=linear –raid-dervices=2 /dev/sdb1 /dev/sdb2\n',
             answer: true
           },
           {
             sentence:
-              "Mdfs –create –verbose /dev/md0/  --level=linear –raid-dervices=2 /dev/sdb1 /dev/sdb2\n",
+              'Mdfs –create –verbose /dev/md0/  --level=linear –raid-dervices=2 /dev/sdb1 /dev/sdb2\n',
             answer: false
           },
           {
             sentence:
-              "mdadm –create –verbose /dev/md0/  --level=raid1 –raid-dervices=2 /dev/sdb1 /dev/sdb2\n",
+              'mdadm –create –verbose /dev/md0/  --level=raid1 –raid-dervices=2 /dev/sdb1 /dev/sdb2\n',
             answer: false
           },
           {
             sentence:
-              "mdadm –new –verbose /dev/md0/  --level=linear –raid-dervices=2 /dev/sdb1 /dev/sdb2\n",
+              'mdadm –new –verbose /dev/md0/  --level=linear –raid-dervices=2 /dev/sdb1 /dev/sdb2\n',
             answer: false
           }
         ]
       },
       {
-        question: "Zaznacz poprawne twierdzenia na temat RAID 0 :\n",
+        question: 'Zaznacz poprawne twierdzenia na temat RAID 0 :\n',
         answers: [
           {
-            sentence: "Zapewnia ochronę przed utratą danych\n",
+            sentence: 'Zapewnia ochronę przed utratą danych\n',
             answer: false
           },
           {
-            sentence: "Zapewnia zwiększoną wydajność zapisu\n",
+            sentence: 'Zapewnia zwiększoną wydajność zapisu\n',
             answer: true
           },
           {
-            sentence: "Zapewnia zwiększoną wydajność odczytu\n",
+            sentence: 'Zapewnia zwiększoną wydajność odczytu\n',
             answer: true
           },
           {
-            sentence: "Do jej stworzenia potrzebne są minimalnie 3 dyski\n",
+            sentence: 'Do jej stworzenia potrzebne są minimalnie 3 dyski\n',
             answer: false
           }
         ]
@@ -1982,11 +1982,11 @@ const data: IModule[] = [
           "Na komputerze została stworzona macierz RAID 1 złożona z 3 partycji sda1, sdb1 i sdc1, wszystkie dyski pracuja poprawnie i nie są uszkodzone, co się stanie w momencie wywołania komendy:\n 'mdadm /dev/md0 -- remove /dev/sda1'\n",
         answers: [
           {
-            sentence: "Partycja sda1 zostanie usunięta z macierzy md0\n",
+            sentence: 'Partycja sda1 zostanie usunięta z macierzy md0\n',
             answer: false
           },
           {
-            sentence: "Nic\n",
+            sentence: 'Nic\n',
             answer: true
           },
           {
@@ -1995,220 +1995,220 @@ const data: IModule[] = [
             answer: true
           },
           {
-            sentence: "Macierz md0 zostanie usunięta\n",
+            sentence: 'Macierz md0 zostanie usunięta\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Wskaż typy macierzy dyskowych, które do ochrony danych wykorzystują sumy kontrolne\n",
+          'Wskaż typy macierzy dyskowych, które do ochrony danych wykorzystują sumy kontrolne\n',
         answers: [
           {
-            sentence: "RAID 0\n",
+            sentence: 'RAID 0\n',
             answer: false
           },
           {
-            sentence: "RAID 1\n",
+            sentence: 'RAID 1\n',
             answer: false
           },
           {
-            sentence: "RAID 3\n",
+            sentence: 'RAID 3\n',
             answer: true
           },
           {
-            sentence: "RAID 5\n",
+            sentence: 'RAID 5\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Cztery dyski twarde o rozmiarach 200GB 200GB 150GB 150GB połączono w macierz typu striped volume:\n",
+          'Cztery dyski twarde o rozmiarach 200GB 200GB 150GB 150GB połączono w macierz typu striped volume:\n',
         answers: [
           {
             sentence:
-              "Macierz taka jest bardziej odporna na awarie niż pojedynczy dysk\n",
+              'Macierz taka jest bardziej odporna na awarie niż pojedynczy dysk\n',
             answer: false
           },
           {
             sentence:
-              "Sumaryczna szybkość takiej macierzy jest 4-krotnością szybkości najwolniejszego z dysków\n",
+              'Sumaryczna szybkość takiej macierzy jest 4-krotnością szybkości najwolniejszego z dysków\n',
             answer: true
           },
           {
             sentence:
-              "Macierz jest widziana w systemie jako pojedynczy dysk logiczny o rozmiarze 700GB\n",
+              'Macierz jest widziana w systemie jako pojedynczy dysk logiczny o rozmiarze 700GB\n',
             answer: false
           },
           {
             sentence:
-              "Prawdopodobieństwo utraty danych jest większe niż dla analogicznej macierzy RAID 1\n",
+              'Prawdopodobieństwo utraty danych jest większe niż dla analogicznej macierzy RAID 1\n',
             answer: true
           }
         ]
       },
       {
-        question: "Zaznacz prawdziwe zdania dotyczące RAID5.\n",
+        question: 'Zaznacz prawdziwe zdania dotyczące RAID5.\n',
         answers: [
           {
             sentence:
-              "RAID5 polega na tworzeniu kopi danych na rożnych dyskach (mirroring)\n",
+              'RAID5 polega na tworzeniu kopi danych na rożnych dyskach (mirroring)\n',
             answer: false
           },
           {
-            sentence: "Macierz składa się z 5 lub więcej dysków\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Macierz składająca się z n dysków jest odporna na awarię n – 2 dysków\n",
-            answer: false
-          },
-          {
-            sentence: "Wszystkie powyższe odpowiedzi są nie poprawne\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "W maszynie zainstalowana jest macierz RAID. Jeden z dysków podlega awarii. Zaznacz zdania prawdziwe.\n",
-        answers: [
-          {
-            sentence:
-              "Dla macierzy RAID 5 po wymianie uszkodzonego dysku dane zostaną odbudowane.\n",
-            answer: true
-          },
-          {
-            sentence: "Macierz RAID 1 przestanie funkcjonować.\n",
+            sentence: 'Macierz składa się z 5 lub więcej dysków\n',
             answer: false
           },
           {
             sentence:
-              "Jeśli zainstalowane były 3 dyski, macierz RAID 1 pozwoli na dalsza pracę bez utraty danych.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Macierz RAID 5 nie wymaga wymiany dysku na nowy przed wznowieniem pracy.\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Wpisanie polecenia fdisk /dev/hda oraz p spowoduje:\n",
-        answers: [
-          {
-            sentence: "sformatowanie dysku hda\n",
+              'Macierz składająca się z n dysków jest odporna na awarię n – 2 dysków\n',
             answer: false
           },
           {
-            sentence: "wypisanie listy partycji istniejących na dysku hda\n",
-            answer: true
-          },
-          {
-            sentence:
-              "utworzenie na dysku hda partycji zajmującej całą dostępną przestrzeń\n",
-            answer: false
-          },
-          {
-            sentence: "uruchomienie systemu operacyjnego z dysku hda\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Wskaż cechy RAID 5:\n",
-        answers: [
-          {
-            sentence:
-              "bity parzystości są zapisywane na specjalnie do tego przeznaczonym dysku\n",
-            answer: false
-          },
-          {
-            sentence:
-              "szybkość dostępu do danych nie ulega zmianie w wypadku awarii jednego z dysków\n",
-            answer: false
-          },
-          {
-            sentence:
-              "gwarantuje stuprocentowe bezpieczeństwo danych przy awarii jednego dysku\n",
-            answer: true
-          },
-          {
-            sentence:
-              "jego zaletą jest szybki odczyt, jego wada to powolny zapis\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Co odróżnia macierze RAID programowe od sprzętowych?\n",
-        answers: [
-          {
-            sentence:
-              "Obsługą macierzy programowych zajmuje się odpowiednie oprogramowanie, np. mdadm.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Macierze programowe mają większą wydajność w porównaniu do sprzętowych.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Problem awarii fizycznego nośnika w żaden sposób nie dotyczy macierzy programowych.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "W macierzach programowych problem awarii fizycznego dotyczy jedynie poziomu RAID 0.\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question:
-          "Wykonywanie jakich czynności związanych z macierzami RAID umożliwia polecenie „mdadm” w systemach z rodziny Linux?\n",
-        answers: [
-          {
-            sentence: "Podłączanie nowych urządzeń do macierzy.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Generowanie zawartości plików konfiguracyjnych macierzy.\n",
-            answer: true
-          },
-          {
-            sentence: "Sprawdzanie statusu macierzy.\n",
-            answer: true
-          },
-          {
-            sentence: "Programowe symulowanie awarii w macierzy.\n",
+            sentence: 'Wszystkie powyższe odpowiedzi są nie poprawne\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Polecenie mount umożliwia: Wskaż wszystkie poprawne odpowiedzi\n",
+          'W maszynie zainstalowana jest macierz RAID. Jeden z dysków podlega awarii. Zaznacz zdania prawdziwe.\n',
         answers: [
           {
-            sentence: "Zamontowanie wszystkich partycji wymienionych w fstab\n",
+            sentence:
+              'Dla macierzy RAID 5 po wymianie uszkodzonego dysku dane zostaną odbudowane.\n',
             answer: true
           },
           {
-            sentence: "Odmontowanie wszystkich partycji wymienionych w fstab\n",
+            sentence: 'Macierz RAID 1 przestanie funkcjonować.\n',
             answer: false
           },
           {
-            sentence: "Odmontowanie partycji\n",
+            sentence:
+              'Jeśli zainstalowane były 3 dyski, macierz RAID 1 pozwoli na dalsza pracę bez utraty danych.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Macierz RAID 5 nie wymaga wymiany dysku na nowy przed wznowieniem pracy.\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Wpisanie polecenia fdisk /dev/hda oraz p spowoduje:\n',
+        answers: [
+          {
+            sentence: 'sformatowanie dysku hda\n',
             answer: false
           },
           {
-            sentence: "Zamontowanie partycji",
+            sentence: 'wypisanie listy partycji istniejących na dysku hda\n',
+            answer: true
+          },
+          {
+            sentence:
+              'utworzenie na dysku hda partycji zajmującej całą dostępną przestrzeń\n',
+            answer: false
+          },
+          {
+            sentence: 'uruchomienie systemu operacyjnego z dysku hda\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Wskaż cechy RAID 5:\n',
+        answers: [
+          {
+            sentence:
+              'bity parzystości są zapisywane na specjalnie do tego przeznaczonym dysku\n',
+            answer: false
+          },
+          {
+            sentence:
+              'szybkość dostępu do danych nie ulega zmianie w wypadku awarii jednego z dysków\n',
+            answer: false
+          },
+          {
+            sentence:
+              'gwarantuje stuprocentowe bezpieczeństwo danych przy awarii jednego dysku\n',
+            answer: true
+          },
+          {
+            sentence:
+              'jego zaletą jest szybki odczyt, jego wada to powolny zapis\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Co odróżnia macierze RAID programowe od sprzętowych?\n',
+        answers: [
+          {
+            sentence:
+              'Obsługą macierzy programowych zajmuje się odpowiednie oprogramowanie, np. mdadm.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Macierze programowe mają większą wydajność w porównaniu do sprzętowych.\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Problem awarii fizycznego nośnika w żaden sposób nie dotyczy macierzy programowych.\n',
+            answer: false
+          },
+          {
+            sentence:
+              'W macierzach programowych problem awarii fizycznego dotyczy jedynie poziomu RAID 0.\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question:
+          'Wykonywanie jakich czynności związanych z macierzami RAID umożliwia polecenie „mdadm” w systemach z rodziny Linux?\n',
+        answers: [
+          {
+            sentence: 'Podłączanie nowych urządzeń do macierzy.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Generowanie zawartości plików konfiguracyjnych macierzy.\n',
+            answer: true
+          },
+          {
+            sentence: 'Sprawdzanie statusu macierzy.\n',
+            answer: true
+          },
+          {
+            sentence: 'Programowe symulowanie awarii w macierzy.\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Polecenie mount umożliwia: Wskaż wszystkie poprawne odpowiedzi\n',
+        answers: [
+          {
+            sentence: 'Zamontowanie wszystkich partycji wymienionych w fstab\n',
+            answer: true
+          },
+          {
+            sentence: 'Odmontowanie wszystkich partycji wymienionych w fstab\n',
+            answer: false
+          },
+          {
+            sentence: 'Odmontowanie partycji\n',
+            answer: false
+          },
+          {
+            sentence: 'Zamontowanie partycji',
             answer: true
           }
         ]
@@ -2216,483 +2216,483 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "linux",
-    name: "LAMP",
+    category: 'linux',
+    name: 'LAMP',
     questions: [
       {
         question:
-          "Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n",
+          'Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n',
         answers: [
           {
             sentence:
-              "Konfiguracja baz danych może odbywać się wyłącznie poprzez narzędzie phpMyAdmin., \n",
+              'Konfiguracja baz danych może odbywać się wyłącznie poprzez narzędzie phpMyAdmin., \n',
             answer: false
           },
           {
             sentence:
-              "MySQL pozwala na wykonywanie kodu zapisanego w języku PHP na stronie wwww., \n",
+              'MySQL pozwala na wykonywanie kodu zapisanego w języku PHP na stronie wwww., \n',
             answer: false
           },
           {
-            sentence: "Funkcją MySQL jest zarządzanie bazą danych., \n",
+            sentence: 'Funkcją MySQL jest zarządzanie bazą danych., \n',
             answer: true
           },
           {
             sentence:
-              "Podstawową funkcją serwera Apache jest przesyłanie do klienta treści plików znajdujących się na dysku przy wykorzystaniu protokołu HTTP., \n",
+              'Podstawową funkcją serwera Apache jest przesyłanie do klienta treści plików znajdujących się na dysku przy wykorzystaniu protokołu HTTP., \n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n",
+          'Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n',
         answers: [
           {
             sentence:
-              "Kod PHP wewnątrz pliku z rozszerzeniem .html może znajdować się pomiędzy znacznikiem <php> oraz znacznikiem </php>., \n",
+              'Kod PHP wewnątrz pliku z rozszerzeniem .html może znajdować się pomiędzy znacznikiem <php> oraz znacznikiem </php>., \n',
             answer: false
           },
           {
             sentence:
-              "Kod PHP wewnątrz pliku z rozszerzeniem .php może znajdować się pomiędzy znacznikiem <? oraz znacznikiem ?>., \n",
+              'Kod PHP wewnątrz pliku z rozszerzeniem .php może znajdować się pomiędzy znacznikiem <? oraz znacznikiem ?>., \n',
             answer: true
           },
           {
             sentence:
-              "Pliki konfiguracyjne serwera Apache znajdują się w katalogu /etc/apache2/, \n",
+              'Pliki konfiguracyjne serwera Apache znajdują się w katalogu /etc/apache2/, \n',
             answer: true
           },
           {
             sentence:
-              "phpMyAdmin jest narzędziem do konfiguracji w trybie tekstowym., \n",
+              'phpMyAdmin jest narzędziem do konfiguracji w trybie tekstowym., \n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n",
+          'Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n',
         answers: [
           {
-            sentence: "Elementy LAMP to Apache, MySQL i Prolog\n",
+            sentence: 'Elementy LAMP to Apache, MySQL i Prolog\n',
             answer: false
           },
           {
             sentence:
-              "Można powiedzieć, że dynamiczna strona internetowa stworzona w PHP na Linuksie, korzystająca z serwera Apache, z bazą danych MySQL jest opartą o LAMP.\n",
+              'Można powiedzieć, że dynamiczna strona internetowa stworzona w PHP na Linuksie, korzystająca z serwera Apache, z bazą danych MySQL jest opartą o LAMP.\n',
             answer: true
           },
           {
             sentence:
-              "Jako język programowania stron w LAMP można wykorzystać wyłącznie PHP., \n",
+              'Jako język programowania stron w LAMP można wykorzystać wyłącznie PHP., \n',
             answer: false
           },
           {
             sentence:
-              "Elementy LAMP zostały stworzone jako osobne rozwiązania, ale razem stanowią popularną platformę systemową.\n",
+              'Elementy LAMP zostały stworzone jako osobne rozwiązania, ale razem stanowią popularną platformę systemową.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n",
+          'Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n',
         answers: [
           {
             sentence:
-              "Kod w HTML wymaga kompilacji zanim zostanie umieszczony na serwerze.\n",
+              'Kod w HTML wymaga kompilacji zanim zostanie umieszczony na serwerze.\n',
             answer: false
           },
           {
             sentence:
-              "Narzędzie phpMyAdmin służy do konfiguracji serwera Apache.\n",
+              'Narzędzie phpMyAdmin służy do konfiguracji serwera Apache.\n',
             answer: false
           },
           {
-            sentence: "MySql może być użyty jako serwer bazy danych.\n",
+            sentence: 'MySql może być użyty jako serwer bazy danych.\n',
             answer: true
           },
           {
-            sentence: "PHP może być użyty do tworzenia stron dynamicznych.\n",
+            sentence: 'PHP może być użyty do tworzenia stron dynamicznych.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n",
+          'Zaznacz wszystkie poprawne stwierdzenia dotyczące rozwiązania LAMP: \n',
         answers: [
           {
             sentence:
-              "Tylko administrator może korzystać z narzędzia phpMyAdmin.\n",
+              'Tylko administrator może korzystać z narzędzia phpMyAdmin.\n',
             answer: false
           },
           {
             sentence:
-              "PostgreSQL może być użyty jako język skryptowy do tworzenia stron dynamicznych.\n",
+              'PostgreSQL może być użyty jako język skryptowy do tworzenia stron dynamicznych.\n',
             answer: false
           },
           {
             sentence:
-              "Kod w PHP wymaga kompilacji zanim zostanie umieszczony na serwerze.\n",
+              'Kod w PHP wymaga kompilacji zanim zostanie umieszczony na serwerze.\n',
             answer: false
           }
         ]
       },
       {
-        question: "Wskaż zdania prawdziwe dotyczące języka PHP\n",
+        question: 'Wskaż zdania prawdziwe dotyczące języka PHP\n',
         answers: [
           {
-            sentence: "PHP wymaga by zmiennym nadawać typy.\n",
+            sentence: 'PHP wymaga by zmiennym nadawać typy.\n',
             answer: false
           },
           {
-            sentence: "Nazwy zmiennych zaczynają się znakiem dolara.\n",
+            sentence: 'Nazwy zmiennych zaczynają się znakiem dolara.\n',
             answer: true
           },
           {
             sentence:
-              "Jeśli kod PHP jest połączony ze znacznikami HTML, to musi się znajdować w pliku o rozszerzeniu phtml.\n",
+              'Jeśli kod PHP jest połączony ze znacznikami HTML, to musi się znajdować w pliku o rozszerzeniu phtml.\n',
             answer: false
           },
           {
             sentence:
-              "Skrypt MUSI znajdować się w znacznikach <?php ?> (żadnych innych)\n",
+              'Skrypt MUSI znajdować się w znacznikach <?php ?> (żadnych innych)\n',
             answer: false
           }
         ]
       },
       {
-        question: "Wskaż zdania prawdziwe dotyczące języka PHP\n",
+        question: 'Wskaż zdania prawdziwe dotyczące języka PHP\n',
         answers: [
           {
             sentence:
-              "Funkcja mysql_query() zwraca wynik w formie tablicy stringów.\n",
+              'Funkcja mysql_query() zwraca wynik w formie tablicy stringów.\n',
             answer: false
           },
           {
             sentence:
-              "Skrypty PHP w typowych rozwiązaniach wykonywane są po stronie serwera.\n",
+              'Skrypty PHP w typowych rozwiązaniach wykonywane są po stronie serwera.\n',
             answer: true
           },
           {
             sentence:
-              "W pliku .php może wystąpić tylko jeden blok ograniczony znacznikami <? i ?>.\n",
+              'W pliku .php może wystąpić tylko jeden blok ograniczony znacznikami <? i ?>.\n',
             answer: false
           },
           {
-            sentence: "PHP jest językiem interpretowanym.\n",
+            sentence: 'PHP jest językiem interpretowanym.\n',
             answer: true
           }
         ]
       },
       {
-        question: "Język PHP: \n",
+        question: 'Język PHP: \n',
         answers: [
           {
-            sentence: "Jest językiem kompilowanym\n",
+            sentence: 'Jest językiem kompilowanym\n',
             answer: false
           },
           {
             sentence:
-              "Posiada biblioteki umożliwiające dostęp do bazy danych np. MySQL.\n",
+              'Posiada biblioteki umożliwiające dostęp do bazy danych np. MySQL.\n',
             answer: true
           },
           {
-            sentence: "Może być przeplatany z kodem HTML.\n",
+            sentence: 'Może być przeplatany z kodem HTML.\n',
             answer: true
           },
           {
-            sentence: "Jest statycznie typowany.\n",
+            sentence: 'Jest statycznie typowany.\n',
             answer: false
           }
         ]
       },
       {
-        question: "Język PHP: \n",
+        question: 'Język PHP: \n',
         answers: [
           {
-            sentence: "może być przeplatany z językiem HTML.\n",
+            sentence: 'może być przeplatany z językiem HTML.\n',
             answer: true
           },
           {
-            sentence: "wymaga deklarowania zmiennych.\n",
+            sentence: 'wymaga deklarowania zmiennych.\n',
             answer: false
           },
           {
-            sentence: "nie wymaga deklarowania zmiennych.\n",
+            sentence: 'nie wymaga deklarowania zmiennych.\n',
             answer: true
           },
           {
             sentence:
-              "{wymaga, aby każda zmienna była poprzedzona znakiem $.\n",
+              '{wymaga, aby każda zmienna była poprzedzona znakiem $.\n',
             answer: true
           }
         ]
       },
       {
-        question: "Każda zmienna w PHP poprzedzona jest znakiem:\n",
+        question: 'Każda zmienna w PHP poprzedzona jest znakiem:\n',
         answers: [
           {
-            sentence: "%\n",
+            sentence: '%\n',
             answer: false
           },
           {
-            sentence: "#\n",
+            sentence: '#\n',
             answer: false
           },
           {
-            sentence: "<?\n",
+            sentence: '<?\n',
             answer: false
           },
           {
-            sentence: "$\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "W jaki sposób w języku PHP można odczytać dane (lub ich część) przesłane przez formularz na stronie internetowej (pobrać dane z formularza)?\n",
-        answers: [
-          {
-            sentence: "Używając tablicy $_POST\n",
-            answer: true
-          },
-          {
-            sentence: "Używając tablicy $_SEND_DATA\n",
-            answer: false
-          },
-          {
-            sentence: "Używając tablicy $_GET\n",
-            answer: true
-          },
-          {
-            sentence: "Używając tablicy $_REQUEST\n",
+            sentence: '$\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "W jaki sposób w języku PHP można odczytać dane (lub ich część) przesłane przez formularz na stronie internetowej (pobrać dane z formularza)?\n",
+          'W jaki sposób w języku PHP można odczytać dane (lub ich część) przesłane przez formularz na stronie internetowej (pobrać dane z formularza)?\n',
         answers: [
           {
-            sentence: "Używając tablicy $_DATA\n",
+            sentence: 'Używając tablicy $_POST\n',
+            answer: true
+          },
+          {
+            sentence: 'Używając tablicy $_SEND_DATA\n',
             answer: false
           },
           {
-            sentence: "Używając tablicy $_RESPONSE\n",
+            sentence: 'Używając tablicy $_GET\n',
+            answer: true
+          },
+          {
+            sentence: 'Używając tablicy $_REQUEST\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'W jaki sposób w języku PHP można odczytać dane (lub ich część) przesłane przez formularz na stronie internetowej (pobrać dane z formularza)?\n',
+        answers: [
+          {
+            sentence: 'Używając tablicy $_DATA\n',
+            answer: false
+          },
+          {
+            sentence: 'Używając tablicy $_RESPONSE\n',
             answer: false
           }
         ]
       },
       {
-        question: "Skrypty PHP:\n",
+        question: 'Skrypty PHP:\n',
         answers: [
           {
             sentence:
-              "Są wykonywane po stronie przeglądarki internetowej klienta.\n",
+              'Są wykonywane po stronie przeglądarki internetowej klienta.\n',
             answer: false
           },
           {
-            sentence: "Mogą zostać osadzone w plikach HTML.\n",
+            sentence: 'Mogą zostać osadzone w plikach HTML.\n',
             answer: true
           },
           {
-            sentence: "ZAWSZE rozpoczynają się od: <?php .\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Mogą być zdefiniowane w osobnych plikach, bez osadzania w kodzie HTML.}\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Od jakich elementów systemu pochodzi określenie LAMP?\n",
-        answers: [
-          {
-            sentence: "Linux, Apache, McEdit, Perl\n",
-            answer: false
-          },
-          {
-            sentence: "Linux, Apache, MySQL, Perl\n",
-            answer: true
-          },
-          {
-            sentence: "Linux, Access, McEdit, PHP\n",
-            answer: false
-          },
-          {
-            sentence: "Linux, Apache, MySQL, Python\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Od jakich elementów systemu pochodzi określenie LAMP?\n",
-        answers: [
-          {
-            sentence: "Linux, Access, MySQL, PHP\n",
-            answer: false
-          },
-        ]
-      },
-      {
-        question: "W skład LAMP wchodzi:\n",
-        answers: [
-          {
-            sentence: "PostgreSQL\n",
-            answer: false
-          },
-          {
-            sentence: "Linux\n",
-            answer: true
-          },
-          {
-            sentence: "Perl\n",
-            answer: true
-          },
-          {
-            sentence: "Windows\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Co może oznaczać „P” w skrócie LAMP?\n",
-        answers: [
-          {
-            sentence: "PostgreSQL\n",
-            answer: false
-          },
-          {
-            sentence: "Perl\n",
-            answer: true
-          },
-          {
-            sentence: "Python\n",
-            answer: true
-          },
-          {
-            sentence: "PHP\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Do poprawnego działania LAMP pod Linuxem potrzebny jest:\n",
-        answers: [
-          {
-            sentence: "PHP\n",
-            answer: true
-          },
-          {
-            sentence: "Apache\n",
-            answer: true
-          },
-          {
-            sentence: "MySQL\n",
-            answer: true
-          },
-          {
-            sentence: "Pakiety wiążące ze sobą pozostałe składniki.\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Jaki serwer www wchodzi w skład LAMP?\n",
-        answers: [
-          {
-            sentence: "MySQL.\n",
-            answer: false
-          },
-          {
-            sentence: "IIS\n",
-            answer: false
-          },
-          {
-            sentence: "Apache\n",
-            answer: true
-          },
-          {
-            sentence: "Zależy od konfiguracji\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Serwer Apache:\n",
-        answers: [
-          {
-            sentence: "Jest serwerem www.\n",
-            answer: true
-          },
-          {
-            sentence: "Można zainstalować osobno.\n",
+            sentence: 'ZAWSZE rozpoczynają się od: <?php .\n',
             answer: true
           },
           {
             sentence:
-              "Można zainstalować tylko razem z serwerem bazy danych MySQL oraz bibliotekami języka PHP.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Współpracuje z interpreterem języka PHP po doinstalowaniu odpowiednich pakietów.}\n",
+              'Mogą być zdefiniowane w osobnych plikach, bez osadzania w kodzie HTML.}\n',
             answer: true
           }
         ]
       },
       {
-        question: "Moduł userdir serwera Apache umożliwia:\n",
+        question: 'Od jakich elementów systemu pochodzi określenie LAMP?\n',
         answers: [
           {
+            sentence: 'Linux, Apache, McEdit, Perl\n',
+            answer: false
+          },
+          {
+            sentence: 'Linux, Apache, MySQL, Perl\n',
+            answer: true
+          },
+          {
+            sentence: 'Linux, Access, McEdit, PHP\n',
+            answer: false
+          },
+          {
+            sentence: 'Linux, Apache, MySQL, Python\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Od jakich elementów systemu pochodzi określenie LAMP?\n',
+        answers: [
+          {
+            sentence: 'Linux, Access, MySQL, PHP\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'W skład LAMP wchodzi:\n',
+        answers: [
+          {
+            sentence: 'PostgreSQL\n',
+            answer: false
+          },
+          {
+            sentence: 'Linux\n',
+            answer: true
+          },
+          {
+            sentence: 'Perl\n',
+            answer: true
+          },
+          {
+            sentence: 'Windows\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Co może oznaczać „P” w skrócie LAMP?\n',
+        answers: [
+          {
+            sentence: 'PostgreSQL\n',
+            answer: false
+          },
+          {
+            sentence: 'Perl\n',
+            answer: true
+          },
+          {
+            sentence: 'Python\n',
+            answer: true
+          },
+          {
+            sentence: 'PHP\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Do poprawnego działania LAMP pod Linuxem potrzebny jest:\n',
+        answers: [
+          {
+            sentence: 'PHP\n',
+            answer: true
+          },
+          {
+            sentence: 'Apache\n',
+            answer: true
+          },
+          {
+            sentence: 'MySQL\n',
+            answer: true
+          },
+          {
+            sentence: 'Pakiety wiążące ze sobą pozostałe składniki.\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Jaki serwer www wchodzi w skład LAMP?\n',
+        answers: [
+          {
+            sentence: 'MySQL.\n',
+            answer: false
+          },
+          {
+            sentence: 'IIS\n',
+            answer: false
+          },
+          {
+            sentence: 'Apache\n',
+            answer: true
+          },
+          {
+            sentence: 'Zależy od konfiguracji\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Serwer Apache:\n',
+        answers: [
+          {
+            sentence: 'Jest serwerem www.\n',
+            answer: true
+          },
+          {
+            sentence: 'Można zainstalować osobno.\n',
+            answer: true
+          },
+          {
             sentence:
-              "Edycję ustawień dotyczących folderów znajdujących się w pliku konfiguracyjnym serwera Apache.\n",
+              'Można zainstalować tylko razem z serwerem bazy danych MySQL oraz bibliotekami języka PHP.\n',
             answer: false
           },
           {
             sentence:
-              "Zakładanie stron poprzez dodawanie folderu public_html w katalogu domowym użytkownika.\n",
+              'Współpracuje z interpreterem języka PHP po doinstalowaniu odpowiednich pakietów.}\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Moduł userdir serwera Apache umożliwia:\n',
+        answers: [
+          {
+            sentence:
+              'Edycję ustawień dotyczących folderów znajdujących się w pliku konfiguracyjnym serwera Apache.\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Zakładanie stron poprzez dodawanie folderu public_html w katalogu domowym użytkownika.\n',
             answer: true
           },
           {
-            sentence: "Proste dodawanie stron www użytkownikom systemu.\n",
+            sentence: 'Proste dodawanie stron www użytkownikom systemu.\n',
             answer: true
           },
           {
             sentence:
-              "Dostęp do założonych stron użytkownika poprzez adres http://localhost/?NAZWA_UZYTKOWNIKA}\n",
+              'Dostęp do założonych stron użytkownika poprzez adres http://localhost/?NAZWA_UZYTKOWNIKA}\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Przy prawidłowo działającym w domyślnej konfiguracji module userdir zawartość strony http://localhost/~joe to:\n",
+          'Przy prawidłowo działającym w domyślnej konfiguracji module userdir zawartość strony http://localhost/~joe to:\n',
         answers: [
           {
             sentence:
-              "zawartość folderu public_html w katalogu domowym użytkownika joe.\n",
+              'zawartość folderu public_html w katalogu domowym użytkownika joe.\n',
             answer: true
           },
           {
             sentence:
-              "zawartość folderu localhost na pulpicie użytkownika joe.\n",
+              'zawartość folderu localhost na pulpicie użytkownika joe.\n',
             answer: false
           },
           {
-            sentence: "zawartość folderu Joe na dysku C.\n",
+            sentence: 'zawartość folderu Joe na dysku C.\n',
             answer: false
           },
           {
             sentence:
-              "zawartość folderu www w katalogu domowym użytkownika joe.}\n",
+              'zawartość folderu www w katalogu domowym użytkownika joe.}\n',
             answer: false
           }
         ]
@@ -2702,34 +2702,34 @@ const data: IModule[] = [
           'Po włączeniu w Apache modułu userdir, pliki umieszczone przez użytkownika "jan" w folderze "/home/jan/public_html" będą (...) :\n',
         answers: [
           {
-            sentence: "http://localhost/~jan\n",
+            sentence: 'http://localhost/~jan\n',
             answer: true
           },
           {
-            sentence: "http://localhost/home/jan/public_html\n",
+            sentence: 'http://localhost/home/jan/public_html\n',
             answer: false
           },
           {
-            sentence: "http://localhost/jan\n",
+            sentence: 'http://localhost/jan\n',
             answer: false
           },
           {
-            sentence: "http://127.0.0.1/~jan}\n",
+            sentence: 'http://127.0.0.1/~jan}\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Które z podanych niżej operacji są prawidłowe, aby włączyć dowolny moduł w serwerze Apache?\n",
+          'Które z podanych niżej operacji są prawidłowe, aby włączyć dowolny moduł w serwerze Apache?\n',
         answers: [
           {
-            sentence: "Skorzystanie z polecenia /etc/init.d/apache2 restart\n",
+            sentence: 'Skorzystanie z polecenia /etc/init.d/apache2 restart\n',
             answer: false
           },
           {
             sentence:
-              "Utworzenie łącza symbolicznego w katalogu mods-enabled do pliku z katalogu mods-available.\n",
+              'Utworzenie łącza symbolicznego w katalogu mods-enabled do pliku z katalogu mods-available.\n',
             answer: true
           },
           {
@@ -2744,143 +2744,143 @@ const data: IModule[] = [
       },
       {
         question:
-          "Które z podanych niżej operacji są prawidłowe, aby włączyć dowolny moduł w serwerze Apache?\n",
+          'Które z podanych niżej operacji są prawidłowe, aby włączyć dowolny moduł w serwerze Apache?\n',
         answers: [
           {
             sentence:
-              "Skorzystanie z polecenia /etc/init.d/apache2 force-reload\n",
-            answer: false
-          },
-        ]
-      },
-      {
-        question:
-          "Jakim poleceniem można zrestartować serwer Apache w celu odświeżenia konfiguracji?}\n",
-        answers: [
-          {
-            sentence: "/etc/init.d/apache2 restart\n",
-            answer: true
-          },
-          {
-            sentence: "/etc/init.d/apache2 stop && /etc/init.d/apache2/start\n",
-            answer: true
-          },
-          {
-            sentence: "/etc/init.d/apache2 refresh\n",
-            answer: false
-          },
-          {
-            sentence: "apache2-restart\n",
+              'Skorzystanie z polecenia /etc/init.d/apache2 force-reload\n',
             answer: false
           }
         ]
       },
       {
-        question: "Konfiguracja serwera Apache w systemie Ubuntu Server:}\n",
+        question:
+          'Jakim poleceniem można zrestartować serwer Apache w celu odświeżenia konfiguracji?}\n',
         answers: [
           {
-            sentence: "wpływa na działający serwer zarz po zapisaniu pliku.\n",
+            sentence: '/etc/init.d/apache2 restart\n',
+            answer: true
+          },
+          {
+            sentence: '/etc/init.d/apache2 stop && /etc/init.d/apache2/start\n',
+            answer: true
+          },
+          {
+            sentence: '/etc/init.d/apache2 refresh\n',
+            answer: false
+          },
+          {
+            sentence: 'apache2-restart\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Konfiguracja serwera Apache w systemie Ubuntu Server:}\n',
+        answers: [
+          {
+            sentence: 'wpływa na działający serwer zarz po zapisaniu pliku.\n',
             answer: false
           },
           {
             sentence:
-              "w przypadku modułów serwera opiera się o dowiązania plików.\n",
+              'w przypadku modułów serwera opiera się o dowiązania plików.\n',
             answer: true
           },
           {
-            sentence: "znajduje się w folderze /etc/apache2.\n",
+            sentence: 'znajduje się w folderze /etc/apache2.\n',
             answer: true
           },
           {
-            sentence: "jest wstępnie przygotowana po zainstalowaniu serwera.\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "Który z modułów odpowiada za włączenie obsługi języka PHP w serwerze Apache?\n",
-        answers: [
-          {
-            sentence: "status\n",
-            answer: false
-          },
-          {
-            sentence: "proxy\n",
-            answer: false
-          },
-          {
-            sentence: "php5\n",
-            answer: true
-          },
-          {
-            sentence: "userdir\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question:
-          "Który z modułów pozwala dodawać strony www w Apache poprzez utworzenie katalogu public_html w katalogu domowym?\n",
-        answers: [
-          {
-            sentence: "status\n",
-            answer: false
-          },
-          {
-            sentence: "proxy\n",
-            answer: false
-          },
-          {
-            sentence: "php5\n",
-            answer: false
-          },
-          {
-            sentence: "userdir\n",
+            sentence: 'jest wstępnie przygotowana po zainstalowaniu serwera.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Które moduły należy uruchomić, aby była możliwość dodawania stron www przez zwykłego użytkownika?\n",
+          'Który z modułów odpowiada za włączenie obsługi języka PHP w serwerze Apache?\n',
         answers: [
           {
-            sentence: "usertrack\n",
+            sentence: 'status\n',
             answer: false
           },
           {
-            sentence: "proxy\n",
+            sentence: 'proxy\n',
             answer: false
           },
           {
-            sentence: "cache\n",
+            sentence: 'php5\n',
+            answer: true
+          },
+          {
+            sentence: 'userdir\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question:
+          'Który z modułów pozwala dodawać strony www w Apache poprzez utworzenie katalogu public_html w katalogu domowym?\n',
+        answers: [
+          {
+            sentence: 'status\n',
             answer: false
           },
           {
-            sentence: "userdir}\n",
+            sentence: 'proxy\n',
+            answer: false
+          },
+          {
+            sentence: 'php5\n',
+            answer: false
+          },
+          {
+            sentence: 'userdir\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Do wybrania bazy danych w MySQL w języku PHP służy funkcja:\n",
+          'Które moduły należy uruchomić, aby była możliwość dodawania stron www przez zwykłego użytkownika?\n',
         answers: [
           {
-            sentence: "mysql_db_name\n",
+            sentence: 'usertrack\n',
             answer: false
           },
           {
-            sentence: "mysql_connect_db\n",
+            sentence: 'proxy\n',
             answer: false
           },
           {
-            sentence: "mysql_select_db\n",
+            sentence: 'cache\n',
             answer: false
           },
           {
-            sentence: "mysqli_connect\n",
+            sentence: 'userdir}\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Do wybrania bazy danych w MySQL w języku PHP służy funkcja:\n',
+        answers: [
+          {
+            sentence: 'mysql_db_name\n',
+            answer: false
+          },
+          {
+            sentence: 'mysql_connect_db\n',
+            answer: false
+          },
+          {
+            sentence: 'mysql_select_db\n',
+            answer: false
+          },
+          {
+            sentence: 'mysqli_connect\n',
             answer: true
           }
         ]
@@ -2903,7 +2903,7 @@ const data: IModule[] = [
             answer: false
           },
           {
-            sentence: "Zwrócenie błędu.",
+            sentence: 'Zwrócenie błędu.',
             answer: true
           }
         ]
@@ -2912,50 +2912,50 @@ const data: IModule[] = [
   },
   {
     category: 'linux',
-    name: "Wielosystemowość",
+    name: 'Wielosystemowość',
     questions: [
       {
-        question: "Po zmianie w plikach konfiguracyjnych programu GRUB:\n",
+        question: 'Po zmianie w plikach konfiguracyjnych programu GRUB:\n',
         answers: [
           {
             sentence:
-              "zmiany NIE SĄ automatycznie wprowadzone po zmianie zawartości plików\n",
+              'zmiany NIE SĄ automatycznie wprowadzone po zmianie zawartości plików\n',
             answer: true
           },
           {
             sentence:
-              "należy wydać polecenie update-grub jako root, aby konfiguracja nowa konfiguracja została wprowadzona\n",
+              'należy wydać polecenie update-grub jako root, aby konfiguracja nowa konfiguracja została wprowadzona\n',
             answer: true
           },
           {
             sentence:
-              "zmiany od razu nie są wprowadzone, zaraz po zmianie pliku\n",
+              'zmiany od razu nie są wprowadzone, zaraz po zmianie pliku\n',
             answer: false
           },
           {
             sentence:
-              "plików konfiguracyjnych GRUBa nie wolno edytować (jest to robione automatycznie przez system)\n",
+              'plików konfiguracyjnych GRUBa nie wolno edytować (jest to robione automatycznie przez system)\n',
             answer: false
           }
         ]
       },
       {
-        question: "Wksaż poprawne zdanie na temat dysku /dev/sdd3\n",
+        question: 'Wksaż poprawne zdanie na temat dysku /dev/sdd3\n',
         answers: [
           {
-            sentence: "Jest to czwarta partycja czwartego dysku SATA\n",
+            sentence: 'Jest to czwarta partycja czwartego dysku SATA\n',
             answer: false
           },
           {
-            sentence: "Jest to czwarta partycja trzeciego dysku SATA\n",
+            sentence: 'Jest to czwarta partycja trzeciego dysku SATA\n',
             answer: false
           },
           {
-            sentence: "Oznaczenie nie jest poprawne\n",
+            sentence: 'Oznaczenie nie jest poprawne\n',
             answer: false
           },
           {
-            sentence: "Jest to trzecia partycja czwartego dysku SATA\n",
+            sentence: 'Jest to trzecia partycja czwartego dysku SATA\n',
             answer: true
           }
         ]
@@ -2966,12 +2966,12 @@ const data: IModule[] = [
         answers: [
           {
             sentence:
-              "Jest to jedyny plik konfiguracji GRUB 2, którego własnoręczna edycja nie jest odradzana\n",
+              'Jest to jedyny plik konfiguracji GRUB 2, którego własnoręczna edycja nie jest odradzana\n',
             answer: false
           },
           {
             sentence:
-              "Nie powinien być bezpośrednio edytowany przez użytkownika.\n",
+              'Nie powinien być bezpośrednio edytowany przez użytkownika.\n',
             answer: true
           },
           {
@@ -2981,30 +2981,30 @@ const data: IModule[] = [
           },
           {
             sentence:
-              "Zawiera wpisy dotyczące uruchamianych systemów operacyjnych.\n",
+              'Zawiera wpisy dotyczące uruchamianych systemów operacyjnych.\n',
             answer: true
           }
         ]
       },
       {
-        question: "Polecenie mount -a\n",
+        question: 'Polecenie mount -a\n',
         answers: [
           {
             sentence:
-              "montuje wszystkie systemy plików wylistowane w pliku /etc/fstab\n",
+              'montuje wszystkie systemy plików wylistowane w pliku /etc/fstab\n',
             answer: false
           },
           {
             sentence:
-              "montuje systemy plików wylistowane w pliku /etc/fstab, które nie korzystają z opcji noauto\n",
+              'montuje systemy plików wylistowane w pliku /etc/fstab, które nie korzystają z opcji noauto\n',
             answer: true
           },
           {
-            sentence: "może być wykonane przez dowolnego użytkownika\n",
+            sentence: 'może być wykonane przez dowolnego użytkownika\n',
             answer: false
           },
           {
-            sentence: "zarezerwowane jest tylko dla roota\n",
+            sentence: 'zarezerwowane jest tylko dla roota\n',
             answer: true
           }
         ]
@@ -3015,22 +3015,22 @@ const data: IModule[] = [
         answers: [
           {
             sentence:
-              "Definiując poszczególne systemy plików możemy posłużyć się zarówno unikalnym identyfikatorem dysku, jak i nazwą urządzenia.\n",
+              'Definiując poszczególne systemy plików możemy posłużyć się zarówno unikalnym identyfikatorem dysku, jak i nazwą urządzenia.\n',
             answer: true
           },
           {
             sentence:
-              "Edytując plik użytkownik może wskazać jako miejsce montowania nieistniejący katalog, w trakcie uruchomienia systemu, katalog taki zostanie utworzony.\n",
+              'Edytując plik użytkownik może wskazać jako miejsce montowania nieistniejący katalog, w trakcie uruchomienia systemu, katalog taki zostanie utworzony.\n',
             answer: false
           },
           {
             sentence:
-              "Plik ten zawiera informację na temat wszystkich systemów plików, które powinny być montowane w trakcie uruchamiania systemu.\n",
+              'Plik ten zawiera informację na temat wszystkich systemów plików, które powinny być montowane w trakcie uruchamiania systemu.\n',
             answer: true
           },
           {
             sentence:
-              "Do edycji pliku wymagane są uprawnienia administratora.\n",
+              'Do edycji pliku wymagane są uprawnienia administratora.\n',
             answer: true
           }
         ]
@@ -3039,28 +3039,28 @@ const data: IModule[] = [
         question: "Używając bootloader'a GRUB2:\n",
         answers: [
           {
-            sentence: "hd1 oznacza drugi dysk w systemie (/dev/sdb)\n",
+            sentence: 'hd1 oznacza drugi dysk w systemie (/dev/sdb)\n',
             answer: true
           },
           {
-            sentence: "hd1 oznacza pierwszy dysk w systemie (/dev/sda)\n",
+            sentence: 'hd1 oznacza pierwszy dysk w systemie (/dev/sda)\n',
             answer: false
           },
           {
             sentence:
-              "setroot(hd0, 1) odwoła się do pierwszej partycji pierwszego dysku (dev/sda1)\n",
+              'setroot(hd0, 1) odwoła się do pierwszej partycji pierwszego dysku (dev/sda1)\n',
             answer: true
           },
           {
             sentence:
-              "setroot(hd0, 1) odwoła się do drugiej partycji pierwszego dysku (dev/sda2)\n",
+              'setroot(hd0, 1) odwoła się do drugiej partycji pierwszego dysku (dev/sda2)\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Co spowoduje dodanie następującego wpisu do pliku /etc/grub.d/40_custom \n menuentry \"Windows\" { \n set root='(hd0,1)' \n chainloader + 1 \n }\n",
+          'Co spowoduje dodanie następującego wpisu do pliku /etc/grub.d/40_custom \n menuentry "Windows" { \n set root=\'(hd0,1)\' \n chainloader + 1 \n }\n',
         answers: [
           {
             sentence:
@@ -3068,7 +3068,7 @@ const data: IModule[] = [
             answer: false
           },
           {
-            sentence: "Jest to niepoprawny wpis.\n",
+            sentence: 'Jest to niepoprawny wpis.\n',
             answer: false
           },
           {
@@ -3078,112 +3078,112 @@ const data: IModule[] = [
           },
           {
             sentence:
-              "W celu załadowania systemu Windows sterowanie zostanie przekazane do pierwszego sektora z podanej partycji (zostanie uruchomiony kod, który się tam znajduje).\n",
+              'W celu załadowania systemu Windows sterowanie zostanie przekazane do pierwszego sektora z podanej partycji (zostanie uruchomiony kod, który się tam znajduje).\n',
             answer: true
           }
         ]
       },
       {
-        question: "Program Grub pozwala na:\n",
+        question: 'Program Grub pozwala na:\n',
         answers: [
           {
-            sentence: "Rekompilację jądra Linux\n",
+            sentence: 'Rekompilację jądra Linux\n',
             answer: false
           },
           {
             sentence:
-              "Automatyczne uruchomienie wybranego systemu z pominięciem wyświetlania ekranu wyboru.\n",
+              'Automatyczne uruchomienie wybranego systemu z pominięciem wyświetlania ekranu wyboru.\n',
             answer: true
           },
           {
-            sentence: "Zarządzanie dyskami i ich partycjonowanie\n",
+            sentence: 'Zarządzanie dyskami i ich partycjonowanie\n',
             answer: false
           },
           {
-            sentence: "Wybór systemu operacyjnego, który będzie uruchomiony.\n",
+            sentence: 'Wybór systemu operacyjnego, który będzie uruchomiony.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Parametr ro w opcjach montowania pliku /etc/fstab oznacza, że:\n",
+          'Parametr ro w opcjach montowania pliku /etc/fstab oznacza, że:\n',
         answers: [
           {
-            sentence: "możliwy jest zapis i odczyt na danym systemie plików\n",
+            sentence: 'możliwy jest zapis i odczyt na danym systemie plików\n',
             answer: false
           },
           {
             sentence:
-              "system plików jest zamontowany w trybie tylko do odczytu\n",
+              'system plików jest zamontowany w trybie tylko do odczytu\n',
             answer: true
           },
           {
-            sentence: "urządzenie może być montowane przez użytkownika\n",
+            sentence: 'urządzenie może być montowane przez użytkownika\n',
             answer: false
           },
           {
             sentence:
-              "system plików może być montowany przez każdego użytkownika\n",
+              'system plików może być montowany przez każdego użytkownika\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "W jaki sposób dodajemy informacje o innych systemach opracyjnych do GRUB2\n",
+          'W jaki sposób dodajemy informacje o innych systemach opracyjnych do GRUB2\n',
         answers: [
           {
             sentence:
-              "Do pliku /etc/grub.d/40_custom dodajemy wpis o systemie, następnie uruchamiamy polecenie sudo update-grub2\n",
+              'Do pliku /etc/grub.d/40_custom dodajemy wpis o systemie, następnie uruchamiamy polecenie sudo update-grub2\n',
             answer: true
           },
           {
             sentence:
-              "Należy wykonać polecenie grub2-add-new-os z prawami użytkownika\n",
+              'Należy wykonać polecenie grub2-add-new-os z prawami użytkownika\n',
             answer: false
           },
           {
             sentence:
-              "Można nadać prawa wykonywania skryptowi: /etc/grub.d/30_os-prober. Grub2 podczas aktualizacji wyszuka dostępne systemy operacyjne na dyskach twardych\n",
+              'Można nadać prawa wykonywania skryptowi: /etc/grub.d/30_os-prober. Grub2 podczas aktualizacji wyszuka dostępne systemy operacyjne na dyskach twardych\n',
             answer: true
           },
           {
             sentence:
-              "GRUB2 sam wykryje wszystkie systemy operacyjne bez konfiguracji\n",
+              'GRUB2 sam wykryje wszystkie systemy operacyjne bez konfiguracji\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Plik /boot/grub.cfg dla GRand United Bootloader w wersji 2:\n",
+          'Plik /boot/grub.cfg dla GRand United Bootloader w wersji 2:\n',
         answers: [
           {
             sentence:
-              "posiada definicje wszystkich systemów uruchamianych przez niego\n",
+              'posiada definicje wszystkich systemów uruchamianych przez niego\n',
             answer: true
           },
           {
             sentence:
-              "w przypadku edycji za każdym razem musi być zaktualizowany za pomocą polecenia update-grub\n",
+              'w przypadku edycji za każdym razem musi być zaktualizowany za pomocą polecenia update-grub\n',
             answer: true
           },
           {
             sentence:
-              "Tworzony jest automatycznie na podstawie skryptów znajdujących się w katalogu /etc/grub.d/\n",
+              'Tworzony jest automatycznie na podstawie skryptów znajdujących się w katalogu /etc/grub.d/\n',
             answer: true
           },
           {
             sentence:
-              "Tworzony jest automatycznie na podstawie konfiguracji zdefiniowanej w pliku /etc/grub/default\n",
+              'Tworzony jest automatycznie na podstawie konfiguracji zdefiniowanej w pliku /etc/grub/default\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Wskaż, które z poniższych twierdzeń odnoszących się do bootmanagera GRUB2 są poprawne.\n",
+          'Wskaż, które z poniższych twierdzeń odnoszących się do bootmanagera GRUB2 są poprawne.\n',
         answers: [
           {
             sentence:
@@ -3209,29 +3209,29 @@ const data: IModule[] = [
       },
       {
         question:
-          "Jakim poleceniem tworzony (bądź aktualizowany) jest plik konfiguracyjny /boot/grub.grub.cfg?\n",
+          'Jakim poleceniem tworzony (bądź aktualizowany) jest plik konfiguracyjny /boot/grub.grub.cfg?\n',
         answers: [
           {
-            sentence: "grub-config\n",
+            sentence: 'grub-config\n',
             answer: false
           },
           {
-            sentence: "grub-install\n",
+            sentence: 'grub-install\n',
             answer: false
           },
           {
-            sentence: "grub-refresh\n",
+            sentence: 'grub-refresh\n',
             answer: false
           },
           {
-            sentence: "update-grub\n",
+            sentence: 'update-grub\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Na jednym fizycznym komputerze, na osobnych partycjach są zainstalowane systemy Ubuntu Linux i Windows 7. Przy obecnej konfiguracji użytkownik ma możliwość (przy użyciu bootmanagera GRUB 2) uruchomienia TYLKO systemu Ubuntu. W jaki sposób można zapeewić użytkownikowi możliwość wyboru systemu operacyjnego przy uruchamianu komputera?\n",
+          'Na jednym fizycznym komputerze, na osobnych partycjach są zainstalowane systemy Ubuntu Linux i Windows 7. Przy obecnej konfiguracji użytkownik ma możliwość (przy użyciu bootmanagera GRUB 2) uruchomienia TYLKO systemu Ubuntu. W jaki sposób można zapeewić użytkownikowi możliwość wyboru systemu operacyjnego przy uruchamianu komputera?\n',
         answers: [
           {
             sentence:
@@ -3239,204 +3239,204 @@ const data: IModule[] = [
             answer: true
           },
           {
-            sentence: "Dodać odpowiedni wpis w pliku /boot/grub/grub.cfg\n",
+            sentence: 'Dodać odpowiedni wpis w pliku /boot/grub/grub.cfg\n',
             answer: true
           },
           {
             sentence:
-              "Należy włożyć dysk instalacyjny Windowsa i z linii poleceń, za pomocą komendy bootrec /fixmbr zainstalować w MBR bootloader dla systemu Windows\n",
+              'Należy włożyć dysk instalacyjny Windowsa i z linii poleceń, za pomocą komendy bootrec /fixmbr zainstalować w MBR bootloader dla systemu Windows\n',
             answer: false
           },
           {
             sentence:
-              "Ustawić prawa uruchamiania dla skryptu /etc/grub.d/30_os-prober oraz uruchomić update-grub\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "Zaznacz, które z podanych plików w systemach z rodziny Linux zawierają informacje o systemach, które mają zostać automatycznie zamontowane przy uruchomieniu systemu operacyjnego.\n",
-        answers: [
-          {
-            sentence: "/boot/grub/grub.cfg\n",
-            answer: false
-          },
-          {
-            sentence: "/etc/default/grub\n",
-            answer: false
-          },
-          {
-            sentence: "/etc/mtab\n",
-            answer: false
-          },
-          {
-            sentence: "/etc/fstab\n",
+              'Ustawić prawa uruchamiania dla skryptu /etc/grub.d/30_os-prober oraz uruchomić update-grub\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Wskaż wszystkie poprawne odpowiedzi dotyczące bootmanagera GRUB2\n",
+          'Zaznacz, które z podanych plików w systemach z rodziny Linux zawierają informacje o systemach, które mają zostać automatycznie zamontowane przy uruchomieniu systemu operacyjnego.\n',
         answers: [
           {
-            sentence:
-              "Skrypty konfiguracyjne znajdujące się w katalogu /etc/grub.d/ uruchamiane są w momencie wywołania grub-update\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Nie wymaga aktualizowania pliku /etc/boot/grub.cfg po wprowadzeniu zmian do pliku konfiguracyjnego /etc/default/grub - zawartość tego pliku odczytywana jest na bieżąco w momencie uruchamiania systemu.\n",
+            sentence: '/boot/grub/grub.cfg\n',
             answer: false
           },
           {
-            sentence:
-              "Jest domyślnym managerem bootowania systemu Linux Ubuntu od dystrybucji 9.10\n",
-            answer: true
+            sentence: '/etc/default/grub\n',
+            answer: false
           },
           {
-            sentence:
-              "Plik /boot/grub/grub.cfg jest jednym z najistotniejszych plików konfiguracyjnych managera GRUB2\n",
+            sentence: '/etc/mtab\n',
+            answer: false
+          },
+          {
+            sentence: '/etc/fstab\n',
             answer: true
           }
         ]
       },
       {
-        question: "Program fdisk\n",
+        question:
+          'Wskaż wszystkie poprawne odpowiedzi dotyczące bootmanagera GRUB2\n',
         answers: [
           {
-            sentence: "Pozwala na sformatowanie wybranej partycji\n",
+            sentence:
+              'Skrypty konfiguracyjne znajdujące się w katalogu /etc/grub.d/ uruchamiane są w momencie wywołania grub-update\n',
             answer: true
           },
           {
             sentence:
-              "Wywołany z parametrem -i wyświetla tablice partycji dla podanych urządzeń\n",
-            answer: true
-          },
-          {
-            sentence: "Pozwala na obsługę tablicy partycji systemu linux\n",
+              'Nie wymaga aktualizowania pliku /etc/boot/grub.cfg po wprowadzeniu zmian do pliku konfiguracyjnego /etc/default/grub - zawartość tego pliku odczytywana jest na bieżąco w momencie uruchamiania systemu.\n',
             answer: false
           },
           {
             sentence:
-              "Zmiany wprowadzone za pomocą tego programu automatycznie modyfikują zawartość plików /etx/fstab i /etc/mtab\n",
+              'Jest domyślnym managerem bootowania systemu Linux Ubuntu od dystrybucji 9.10\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Plik /boot/grub/grub.cfg jest jednym z najistotniejszych plików konfiguracyjnych managera GRUB2\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Program fdisk\n',
+        answers: [
+          {
+            sentence: 'Pozwala na sformatowanie wybranej partycji\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Wywołany z parametrem -i wyświetla tablice partycji dla podanych urządzeń\n',
+            answer: true
+          },
+          {
+            sentence: 'Pozwala na obsługę tablicy partycji systemu linux\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Zmiany wprowadzone za pomocą tego programu automatycznie modyfikują zawartość plików /etx/fstab i /etc/mtab\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Jeżeli nie chcemy, aby konfiguracja zdefiniowana w pewnym skrypcie konfiguracyjnym GRUBA znajdującym się w katalogu /etc/grub.d/ była uwzględniona po wykonaniu polecenia update-grub, należy:\n",
+          'Jeżeli nie chcemy, aby konfiguracja zdefiniowana w pewnym skrypcie konfiguracyjnym GRUBA znajdującym się w katalogu /etc/grub.d/ była uwzględniona po wykonaniu polecenia update-grub, należy:\n',
         answers: [
           {
-            sentence: "Zabrać temu skryptowi uprawnienia zapisu\n",
+            sentence: 'Zabrać temu skryptowi uprawnienia zapisu\n',
             answer: false
           },
           {
             sentence:
-              "Wprowadzić odpowiednie zmiany w pliku /etc/default/grub\n",
+              'Wprowadzić odpowiednie zmiany w pliku /etc/default/grub\n',
             answer: false
           },
           {
-            sentence: "Zabrać temu skryptowi uprawnienia odczytu\n",
+            sentence: 'Zabrać temu skryptowi uprawnienia odczytu\n',
             answer: false
           },
           {
-            sentence: "Zabrać temu skryptowi uprawnienia wykonywalności\n",
+            sentence: 'Zabrać temu skryptowi uprawnienia wykonywalności\n',
             answer: true
           }
         ]
       },
       {
-        question: "Plik /etc/fstab zawiera informacje o:\n",
+        question: 'Plik /etc/fstab zawiera informacje o:\n',
         answers: [
           {
             sentence:
-              "systemach plików montowanych podczas uruchomienia systemu\n",
+              'systemach plików montowanych podczas uruchomienia systemu\n',
             answer: true
           },
           {
-            sentence: "aktualnie zamontowanych systemach plików\n",
+            sentence: 'aktualnie zamontowanych systemach plików\n',
             answer: false
           },
           {
-            sentence: "tablicach partycji na aktualnie podłączonych dyskach\n",
+            sentence: 'tablicach partycji na aktualnie podłączonych dyskach\n',
             answer: false
           },
           {
             sentence:
-              "mapowaniu identyfikatorów UUID na oznaczenia linuksowe (sda, sdb, itd.)\n",
+              'mapowaniu identyfikatorów UUID na oznaczenia linuksowe (sda, sdb, itd.)\n',
             answer: false
           }
         ]
       },
       {
-        question: "Wskaż prawdziwe zdania:\n",
+        question: 'Wskaż prawdziwe zdania:\n',
         answers: [
           {
             sentence:
-              "Plik /boot.grub/grub.cfg jest generowany automatycznie na podstawie skryptów z katalogu /etc/grub.d/\n",
+              'Plik /boot.grub/grub.cfg jest generowany automatycznie na podstawie skryptów z katalogu /etc/grub.d/\n',
             answer: true
           },
           {
             sentence:
-              "Pod Windowsem możliwe jest odczytywanie partycji ext2/ext3 za pomocą dodatkowego oprogramowania\n",
+              'Pod Windowsem możliwe jest odczytywanie partycji ext2/ext3 za pomocą dodatkowego oprogramowania\n',
             answer: true
           },
           {
             sentence:
-              "Pod Linuksem jest możliwość obsługi partycji NTFS, ale jedynie w trybie do odczytu\n",
+              'Pod Linuksem jest możliwość obsługi partycji NTFS, ale jedynie w trybie do odczytu\n',
             answer: false
           },
           {
             sentence:
-              "GRUB jest w stanie uruchamiać jedynie Linuksa i Windowsa\n",
+              'GRUB jest w stanie uruchamiać jedynie Linuksa i Windowsa\n',
             answer: false
           }
         ]
       },
       {
-        question: "Domyślnie skrypt /etc/grub.d/30_os-prober\n",
+        question: 'Domyślnie skrypt /etc/grub.d/30_os-prober\n',
         answers: [
           {
-            sentence: "ustawia tło, kolory tekstu, motyw graficzny\n",
+            sentence: 'ustawia tło, kolory tekstu, motyw graficzny\n',
             answer: false
           },
           {
-            sentence: "lokalizuje jądra hurd\n",
+            sentence: 'lokalizuje jądra hurd\n',
             answer: false
           },
           {
-            sentence: "lokalizuje jądro Linuksa\n",
+            sentence: 'lokalizuje jądro Linuksa\n',
             answer: false
           },
           {
             sentence:
-              "wyszukuje w każdej partycji systemów operacyjnych i integruje je w startowym menu\n",
+              'wyszukuje w każdej partycji systemów operacyjnych i integruje je w startowym menu\n',
             answer: true
           }
         ]
       },
       {
-        question: "Plik /etc/mtab przechowuje informacje o:\n",
+        question: 'Plik /etc/mtab przechowuje informacje o:\n',
         answers: [
           {
-            sentence: "Systemach plików montowanych przy starcie systemu\n",
+            sentence: 'Systemach plików montowanych przy starcie systemu\n',
             answer: false
           },
           {
-            sentence: "Aktualnie zamontowanych systemach plików\n",
+            sentence: 'Aktualnie zamontowanych systemach plików\n',
             answer: true
           },
           {
             sentence:
-              "Systemach plików oczekujących na zamontowanie w systemie\n",
+              'Systemach plików oczekujących na zamontowanie w systemie\n',
             answer: false
           },
           {
             sentence:
-              "Systemach plików, które z jakiś powodów nie mogły zostać zamontowane i pojawić się tym samym pliku /etc/fstab\n",
+              'Systemach plików, które z jakiś powodów nie mogły zostać zamontowane i pojawić się tym samym pliku /etc/fstab\n',
             answer: false
           }
         ]
@@ -3447,71 +3447,71 @@ const data: IModule[] = [
         answers: [
           {
             sentence:
-              "wykonania standardowego skryptu 30_os-prober, a następnie wykonania polecenia update-grub\n",
+              'wykonania standardowego skryptu 30_os-prober, a następnie wykonania polecenia update-grub\n',
             answer: true
           },
           {
             sentence:
-              "stworzenia własnego skryptu w katalogu /etc/grub.d/, a następnie wykonania polecenia update-grub\n",
+              'stworzenia własnego skryptu w katalogu /etc/grub.d/, a następnie wykonania polecenia update-grub\n',
             answer: true
           },
           {
             sentence:
-              "dodania odpowiedniego wpisu do pliku device.map, a następnie wykonania polecenia update-grub\n",
+              'dodania odpowiedniego wpisu do pliku device.map, a następnie wykonania polecenia update-grub\n',
             answer: false
           },
           {
             sentence:
-              "dodania odpowiedniego wpisu do pliku 40_custom, a następnie wykonania polecenia update-grub\n",
+              'dodania odpowiedniego wpisu do pliku 40_custom, a następnie wykonania polecenia update-grub\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Wskaż wszystkie poprawne zdania odnoścnie pliku device.map\n",
+          'Wskaż wszystkie poprawne zdania odnoścnie pliku device.map\n',
         answers: [
           {
             sentence:
-              "Ręczna zmiana pliku device.map wymaga aktualizacji konfiguracji GRUBa\n",
+              'Ręczna zmiana pliku device.map wymaga aktualizacji konfiguracji GRUBa\n',
             answer: true
           },
           {
             sentence:
-              "Zawiera zmapowane nazwy urządzeń GRUBa na nazwy Linuxowe\n",
+              'Zawiera zmapowane nazwy urządzeń GRUBa na nazwy Linuxowe\n',
             answer: true
           },
           {
             sentence:
-              "Po każdym restarcie systemu zapisywana jest do niego aktualna struktura dysków.\n",
+              'Po każdym restarcie systemu zapisywana jest do niego aktualna struktura dysków.\n',
             answer: false
           },
           {
-            sentence: "W wersji bootloadera GRUB2 plik ten nie istnieje\n",
+            sentence: 'W wersji bootloadera GRUB2 plik ten nie istnieje\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Parametr ro w opcjach montowania pliku etc/fstab oznacza, że:\n",
+          'Parametr ro w opcjach montowania pliku etc/fstab oznacza, że:\n',
         answers: [
           {
-            sentence: "możliwy jest zapis i odczyt na danym systemie plików\n",
+            sentence: 'możliwy jest zapis i odczyt na danym systemie plików\n',
             answer: false
           },
           {
             sentence:
-              "system plików jest zamontowany w trybie tylko do odczytu\n",
+              'system plików jest zamontowany w trybie tylko do odczytu\n',
             answer: true
           },
           {
-            sentence: "urządzenie może być montowane przez użytkownika\n",
+            sentence: 'urządzenie może być montowane przez użytkownika\n',
             answer: false
           },
           {
             sentence:
-              "system plików może być montowany przez każdego użytkownika\n",
+              'system plików może być montowany przez każdego użytkownika\n',
             answer: false
           }
         ]
@@ -3521,120 +3521,120 @@ const data: IModule[] = [
           'Dodajemy własny wpis do menu GRUB2. Które z poniższych wartości parametru "setroot" bloku menuentry są poprawne?\n',
         answers: [
           {
-            sentence: "setroot = (hda,1)\n",
+            sentence: 'setroot = (hda,1)\n',
             answer: false
           },
           {
-            sentence: "setroot = (hd0, msdos1)\n",
+            sentence: 'setroot = (hd0, msdos1)\n',
             answer: true
           },
           {
-            sentence: "setroot = (sda,1)\n",
+            sentence: 'setroot = (sda,1)\n',
             answer: false
           },
           {
-            sentence: "setroot = (hd0,1)\n",
+            sentence: 'setroot = (hd0,1)\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Informacje na temat wszystkich systemów plików, które mają być montowane podczas uruchamiania systemu znajdują się w pliku:\n",
+          'Informacje na temat wszystkich systemów plików, które mają być montowane podczas uruchamiania systemu znajdują się w pliku:\n',
         answers: [
           {
-            sentence: "/mnt\n",
+            sentence: '/mnt\n',
             answer: false
           },
           {
-            sentence: "/etc/fstab\n",
+            sentence: '/etc/fstab\n',
             answer: true
           },
           {
-            sentence: "/etc/default/fstab\n",
+            sentence: '/etc/default/fstab\n',
             answer: false
           },
           {
-            sentence: "/etc/mtab\n",
+            sentence: '/etc/mtab\n',
             answer: false
           }
         ]
       },
       {
-        question: "Plik /boot/grub/grub.cfg zawiera:\n",
+        question: 'Plik /boot/grub/grub.cfg zawiera:\n',
         answers: [
           {
-            sentence: "tryb, w jakim ma się ładować system.\n",
+            sentence: 'tryb, w jakim ma się ładować system.\n',
             answer: true
           },
           {
             sentence:
-              "liste systemów operacyjnych, które można uruchomić za pomocą GRUBa\n",
+              'liste systemów operacyjnych, które można uruchomić za pomocą GRUBa\n',
             answer: true
           },
           {
             sentence:
-              "informację o tym, który system jest systemem domyślnym.\n",
+              'informację o tym, który system jest systemem domyślnym.\n',
             answer: true
           },
           {
             sentence:
-              "czas oczekiwania na wybór systemu przez użytkownika, po upływie którego uruchomi się domyślny system.\n",
+              'czas oczekiwania na wybór systemu przez użytkownika, po upływie którego uruchomi się domyślny system.\n',
             answer: true
           }
         ]
       },
       {
-        question: "Plik /boot/grub/grub.cfg:\n",
+        question: 'Plik /boot/grub/grub.cfg:\n',
         answers: [
           {
-            sentence: "Aktualizowany jest poleceniem update-grub\n",
+            sentence: 'Aktualizowany jest poleceniem update-grub\n',
             answer: true
           },
           {
             sentence:
-              "Zawiera definicje systemów operacyjnych możliwych do uruchomienia przez program rozruchowy\n",
+              'Zawiera definicje systemów operacyjnych możliwych do uruchomienia przez program rozruchowy\n',
             answer: true
           },
           {
-            sentence: "Nie powinien być ręcznie modyfikowany\n",
+            sentence: 'Nie powinien być ręcznie modyfikowany\n',
             answer: true
           },
           {
             sentence:
-              "Jest tworzony tylko na podstawie konfiguracji zdefiniowanej w /etc/default/grub\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question:
-          "Jakie informacje na temat zamontowanych systemów plików znajdują się w /etc/fstab?\n",
-        answers: [
-          {
-            sentence: "Data zamontowania urządzenia.\n",
-            answer: false
-          },
-          {
-            sentence: "Miejsce zamontowania systemu plików\n",
-            answer: true
-          },
-          {
-            sentence: "Typ systemu plików.\n",
-            answer: true
-          },
-          {
-            sentence: "Wielkość partycji.\n",
+              'Jest tworzony tylko na podstawie konfiguracji zdefiniowanej w /etc/default/grub\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Zaznacz zdania poprawne dotyczące odwoływania się do systemów plików w systemie Linux.\n",
+          'Jakie informacje na temat zamontowanych systemów plików znajdują się w /etc/fstab?\n',
         answers: [
           {
-            sentence: "/dev/fd0 - oznacza dyskietkę\n",
+            sentence: 'Data zamontowania urządzenia.\n',
+            answer: false
+          },
+          {
+            sentence: 'Miejsce zamontowania systemu plików\n',
+            answer: true
+          },
+          {
+            sentence: 'Typ systemu plików.\n',
+            answer: true
+          },
+          {
+            sentence: 'Wielkość partycji.\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question:
+          'Zaznacz zdania poprawne dotyczące odwoływania się do systemów plików w systemie Linux.\n',
+        answers: [
+          {
+            sentence: '/dev/fd0 - oznacza dyskietkę\n',
             answer: true
           },
           {
@@ -3644,345 +3644,345 @@ const data: IModule[] = [
           },
           {
             sentence:
-              "/dev/sda1 - oznacza pierwszą partycję pierwszego dysku SCSII lub drugą partycję na kontrolerze SATA1.\n",
+              '/dev/sda1 - oznacza pierwszą partycję pierwszego dysku SCSII lub drugą partycję na kontrolerze SATA1.\n',
             answer: false
           },
           {
             sentence:
-              "/dev/ssd1 - oznacza pierwszą partycję dysku stworzonego w oparciu o technologię SSD\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Plik /etc/fstab:\n",
-        answers: [
-          {
-            sentence: "może być modyfikowany przez administratora systemu\n",
-            answer: true
-          },
-          {
-            sentence:
-              "zawiera informacje o aktualnie zalogowanych użytkownikach\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Jest odczytywany w trakcie uruchamiania systemu operacyjnego\n",
-            answer: true
-          },
-          {
-            sentence:
-              "zawiera informacje o systemach plików, jakie mają być montowane w trakcie uruchamiania systemu.\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "Na jednej maszynie zainstalowane są systemy Windows 7 oraz Ubuntu Linux:\n",
-        answers: [
-          {
-            sentence:
-              "W systemie Linux możemy zamontować partycję Windowsową jako katalog korzystając z polecenia mnt.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "W systemie Windows dostęp do partycji Linuxowych konfigurowany jest automatycznie.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "W pliku /etc/fstab znajduje się przyporządkowanie partycji ich punktom montowania\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Przy starcie systemu Linux partycje Windowsowe są montowane automatycznie, jeśli dodamy odpowiedni wpis do pliku /etc/fstab\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Plik o domyślnej nazwie „/etc/grub.d/40_custom” służy do:\n",
-        answers: [
-          {
-            sentence: "Tworzenia własnych wpisów w menu bootloadera.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Zmiany czasu oczekiwania na wybór systemu przez użytkownika.\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Zaimportowania parametrów zdefiniowanych w pliku „/etc/default/grub”\n",
-            answer: false
-          },
-          {
-            sentence: "Ustawiania elementów wizualnych bootloadera.\n",
+              '/dev/ssd1 - oznacza pierwszą partycję dysku stworzonego w oparciu o technologię SSD\n',
             answer: false
           }
         ]
       },
       {
-        question:
-          "Informacje na temat wszystkich systemów plików, które mają być montowane podczas uruchamiania systemu znajdują się w pliku:\n",
+        question: 'Plik /etc/fstab:\n',
         answers: [
           {
-            sentence: "/etc/mtab\n",
+            sentence: 'może być modyfikowany przez administratora systemu\n',
+            answer: true
+          },
+          {
+            sentence:
+              'zawiera informacje o aktualnie zalogowanych użytkownikach\n',
             answer: false
           },
           {
-            sentence: "/etc/default/fstab\n",
-            answer: false
+            sentence:
+              'Jest odczytywany w trakcie uruchamiania systemu operacyjnego\n',
+            answer: true
           },
           {
-            sentence: "/mnt\n",
-            answer: false
-          },
-          {
-            sentence: "/etc/fstab\n",
+            sentence:
+              'zawiera informacje o systemach plików, jakie mają być montowane w trakcie uruchamiania systemu.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Aby zmienić ustawienia menu GRUB2 (np. zwiększyć czas oczekiwania na wybór systemu operacyjnego) POWINNO SIĘ:\n",
+          'Na jednej maszynie zainstalowane są systemy Windows 7 oraz Ubuntu Linux:\n',
         answers: [
           {
             sentence:
-              "w konsoli wpisać komendę: sudo update-grub z odpowiednim parametrem\n",
+              'W systemie Linux możemy zamontować partycję Windowsową jako katalog korzystając z polecenia mnt.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'W systemie Windows dostęp do partycji Linuxowych konfigurowany jest automatycznie.\n',
             answer: false
           },
           {
             sentence:
-              "wpisać odpowiednie polecenie w linii komend po uruchomieniu menu GRUB2\n",
-            answer: false
+              'W pliku /etc/fstab znajduje się przyporządkowanie partycji ich punktom montowania\n',
+            answer: true
           },
           {
-            sentence: "edytować plik konfiguracyjny /boot/grub/grub.cfg\n",
-            answer: false
-          },
-          {
-            sentence: "edytować odpowiedni skrypt z /etc/grub.d/\n",
+            sentence:
+              'Przy starcie systemu Linux partycje Windowsowe są montowane automatycznie, jeśli dodamy odpowiedni wpis do pliku /etc/fstab\n',
             answer: true
           }
         ]
       },
       {
-        question:
-          "Zaznacz prawdziwe zdania dotyczące partycji wymiany (SWAP) w systemie Linux:\n",
+        question: 'Plik o domyślnej nazwie „/etc/grub.d/40_custom” służy do:\n',
         answers: [
           {
-            sentence:
-              "Domyślnie jest na niej zapisywany zrzut pamięci RAM przy hibernacji\n",
+            sentence: 'Tworzenia własnych wpisów w menu bootloadera.\n',
             answer: true
           },
           {
             sentence:
-              "Można go aktywować i dezaktywować podczas działania systemu\n",
-            answer: true
-          },
-          {
-            sentence: "Jest zamontowana w katalogu /swap\n",
-            answer: false
-          },
-          {
-            sentence: "Jest konieczna do działania systemu Linux\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question:
-          "Aby dodać system do listy rozruchowej w programie GRUB2 należy:\n",
-        answers: [
-          {
-            sentence: "Ręcznie zaktualizować plik /boot/grub/grub.cfg\n",
-            answer: false
-          },
-          {
-            sentence: "Dodać odpowiedni skrypt do katalogu /etc/grub.d/\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Program GRUB2 posiada interfejs graficzny i każdą zmianę należy wykonywać tylko i wyłącznie w środowisku graficznym.\n",
+              'Zmiany czasu oczekiwania na wybór systemu przez użytkownika.\n',
             answer: false
           },
           {
             sentence:
-              "Zaktualizować plik /boot/grub/grub.cfg poleceniem update-grub\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "Jeżeli do plików lub skryptów konfiguracyjnych managera bootwania GRUB wprowadzimy jakieś zmiany, musimy zaktualizować plik grub.cfg za pomocą polecenia:\n",
-        answers: [
-          {
-            sentence: "new-grub\n",
+              'Zaimportowania parametrów zdefiniowanych w pliku „/etc/default/grub”\n',
             answer: false
           },
           {
-            sentence: "update-grub\n",
-            answer: true
-          },
-          {
-            sentence: "grub-update\n",
-            answer: false
-          },
-          {
-            sentence: "grub-mkdevicemap\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Program Grub pozwala na:\n",
-        answers: [
-          {
-            sentence: "Wybór systemu operacyjnego, który będzie uruchomiony.\n",
-            answer: true
-          },
-          {
-            sentence: "Rekompilację jądra Linux\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Automatyczne uruchomienie wybranego systemu z pominięciem wyświetlania ekranu wyboru.\n",
-            answer: true
-          },
-          {
-            sentence: "Zarządzanie dyskami i ich partycjonowanie\n",
+            sentence: 'Ustawiania elementów wizualnych bootloadera.\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "W jaki sposób dodajemy informacje o innych systemach operacyjnych do GRUB2?\n",
+          'Informacje na temat wszystkich systemów plików, które mają być montowane podczas uruchamiania systemu znajdują się w pliku:\n',
         answers: [
           {
-            sentence:
-              "GRUB2 sam wykryje wszystkie systemy operacyjne bez konfiguracji\n",
+            sentence: '/etc/mtab\n',
             answer: false
           },
           {
-            sentence:
-              "Można nadać prawa wykonywania skryptowi:/etc/grub.d/30_os-prober. Grub2 podczas aktualizacji wyszuka dostępne systemy operacyjne na dyskach twardych\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Należy wykonać polecenie grub2-add-new-os z prawami użytkownika\n",
+            sentence: '/etc/default/fstab\n',
             answer: false
           },
           {
-            sentence:
-              "Do pliku /etc/grub.d/40_custom dodajemy wpis o systemie, następnie uruchamiamy polecenie sudo update-grub2\n",
+            sentence: '/mnt\n',
+            answer: false
+          },
+          {
+            sentence: '/etc/fstab\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Wskaż poprawne nazewnictwa partycji i dysków w GRUB z odpowiednim dla niego wyjaśnieniem:\n",
+          'Aby zmienić ustawienia menu GRUB2 (np. zwiększyć czas oczekiwania na wybór systemu operacyjnego) POWINNO SIĘ:\n',
         answers: [
           {
-            sentence: "(hd0,0) – pierwsza partycja na pierwszym dysku\n",
+            sentence:
+              'w konsoli wpisać komendę: sudo update-grub z odpowiednim parametrem\n',
             answer: false
           },
           {
             sentence:
-              "(hd0,msdos5) oznacza pierwszą partycję rozszerzoną (extended)\n",
+              'wpisać odpowiednie polecenie w linii komend po uruchomieniu menu GRUB2\n',
+            answer: false
+          },
+          {
+            sentence: 'edytować plik konfiguracyjny /boot/grub/grub.cfg\n',
+            answer: false
+          },
+          {
+            sentence: 'edytować odpowiedni skrypt z /etc/grub.d/\n',
             answer: true
-          },
-          {
-            sentence: "(sda2,2) – trzecia partycja na drugim dysku\n",
-            answer: false
-          },
-          {
-            sentence: "(hd3,2) – trzecia partycja na drugim dysku\n",
-            answer: false
           }
         ]
       },
       {
-        question: "Zaznacz poprawne odpowiedzi dotyczące pliku /etc/fstab\n",
+        question:
+          'Zaznacz prawdziwe zdania dotyczące partycji wymiany (SWAP) w systemie Linux:\n',
         answers: [
           {
             sentence:
-              "jest automatycznie modyfikowany podczas użycia polecenia mount\n",
-            answer: false
-          },
-          {
-            sentence: "jest on odczytywany w trakcie uruchamiania systemu\n",
+              'Domyślnie jest na niej zapisywany zrzut pamięci RAM przy hibernacji\n',
             answer: true
           },
           {
             sentence:
-              "zawiera informacje na temat znajdujących się w systemie dysków twardych, ich partycji oraz punktów i parametrów montowania\n",
+              'Można go aktywować i dezaktywować podczas działania systemu\n',
             answer: true
           },
           {
-            sentence: "nie jest odczytywany w trakcie uruchamiania systemu\n",
+            sentence: 'Jest zamontowana w katalogu /swap\n',
+            answer: false
+          },
+          {
+            sentence: 'Jest konieczna do działania systemu Linux\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Mówiąc o wymianie danych między systemem Linux a system Windows prawdą jest, że:\n",
+          'Aby dodać system do listy rozruchowej w programie GRUB2 należy:\n',
         answers: [
           {
-            sentence:
-              "System Linux nie wymaga dodatkowego oprogramowania, aby uzyskać dostęp do partycji NTFS\n",
+            sentence: 'Ręcznie zaktualizować plik /boot/grub/grub.cfg\n',
+            answer: false
+          },
+          {
+            sentence: 'Dodać odpowiedni skrypt do katalogu /etc/grub.d/\n',
             answer: true
           },
           {
             sentence:
-              "W systemie Linux tylko root może zapisywać na partycji NTFS\n",
+              'Program GRUB2 posiada interfejs graficzny i każdą zmianę należy wykonywać tylko i wyłącznie w środowisku graficznym.\n',
             answer: false
           },
           {
             sentence:
-              "Dostępne oprogramowanie dla systemu Windows nie pozwala na modyfikowanie plików zapisanych na partycji Ext3\n",
+              'Zaktualizować plik /boot/grub/grub.cfg poleceniem update-grub\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Jeżeli do plików lub skryptów konfiguracyjnych managera bootwania GRUB wprowadzimy jakieś zmiany, musimy zaktualizować plik grub.cfg za pomocą polecenia:\n',
+        answers: [
+          {
+            sentence: 'new-grub\n',
             answer: false
           },
           {
-            sentence:
-              "System Windows nie wymaga dodatkowego oprogramowania, aby uzyskać dostęp do partycji Ext3\n",
+            sentence: 'update-grub\n',
+            answer: true
+          },
+          {
+            sentence: 'grub-update\n',
+            answer: false
+          },
+          {
+            sentence: 'grub-mkdevicemap\n',
             answer: false
           }
         ]
       },
       {
-        question: "Co znajduje się w katalogu /dev/disk/by-uuid ?\n",
+        question: 'Program Grub pozwala na:\n',
         answers: [
           {
-            sentence:
-              "Linki symboliczne do wszystkich partycji zamontowanych obecnie w systemie\n",
+            sentence: 'Wybór systemu operacyjnego, który będzie uruchomiony.\n',
             answer: true
           },
           {
-            sentence: "Nie ma takiego folderu\n",
+            sentence: 'Rekompilację jądra Linux\n',
             answer: false
           },
           {
             sentence:
-              "Linki symboliczne do wszystkich urządzeń fizycznych podłączonych do komputera\n",
+              'Automatyczne uruchomienie wybranego systemu z pominięciem wyświetlania ekranu wyboru.\n',
+            answer: true
+          },
+          {
+            sentence: 'Zarządzanie dyskami i ich partycjonowanie\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question:
+          'W jaki sposób dodajemy informacje o innych systemach operacyjnych do GRUB2?\n',
+        answers: [
+          {
+            sentence:
+              'GRUB2 sam wykryje wszystkie systemy operacyjne bez konfiguracji\n',
             answer: false
           },
           {
             sentence:
-              "Informacja na temat tego, jakie UUIDy zostały przypisane poszczególnym urządzeniom (partycjom) w systemie.\n",
+              'Można nadać prawa wykonywania skryptowi:/etc/grub.d/30_os-prober. Grub2 podczas aktualizacji wyszuka dostępne systemy operacyjne na dyskach twardych\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Należy wykonać polecenie grub2-add-new-os z prawami użytkownika\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Do pliku /etc/grub.d/40_custom dodajemy wpis o systemie, następnie uruchamiamy polecenie sudo update-grub2\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Wskaż poprawne nazewnictwa partycji i dysków w GRUB z odpowiednim dla niego wyjaśnieniem:\n',
+        answers: [
+          {
+            sentence: '(hd0,0) – pierwsza partycja na pierwszym dysku\n',
+            answer: false
+          },
+          {
+            sentence:
+              '(hd0,msdos5) oznacza pierwszą partycję rozszerzoną (extended)\n',
+            answer: true
+          },
+          {
+            sentence: '(sda2,2) – trzecia partycja na drugim dysku\n',
+            answer: false
+          },
+          {
+            sentence: '(hd3,2) – trzecia partycja na drugim dysku\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Zaznacz poprawne odpowiedzi dotyczące pliku /etc/fstab\n',
+        answers: [
+          {
+            sentence:
+              'jest automatycznie modyfikowany podczas użycia polecenia mount\n',
+            answer: false
+          },
+          {
+            sentence: 'jest on odczytywany w trakcie uruchamiania systemu\n',
+            answer: true
+          },
+          {
+            sentence:
+              'zawiera informacje na temat znajdujących się w systemie dysków twardych, ich partycji oraz punktów i parametrów montowania\n',
+            answer: true
+          },
+          {
+            sentence: 'nie jest odczytywany w trakcie uruchamiania systemu\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question:
+          'Mówiąc o wymianie danych między systemem Linux a system Windows prawdą jest, że:\n',
+        answers: [
+          {
+            sentence:
+              'System Linux nie wymaga dodatkowego oprogramowania, aby uzyskać dostęp do partycji NTFS\n',
+            answer: true
+          },
+          {
+            sentence:
+              'W systemie Linux tylko root może zapisywać na partycji NTFS\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Dostępne oprogramowanie dla systemu Windows nie pozwala na modyfikowanie plików zapisanych na partycji Ext3\n',
+            answer: false
+          },
+          {
+            sentence:
+              'System Windows nie wymaga dodatkowego oprogramowania, aby uzyskać dostęp do partycji Ext3\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Co znajduje się w katalogu /dev/disk/by-uuid ?\n',
+        answers: [
+          {
+            sentence:
+              'Linki symboliczne do wszystkich partycji zamontowanych obecnie w systemie\n',
+            answer: true
+          },
+          {
+            sentence: 'Nie ma takiego folderu\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Linki symboliczne do wszystkich urządzeń fizycznych podłączonych do komputera\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Informacja na temat tego, jakie UUIDy zostały przypisane poszczególnym urządzeniom (partycjom) w systemie.\n',
             answer: true
           }
         ]
@@ -3992,40 +3992,40 @@ const data: IModule[] = [
           'Wskaż poprawne zdania na temat oznaczenia dysku /dev/ssd3"\n',
         answers: [
           {
-            sentence: "Jest to czwarta partycja czwartego dysku SATA\n",
+            sentence: 'Jest to czwarta partycja czwartego dysku SATA\n',
             answer: false
           },
           {
-            sentence: "Jest to czwarta partycja trzeciego dysku SATA\n",
+            sentence: 'Jest to czwarta partycja trzeciego dysku SATA\n',
             answer: false
           },
           {
-            sentence: "Jest to trzecia partycja czwartego dysku SATA\n",
+            sentence: 'Jest to trzecia partycja czwartego dysku SATA\n',
             answer: true
           },
           {
-            sentence: "Oznaczenie nie jest poprawne\n",
+            sentence: 'Oznaczenie nie jest poprawne\n',
             answer: false
           }
         ]
       },
       {
-        question: "Plikiem konfiguracyjnym managera bootowania GRUB2 jest :\n",
+        question: 'Plikiem konfiguracyjnym managera bootowania GRUB2 jest :\n',
         answers: [
           {
-            sentence: "/boot/grub/grub.cfg\n",
+            sentence: '/boot/grub/grub.cfg\n',
             answer: true
           },
           {
-            sentence: "/boot/grub/grub.exe\n",
+            sentence: '/boot/grub/grub.exe\n',
             answer: false
           },
           {
-            sentence: "/boot/grub/grub.txt\n",
+            sentence: '/boot/grub/grub.txt\n',
             answer: false
           },
           {
-            sentence: "/boot/grub/grub.xml",
+            sentence: '/boot/grub/grub.xml',
             answer: false
           }
         ]
@@ -4033,52 +4033,52 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "linux",
-    name: "Linux Kernel",
+    category: 'linux',
+    name: 'Linux Kernel',
     questions: [
       {
-        question: "Zaznacz wszystkie poprawne odpowiedzi:\n",
+        question: 'Zaznacz wszystkie poprawne odpowiedzi:\n',
         answers: [
           {
-            sentence: "Jądro Linuxa jest mikrojądrem (microkernel)\n",
+            sentence: 'Jądro Linuxa jest mikrojądrem (microkernel)\n',
             answer: false
           },
           {
-            sentence: "Jądro Linuxa jest jądrem typu hybrydowego (hybrid)\n",
+            sentence: 'Jądro Linuxa jest jądrem typu hybrydowego (hybrid)\n',
             answer: false
           },
           {
             sentence:
-              "Jądro Linuxa jest jądrem typu monolitycznego (monolythic)\n",
+              'Jądro Linuxa jest jądrem typu monolitycznego (monolythic)\n',
             answer: true
           },
           {
-            sentence: "Jądro Linuxa jest napisane w C++\n",
+            sentence: 'Jądro Linuxa jest napisane w C++\n',
             answer: false
           }
         ]
       },
       {
-        question: "Zaznacz wszystkie poprawne odpowiedzi:\n",
+        question: 'Zaznacz wszystkie poprawne odpowiedzi:\n',
         answers: [
           {
             sentence:
-              "Jądro Linuxa wykorzystuje bibliotekę libc (dzięki temu można wykorzystywać np. funkcję printf()\n",
+              'Jądro Linuxa wykorzystuje bibliotekę libc (dzięki temu można wykorzystywać np. funkcję printf()\n',
             answer: false
           },
           {
-            sentence: "Jądro Linuxa jest napisane w C\n",
+            sentence: 'Jądro Linuxa jest napisane w C\n',
             answer: true
           },
           {
             sentence:
-              "Jądro Linuxa zarządza pamięcią operacyjną (przydziały/zwolnienia).\n",
+              'Jądro Linuxa zarządza pamięcią operacyjną (przydziały/zwolnienia).\n',
             answer: true
-          },
+          }
         ]
       },
       {
-        question: "Zaznacz wszystkie poprawne odpowiedzi:\n",
+        question: 'Zaznacz wszystkie poprawne odpowiedzi:\n',
         answers: [
           {
             sentence:
@@ -4092,18 +4092,18 @@ const data: IModule[] = [
           },
           {
             sentence:
-              "Do jądra systemu operacyjnego Linux można, w czasie jego pracy, dołączać różnorodną funkcjonalność (np. sterowniki urządzenia)\n",
+              'Do jądra systemu operacyjnego Linux można, w czasie jego pracy, dołączać różnorodną funkcjonalność (np. sterowniki urządzenia)\n',
             answer: true
           },
           {
             sentence:
-              "Do załadowania modułu w jądrze można wykorzystać polecenia rmmod oraz modprobe -r\n",
+              'Do załadowania modułu w jądrze można wykorzystać polecenia rmmod oraz modprobe -r\n',
             answer: false
           }
         ]
       },
       {
-        question: "Zaznacz wszystkie poprawne odpowiedzi:\n",
+        question: 'Zaznacz wszystkie poprawne odpowiedzi:\n',
         answers: [
           {
             sentence:
@@ -4117,22 +4117,22 @@ const data: IModule[] = [
           },
           {
             sentence:
-              "Do usunięcia modułu z jądra można wykorzystać polecenie insmod\n",
+              'Do usunięcia modułu z jądra można wykorzystać polecenie insmod\n',
             answer: false
           },
           {
             sentence:
-              "Do sprawdzenia jakie moduły załadowane są do jądra można wykorzystać polecenie lsmod\n",
+              'Do sprawdzenia jakie moduły załadowane są do jądra można wykorzystać polecenie lsmod\n',
             answer: true
           }
         ]
       },
       {
-        question: "Zaznacz wszystkie poprawne odpowiedzi:\n",
+        question: 'Zaznacz wszystkie poprawne odpowiedzi:\n',
         answers: [
           {
             sentence:
-              "Do załadowania modułu w jądrze można wykorzystać polecenie modprobe oraz insmod\n",
+              'Do załadowania modułu w jądrze można wykorzystać polecenie modprobe oraz insmod\n',
             answer: true
           },
           {
@@ -4147,173 +4147,173 @@ const data: IModule[] = [
           },
           {
             sentence:
-              "Do usunięcia modułu z jądra można wykorzystać polecenia modprobe oraz mmod\n",
+              'Do usunięcia modułu z jądra można wykorzystać polecenia modprobe oraz mmod\n',
             answer: true
           }
         ]
       },
       {
-        question: "Zaznacz wszystkie poprawne odpowiedzi:\n",
+        question: 'Zaznacz wszystkie poprawne odpowiedzi:\n',
         answers: [
           {
             sentence:
-              "Katalogi /proc, /sys oraz polecenie sysctl pozwalają na kontrolę pracy systemu\n",
+              'Katalogi /proc, /sys oraz polecenie sysctl pozwalają na kontrolę pracy systemu\n',
             answer: true
           },
           {
             sentence:
-              "Z jądra systemu operacyjnego Linux, w trakcie jego pracy, można usuwać różnorodną funkcjonalność (na przykład sterowniki urządzenia)\n",
+              'Z jądra systemu operacyjnego Linux, w trakcie jego pracy, można usuwać różnorodną funkcjonalność (na przykład sterowniki urządzenia)\n',
             answer: true
           },
           {
             sentence:
-              "Do kontroli pracy systemu można wykorzystać polecenia sysctl oraz zawartość katalogu /proc\n",
+              'Do kontroli pracy systemu można wykorzystać polecenia sysctl oraz zawartość katalogu /proc\n',
             answer: true
           },
           {
             sentence:
-              "Do sprawdzenia jakie moduły załadowane są do jądra można wykorzystać polecenie lsmod\n",
+              'Do sprawdzenia jakie moduły załadowane są do jądra można wykorzystać polecenie lsmod\n',
             answer: true
           }
         ]
       },
       {
-        question: "Zaznacz wszystkie poprawne odpowiedzi:\n",
+        question: 'Zaznacz wszystkie poprawne odpowiedzi:\n',
         answers: [
           {
             sentence:
-              "Do załadowania modułu w jądrze można wykorzystać polecenia modprobe oraz insmod\n",
+              'Do załadowania modułu w jądrze można wykorzystać polecenia modprobe oraz insmod\n',
             answer: true
           },
           {
             sentence:
-              "Do kontroli pracy systemu można wykorzystać polecenia sysctl oraz zawartość katalogu /var\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question:
-          "Zaznacz wszystkie funkcje realizowane przez jądro monolityczne (na przykład jądro Linuxa)\n",
-        answers: [
-          {
-            sentence: "Szeregowanie procesów\n",
-            answer: true
-          },
-          {
-            sentence: "Zarządzanie pamięcią (zwalnianie/przydzielanie)\n",
-            answer: true
-          },
-          {
-            sentence: "Szeregowanie I/O\n",
-            answer: true
-          },
-          {
-            sentence: "Obsługa systemu plików\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Jakie operacje można wykonać za pomocą polecenia sysctl?\n",
-        answers: [
-          {
-            sentence: "Ustawić wartości dla parametrów jądra\n",
-            answer: true
-          },
-          {
-            sentence: "Ustawić wartości dla parametrów systemu plików\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Wypisać wszystkie parametry jądra w trakcie działania systemu\n",
-            answer: true
-          },
-          {
-            sentence: "Wypisać wszystkie parametry systemu plików\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Polecenie sysctl:\n",
-        answers: [
-          {
-            sentence: "Służy do zmiany hasła użytkownika systemu\n",
-            answer: false
-          },
-          {
-            sentence: "Umożliwia zmianę nazwy użytkownika\n",
-            answer: false
-          },
-          {
-            sentence: "Wyświetla listę użytkowników w systemie\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Pozwala na zmianę parametrów jądra systemu w trakcie działania systemu operacyjnego\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Polecenie sysctl:\n",
-        answers: [
-          {
-            sentence:
-              "To komenda pozwalająca na konfiguracje parametrów jądra systemu Linux.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Wykonuje konfigurację jaką można także wykonać w wirtualnym systemie plików /proc/sys.\n",
-            answer: true
-          },
-          {
-            sentence:
-              "Pozwala na rekompilację jądra z uwzględnieniem nowych plików konfiguracyjnych.\n",
-            answer: false
-          },
-          {
-            sentence: "Wyświetla wszystkie procesy w systemie.\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question: "Wskaż prawdziwe zdania:\n",
-        answers: [
-          {
-            sentence:
-              "przy overcommit_memory ustawionym na 2 system zawsze przydzieli aplikacjom dokładnie 100% pamięci RAM\n",
-            answer: false
-          },
-          {
-            sentence:
-              "przy overcommit_memory ustawionym na 1 możliwe jest uzyskanie za pomocą malloc() ilości pamięci wirtualnej większej niż objętość pamięci fizycznej + swap\n",
-            answer: true
-          },
-          {
-            sentence:
-              "przy overcommit_memory ustawionym na 2 ilość pamięci przydzielonej aplikacjom zależy od overcommit_ratio\n",
-            answer: true
-          },
-          {
-            sentence:
-              "kernel nigdy nie przydziela więcej pamięci niż jest dostępne fizycznie\n",
+              'Do kontroli pracy systemu można wykorzystać polecenia sysctl oraz zawartość katalogu /var\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Sterowanie jądrem systemu Linux. Zaznacz poprawne odpowiedzi:\n",
+          'Zaznacz wszystkie funkcje realizowane przez jądro monolityczne (na przykład jądro Linuxa)\n',
+        answers: [
+          {
+            sentence: 'Szeregowanie procesów\n',
+            answer: true
+          },
+          {
+            sentence: 'Zarządzanie pamięcią (zwalnianie/przydzielanie)\n',
+            answer: true
+          },
+          {
+            sentence: 'Szeregowanie I/O\n',
+            answer: true
+          },
+          {
+            sentence: 'Obsługa systemu plików\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Jakie operacje można wykonać za pomocą polecenia sysctl?\n',
+        answers: [
+          {
+            sentence: 'Ustawić wartości dla parametrów jądra\n',
+            answer: true
+          },
+          {
+            sentence: 'Ustawić wartości dla parametrów systemu plików\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Wypisać wszystkie parametry jądra w trakcie działania systemu\n',
+            answer: true
+          },
+          {
+            sentence: 'Wypisać wszystkie parametry systemu plików\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Polecenie sysctl:\n',
+        answers: [
+          {
+            sentence: 'Służy do zmiany hasła użytkownika systemu\n',
+            answer: false
+          },
+          {
+            sentence: 'Umożliwia zmianę nazwy użytkownika\n',
+            answer: false
+          },
+          {
+            sentence: 'Wyświetla listę użytkowników w systemie\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Pozwala na zmianę parametrów jądra systemu w trakcie działania systemu operacyjnego\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Polecenie sysctl:\n',
         answers: [
           {
             sentence:
-              "Nawet najdrobniejsza zmiana w pracy jądra systemu wymaga jego ponownej kompilacji.\n",
+              'To komenda pozwalająca na konfiguracje parametrów jądra systemu Linux.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Wykonuje konfigurację jaką można także wykonać w wirtualnym systemie plików /proc/sys.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Pozwala na rekompilację jądra z uwzględnieniem nowych plików konfiguracyjnych.\n',
+            answer: false
+          },
+          {
+            sentence: 'Wyświetla wszystkie procesy w systemie.\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Wskaż prawdziwe zdania:\n',
+        answers: [
+          {
+            sentence:
+              'przy overcommit_memory ustawionym na 2 system zawsze przydzieli aplikacjom dokładnie 100% pamięci RAM\n',
+            answer: false
+          },
+          {
+            sentence:
+              'przy overcommit_memory ustawionym na 1 możliwe jest uzyskanie za pomocą malloc() ilości pamięci wirtualnej większej niż objętość pamięci fizycznej + swap\n',
+            answer: true
+          },
+          {
+            sentence:
+              'przy overcommit_memory ustawionym na 2 ilość pamięci przydzielonej aplikacjom zależy od overcommit_ratio\n',
+            answer: true
+          },
+          {
+            sentence:
+              'kernel nigdy nie przydziela więcej pamięci niż jest dostępne fizycznie\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question:
+          'Sterowanie jądrem systemu Linux. Zaznacz poprawne odpowiedzi:\n',
+        answers: [
+          {
+            sentence:
+              'Nawet najdrobniejsza zmiana w pracy jądra systemu wymaga jego ponownej kompilacji.\n',
             answer: false
           },
           {
@@ -4323,284 +4323,284 @@ const data: IModule[] = [
           },
           {
             sentence:
-              "Po każdej zmianie parametru w jądrze systemu Linux należy ponownie uruchomić komputer.\n",
+              'Po każdej zmianie parametru w jądrze systemu Linux należy ponownie uruchomić komputer.\n',
             answer: false
           },
           {
             sentence:
-              "Wartości sysctl wczytywane są podczas startu systemu z pliku /etc/sysct.conf.\n",
+              'Wartości sysctl wczytywane są podczas startu systemu z pliku /etc/sysct.conf.\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Sterowniki w systemach Linuxowych: Wskaż poprawne odpowiedzi.\n",
+          'Sterowniki w systemach Linuxowych: Wskaż poprawne odpowiedzi.\n',
         answers: [
           {
             sentence:
-              "Można wkompilować w jądro, ale można ładować dynamicznie bez potrzeby wkompilowywania.\n",
+              'Można wkompilować w jądro, ale można ładować dynamicznie bez potrzeby wkompilowywania.\n',
             answer: true
           },
           {
             sentence:
-              "Mogą być ładowane dynamicznie w trakcie działania systemu.\n",
+              'Mogą być ładowane dynamicznie w trakcie działania systemu.\n',
             answer: true
           },
           {
             sentence:
-              "Są tylko wkompilowane w jądro i uruchamiane automatycznie. Nie ma innej możliwości instalacji i uruchomienia.\n",
+              'Są tylko wkompilowane w jądro i uruchamiane automatycznie. Nie ma innej możliwości instalacji i uruchomienia.\n',
             answer: false
           },
           {
             sentence:
-              "Po instalacji nowego sterownika zawsze wymagane jest ponowne uruchomienie komputera.\n",
+              'Po instalacji nowego sterownika zawsze wymagane jest ponowne uruchomienie komputera.\n',
             answer: false
           }
         ]
       },
       {
-        question: "W jaki sposóbm ożna wyłączyć partycję SWAP?\n",
+        question: 'W jaki sposóbm ożna wyłączyć partycję SWAP?\n',
         answers: [
           {
-            sentence: "Nie można wyłączyć partycji SWAP\n",
+            sentence: 'Nie można wyłączyć partycji SWAP\n',
             answer: false
           },
           {
-            sentence: "sudo setswap off\n",
+            sentence: 'sudo setswap off\n',
             answer: false
           },
           {
-            sentence: "sudo swapoff -a\n",
+            sentence: 'sudo swapoff -a\n',
             answer: true
           },
           {
-            sentence: "sudo swap stop\n",
+            sentence: 'sudo swap stop\n',
             answer: false
           }
         ]
       },
       {
-        question: "Jakie jest zadanie jądra w systemie Linux?\n",
+        question: 'Jakie jest zadanie jądra w systemie Linux?\n',
         answers: [
           {
-            sentence: "Ładuje i odładowuje sterowniki urządzeń.\n",
+            sentence: 'Ładuje i odładowuje sterowniki urządzeń.\n',
             answer: true
           },
           {
-            sentence: "Tylko i wyłącznie zarządza pamięcią.\n",
+            sentence: 'Tylko i wyłącznie zarządza pamięcią.\n',
             answer: false
           },
           {
             sentence:
-              "Pośredniczy pomiędzy aplikacją użytkownika a sprzętem.\n",
+              'Pośredniczy pomiędzy aplikacją użytkownika a sprzętem.\n',
             answer: true
           },
           {
-            sentence: "Zarządza pamięcią.\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Jądro w systemie Linux odpowiedzialne jest za:\n",
-        answers: [
-          {
-            sentence: "Sterowniki urządzeń\n",
-            answer: true
-          },
-          {
-            sentence: "Wygląd interfejsu graficznego\n",
-            answer: false
-          },
-          {
-            sentence: "Zarządzanie procesami\n",
-            answer: true
-          },
-          {
-            sentence: "Obsługę pamięci\n",
+            sentence: 'Zarządza pamięcią.\n',
             answer: true
           }
         ]
       },
       {
-        question:
-          "Moduły jądra systemu Linux: wskaż wszystkie poprawne odpowiedzi.\n",
+        question: 'Jądro w systemie Linux odpowiedzialne jest za:\n',
         answers: [
           {
-            sentence: "Można pisać w języku C\n",
+            sentence: 'Sterowniki urządzeń\n',
             answer: true
           },
           {
-            sentence: "Mogą być załadowane przez każdego użytkownika\n",
+            sentence: 'Wygląd interfejsu graficznego\n',
             answer: false
           },
           {
-            sentence:
-              "Nie posiadają możliwości wyprowadzania danych na standardowe wyjście stdout za pomocą printf\n",
+            sentence: 'Zarządzanie procesami\n',
             answer: true
           },
           {
-            sentence:
-              "Można je kompilować na tym samym systemie na którym zamierzamy je uruchomić.\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Co znajduje się w katalogu /proc/?\n",
-        answers: [
-          {
-            sentence: "Informacje o procesach w systemie\n",
-            answer: true
-          },
-          {
-            sentence: "Informacje o użytkownikach\n",
-            answer: false
-          },
-          {
-            sentence: "Informacje o sieci\n",
-            answer: true
-          },
-          {
-            sentence: "Ogólne informacje o systemie\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Program modprobe:\n",
-        answers: [
-          {
-            sentence: "wymaga restartu aby zmiany zostały wprowadzone\n",
-            answer: false
-          },
-          {
-            sentence: "umożliwia usuwanie modułów z kernela\n",
-            answer: true
-          },
-          {
-            sentence: "umożliwia ładowanie modułów kernela\n",
-            answer: true
-          },
-          {
-            sentence: "automatycznie dodaje moduły zależne\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question: "Parametry jądra systemu Linux można odczytać za pomocą:\n",
-        answers: [
-          {
-            sentence: "pliku /proc/stat\n",
-            answer: false
-          },
-          {
-            sentence: "katalogu /proc/sys\n",
-            answer: true
-          },
-          {
-            sentence: "komendy ps\n",
-            answer: false
-          },
-          {
-            sentence: "komendy sysctl\n",
+            sentence: 'Obsługę pamięci\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Które z poniższych komend sprawdza logi jądra systemu Linux\n",
+          'Moduły jądra systemu Linux: wskaż wszystkie poprawne odpowiedzi.\n',
         answers: [
           {
-            sentence: "dmesg\n",
+            sentence: 'Można pisać w języku C\n',
             answer: true
           },
           {
-            sentence: "klog\n",
+            sentence: 'Mogą być załadowane przez każdego użytkownika\n',
             answer: false
           },
           {
-            sentence: "kmllg\n",
+            sentence:
+              'Nie posiadają możliwości wyprowadzania danych na standardowe wyjście stdout za pomocą printf\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Można je kompilować na tym samym systemie na którym zamierzamy je uruchomić.\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Co znajduje się w katalogu /proc/?\n',
+        answers: [
+          {
+            sentence: 'Informacje o procesach w systemie\n',
+            answer: true
+          },
+          {
+            sentence: 'Informacje o użytkownikach\n',
             answer: false
           },
           {
-            sentence: "kernelog\n",
+            sentence: 'Informacje o sieci\n',
+            answer: true
+          },
+          {
+            sentence: 'Ogólne informacje o systemie\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Program modprobe:\n',
+        answers: [
+          {
+            sentence: 'wymaga restartu aby zmiany zostały wprowadzone\n',
+            answer: false
+          },
+          {
+            sentence: 'umożliwia usuwanie modułów z kernela\n',
+            answer: true
+          },
+          {
+            sentence: 'umożliwia ładowanie modułów kernela\n',
+            answer: true
+          },
+          {
+            sentence: 'automatycznie dodaje moduły zależne\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question: 'Parametry jądra systemu Linux można odczytać za pomocą:\n',
+        answers: [
+          {
+            sentence: 'pliku /proc/stat\n',
+            answer: false
+          },
+          {
+            sentence: 'katalogu /proc/sys\n',
+            answer: true
+          },
+          {
+            sentence: 'komendy ps\n',
+            answer: false
+          },
+          {
+            sentence: 'komendy sysctl\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Które z poniższych komend sprawdza logi jądra systemu Linux\n',
+        answers: [
+          {
+            sentence: 'dmesg\n',
+            answer: true
+          },
+          {
+            sentence: 'klog\n',
+            answer: false
+          },
+          {
+            sentence: 'kmllg\n',
+            answer: false
+          },
+          {
+            sentence: 'kernelog\n',
             answer: false
           }
         ]
       },
       {
-        question: "Jądro systemu operacyjnego Linux:\n",
+        question: 'Jądro systemu operacyjnego Linux:\n',
         answers: [
           {
             sentence:
-              "pośredniczy pomiędzy aplikacjami użytkownika, a sprzętem\n",
+              'pośredniczy pomiędzy aplikacjami użytkownika, a sprzętem\n',
             answer: true
           },
           {
             sentence:
-              "pośredniczy pomiędzy aplikacjami użytkownika, a pamięcią\n",
+              'pośredniczy pomiędzy aplikacjami użytkownika, a pamięcią\n',
             answer: true
           },
           {
             sentence:
-              "służy wyłącznie do uruchomienia systemu i skonfigurowania urządzeń, potem kończy swoją pracę\n",
+              'służy wyłącznie do uruchomienia systemu i skonfigurowania urządzeń, potem kończy swoją pracę\n',
             answer: false
           },
           {
-            sentence: "NIE pozwala na ładowanie dodatkowych modułów\n",
+            sentence: 'NIE pozwala na ładowanie dodatkowych modułów\n',
             answer: false
           }
         ]
       },
       {
-        question: "Które ze zdań dotyczących sysctl jest poprawne?\n",
+        question: 'Które ze zdań dotyczących sysctl jest poprawne?\n',
         answers: [
           {
             sentence:
-              "Katalog /proc/sys dostarcza interfejs do parametrów sysctl\n",
+              'Katalog /proc/sys dostarcza interfejs do parametrów sysctl\n',
             answer: true
           },
           {
             sentence:
-              "/proc/sys/vm/overcommit_memory jest odpowiednikiem parametru vm.overcommit_memory w sysctl.conf\n",
+              '/proc/sys/vm/overcommit_memory jest odpowiednikiem parametru vm.overcommit_memory w sysctl.conf\n',
             answer: true
           },
           {
             sentence:
-              "jeżeli katalog /proc/sys jest tylko do odczytu to da się mimo to zmieniać parametry przez komendę sysctl\n",
+              'jeżeli katalog /proc/sys jest tylko do odczytu to da się mimo to zmieniać parametry przez komendę sysctl\n',
             answer: false
           },
           {
             sentence:
-              "Wartości sysctl są wczytywane przy starcie systemu z /proc/sys/vm/sysctl.conf\n",
+              'Wartości sysctl są wczytywane przy starcie systemu z /proc/sys/vm/sysctl.conf\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Zaznacz prawdziwe zdania dotyczące partycji wymiany (SWAP) w systemie Linux:\n",
+          'Zaznacz prawdziwe zdania dotyczące partycji wymiany (SWAP) w systemie Linux:\n',
         answers: [
           {
             sentence:
-              "Domyślnie jest na niej zapisywany zrzut pamięci RAM przy hibernacji\n",
+              'Domyślnie jest na niej zapisywany zrzut pamięci RAM przy hibernacji\n',
             answer: true
           },
           {
             sentence:
-              "Można go aktywować i dezaktywować podczas działania systemu\n",
+              'Można go aktywować i dezaktywować podczas działania systemu\n',
             answer: true
           },
           {
-            sentence: "Jest zamontowana w katalogu /swap\n",
+            sentence: 'Jest zamontowana w katalogu /swap\n',
             answer: false
           },
           {
-            sentence: "Jest konieczna do działania systemu Linux",
+            sentence: 'Jest konieczna do działania systemu Linux',
             answer: false
           }
         ]
@@ -4608,296 +4608,296 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "windows",
-    name: "Usługi katalogowe",
+    category: 'windows',
+    name: 'Usługi katalogowe',
     questions: [
       {
         question:
-          "Wykonanie kwerendy do wyszukiwania wyłączonych kont użytkowników jest możliwe za pomocą:\n",
+          'Wykonanie kwerendy do wyszukiwania wyłączonych kont użytkowników jest możliwe za pomocą:\n',
         answers: [
           {
-            sentence: "polecenia ds-query\n",
+            sentence: 'polecenia ds-query\n',
             answer: false
           },
           {
-            sentence: "polecenia dsquery\n",
+            sentence: 'polecenia dsquery\n',
             answer: true
           },
           {
-            sentence: "konsoli Active Directory Users and Computers\n",
+            sentence: 'konsoli Active Directory Users and Computers\n',
             answer: true
           },
           {
-            sentence: "polecenia ds-get\n",
+            sentence: 'polecenia ds-get\n',
             answer: false
           }
         ]
       },
       {
-        question: "Role FSMO można:\n",
+        question: 'Role FSMO można:\n',
         answers: [
           {
-            sentence: "Przejmować\n",
+            sentence: 'Przejmować\n',
             answer: true
           },
           {
-            sentence: "Filtrować\n",
+            sentence: 'Filtrować\n',
             answer: false
           },
           {
-            sentence: "Nadpisywać\n",
+            sentence: 'Nadpisywać\n',
             answer: false
           },
           {
-            sentence: "Transferować\n",
-            answer: true
-          }
-        ]
-      },
-      {
-        question:
-          "W jednostkach organizacyjnych (Organization Unit) można utworzyć:\n",
-        answers: [
-          {
-            sentence: "Użytkownika\n",
-            answer: true
-          },
-          {
-            sentence: "Grupę\n",
-            answer: true
-          },
-          {
-            sentence: "Komputer\n",
-            answer: true
-          },
-          {
-            sentence: "Drukarkę\n",
+            sentence: 'Transferować\n',
             answer: true
           }
         ]
       },
       {
         question:
-          "Za pomocą jakiego polecenia można dodać obiekt określonego typu (korzystając z wiersza poleceń) w Active Directory\n",
+          'W jednostkach organizacyjnych (Organization Unit) można utworzyć:\n',
         answers: [
           {
-            sentence: "dscreate user\n",
+            sentence: 'Użytkownika\n',
+            answer: true
+          },
+          {
+            sentence: 'Grupę\n',
+            answer: true
+          },
+          {
+            sentence: 'Komputer\n',
+            answer: true
+          },
+          {
+            sentence: 'Drukarkę\n',
+            answer: true
+          }
+        ]
+      },
+      {
+        question:
+          'Za pomocą jakiego polecenia można dodać obiekt określonego typu (korzystając z wiersza poleceń) w Active Directory\n',
+        answers: [
+          {
+            sentence: 'dscreate user\n',
             answer: false
           },
           {
-            sentence: "dsadd user\n",
+            sentence: 'dsadd user\n',
             answer: true
           },
           {
-            sentence: "dsadd computer\n",
+            sentence: 'dsadd computer\n',
             answer: true
           },
           {
-            sentence: "dscreate computer\n",
+            sentence: 'dscreate computer\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Wybierz prawidłowe odpowiedzi dotyczące struktury Active Directory:\n",
+          'Wybierz prawidłowe odpowiedzi dotyczące struktury Active Directory:\n',
         answers: [
           {
             sentence:
-              "Jeśli domeny wchodzące w skład lasu mają nieciągłe nazwy DNS, tworzą kilka odrębnych drzew w obrębie lasu\n",
+              'Jeśli domeny wchodzące w skład lasu mają nieciągłe nazwy DNS, tworzą kilka odrębnych drzew w obrębie lasu\n',
             answer: true
           },
           {
             sentence:
-              "Drzewo posiada zawsze przynajmniej jedną domenę - domenę najwyższego poziomu (ang. root) - korzeń drzewa\n",
+              'Drzewo posiada zawsze przynajmniej jedną domenę - domenę najwyższego poziomu (ang. root) - korzeń drzewa\n',
             answer: true
           },
           {
             sentence:
-              "Drzewo domen - domeny potomne mogą, ale nie muszą zawierać nazwy bezpośredniej domeny nadrzędnej\n",
+              'Drzewo domen - domeny potomne mogą, ale nie muszą zawierać nazwy bezpośredniej domeny nadrzędnej\n',
             answer: false
           },
           {
             sentence:
-              "Las jest zestawem przynajmniej dwóch lub więcej drzew, które formują zwartą, ciągłą przestrzeń nazw.}\n",
+              'Las jest zestawem przynajmniej dwóch lub więcej drzew, które formują zwartą, ciągłą przestrzeń nazw.}\n',
             answer: false
           }
         ]
       },
       {
-        question: "Do czego służy polecenie dsget?\n",
+        question: 'Do czego służy polecenie dsget?\n',
         answers: [
           {
             sentence:
-              "Wyświetla różne właściwości grupy, włącznie z członkami grupy w katalogu\n",
+              'Wyświetla różne właściwości grupy, włącznie z członkami grupy w katalogu\n',
             answer: false
           },
           {
-            sentence: "Wyświetla właściwości komputera w katalogu.\n",
+            sentence: 'Wyświetla właściwości komputera w katalogu.\n',
             answer: false
           },
           {
             sentence:
-              "Umożliwia dodawanie użytkowników, grup, komputerów, kontaktów i jednostek organizacyjnych do usługi Active Directory.\n",
+              'Umożliwia dodawanie użytkowników, grup, komputerów, kontaktów i jednostek organizacyjnych do usługi Active Directory.\n',
             answer: true
           },
           {
             sentence:
-              "Umożliwia tworzenie, modyfikowanie i usuwanie obiektów katalogu.}\n",
+              'Umożliwia tworzenie, modyfikowanie i usuwanie obiektów katalogu.}\n',
             answer: false
           }
         ]
       },
       {
-        question: "Jakie obiekty można dodawać za pomocą polecenia dsadd?\n",
+        question: 'Jakie obiekty można dodawać za pomocą polecenia dsadd?\n',
         answers: [
           {
-            sentence: "Grupy\n",
+            sentence: 'Grupy\n',
             answer: true
           },
           {
-            sentence: "Użytkowników\n",
+            sentence: 'Użytkowników\n',
             answer: true
           },
           {
-            sentence: "Jednostki organizacyjne\n",
+            sentence: 'Jednostki organizacyjne\n',
             answer: true
           },
           {
-            sentence: "Pliki\n",
+            sentence: 'Pliki\n',
             answer: false
           }
         ]
       },
       {
-        question: "Wskaż zdania prawdziwe dotyczące usługi Active Directory:\n",
+        question: 'Wskaż zdania prawdziwe dotyczące usługi Active Directory:\n',
         answers: [
           {
-            sentence: "Struktura Active Directory ma strukturę drzewiastą.\n",
+            sentence: 'Struktura Active Directory ma strukturę drzewiastą.\n',
             answer: true
           },
           {
-            sentence: "Liśćmi drzewa mogą być użytkownicy, grupy i \n",
+            sentence: 'Liśćmi drzewa mogą być użytkownicy, grupy i \n',
             answer: true
           },
           {
             sentence:
-              "Nie ma możliwości nadania określonemu użytkownikowi praw do zarządzania użytkownikami w jednostce organizacyjnej bez nadawania (...)\n",
+              'Nie ma możliwości nadania określonemu użytkownikowi praw do zarządzania użytkownikami w jednostce organizacyjnej bez nadawania (...)\n',
             answer: false
           },
           {
-            sentence: "Możliwe jest kopiowanie użytkowników.}\n",
+            sentence: 'Możliwe jest kopiowanie użytkowników.}\n',
             answer: true
           }
         ]
       },
       {
-        question: "Program dsget.exe:\n",
+        question: 'Program dsget.exe:\n',
         answers: [
           {
-            sentence: "wymaga praw administratora do działania\n",
+            sentence: 'wymaga praw administratora do działania\n',
             answer: true
           },
           {
             sentence:
-              "może być uruchomione w graficznym interfejsie użytkownika za pomocą odpowiedniej opcji linii poleceń.\n",
+              'może być uruchomione w graficznym interfejsie użytkownika za pomocą odpowiedniej opcji linii poleceń.\n',
             answer: false
           },
           {
-            sentence: "ma tekstowy interfejs użytkownika.\n",
+            sentence: 'ma tekstowy interfejs użytkownika.\n',
             answer: true
           },
           {
-            sentence: "umożliwia tworzenie jednostek organizacyjnych.}\n",
-            answer: false
-          }
-        ]
-      },
-      {
-        question:
-          "Jakie możliwości daje użycie polecenia dsadd (jako polecenie dla Active Directory)? \n",
-        answers: [
-          {
-            sentence: "Nie może dodawać obiektu typu Computer do katalogu\n",
-            answer: false
-          },
-          {
-            sentence:
-              "Nie może dodać obiektu typu Doman Service do katalogu.\n",
-            answer: true
-          },
-          {
-            sentence: "Może dodawać obiekt typu Computer do katalogu.\n",
-            answer: true
-          },
-          {
-            sentence: "Może dodać obiekt typu Domain Service do katalogu.}\n",
+            sentence: 'umożliwia tworzenie jednostek organizacyjnych.}\n',
             answer: false
           }
         ]
       },
       {
         question:
-          "Różnica pomiędzy zaufaniem do domen forest i external polega na:\n",
+          'Jakie możliwości daje użycie polecenia dsadd (jako polecenie dla Active Directory)? \n',
         answers: [
           {
-            sentence:
-              "Zaufanie typu forest pozwala na korzystanie z zasobów tylko w obrębie danego drzewa, zaś external we wszystkich drzewach.\n",
+            sentence: 'Nie może dodawać obiektu typu Computer do katalogu\n',
             answer: false
           },
           {
             sentence:
-              "Zaufanie typu external pozwala większej liczby domen na korzystanie ze swoich zasobów niż typ forest.\n",
+              'Nie może dodać obiektu typu Doman Service do katalogu.\n',
             answer: true
           },
           {
-            sentence:
-              "Zaufanie typu forest pozwala na korzystanie z zasobów tylko w obrębie drzew połączonych tego typu zaufaniem, zaś external nie musi (...)\n",
+            sentence: 'Może dodawać obiekt typu Computer do katalogu.\n',
             answer: true
           },
           {
-            sentence:
-              "Zaufanie typu external jest dwukierunkowe, typu forest tylko jednokierunkowe.}\n",
+            sentence: 'Może dodać obiekt typu Domain Service do katalogu.}\n',
             answer: false
           }
         ]
       },
       {
-        question: "Polecenie dsquery:\n",
+        question:
+          'Różnica pomiędzy zaufaniem do domen forest i external polega na:\n',
         answers: [
           {
             sentence:
-              "Zgodnie z określonymi kryteriami wykonuje kwerendę dotyczącą drzewa usługi DNS.\n",
-            answer: false
-          },
-          {
-            sentence: "Jest równoważne poleceniu dsget.\n",
-            answer: false
-          },
-          {
-            sentence: "Wykonuje kwerendę na dowolnej bazie danych.\n",
+              'Zaufanie typu forest pozwala na korzystanie z zasobów tylko w obrębie danego drzewa, zaś external we wszystkich drzewach.\n',
             answer: false
           },
           {
             sentence:
-              "Zgodnie z określonymi kryteriami wykonuje kwerendę dotyczącą usługi Active Directory.}\n",
+              'Zaufanie typu external pozwala większej liczby domen na korzystanie ze swoich zasobów niż typ forest.\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Zaufanie typu forest pozwala na korzystanie z zasobów tylko w obrębie drzew połączonych tego typu zaufaniem, zaś external nie musi (...)\n',
+            answer: true
+          },
+          {
+            sentence:
+              'Zaufanie typu external jest dwukierunkowe, typu forest tylko jednokierunkowe.}\n',
+            answer: false
+          }
+        ]
+      },
+      {
+        question: 'Polecenie dsquery:\n',
+        answers: [
+          {
+            sentence:
+              'Zgodnie z określonymi kryteriami wykonuje kwerendę dotyczącą drzewa usługi DNS.\n',
+            answer: false
+          },
+          {
+            sentence: 'Jest równoważne poleceniu dsget.\n',
+            answer: false
+          },
+          {
+            sentence: 'Wykonuje kwerendę na dowolnej bazie danych.\n',
+            answer: false
+          },
+          {
+            sentence:
+              'Zgodnie z określonymi kryteriami wykonuje kwerendę dotyczącą usługi Active Directory.}\n',
             answer: true
           }
         ]
       },
       {
-        question: "Dodać grupę można za pomocą:\n",
+        question: 'Dodać grupę można za pomocą:\n',
         answers: [
           {
             sentence: 'Konsoli "Active directory users and computers".\n',
             answer: true
           },
           {
-            sentence: "Polecenia Addgroup.\n",
+            sentence: 'Polecenia Addgroup.\n',
             answer: false
           },
           {
-            sentence: "Polecenia dsadd group.\n",
+            sentence: 'Polecenia dsadd group.\n',
             answer: true
           },
           {
@@ -5435,7 +5435,7 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "windows",
+    category: 'windows',
     name: 'Obiekty Zasad Grup',
     questions: [
       {
@@ -6250,7 +6250,7 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "windows",
+    category: 'windows',
     name: 'Instalacja zdalna',
     questions: [
       {
@@ -6576,7 +6576,7 @@ const data: IModule[] = [
           },
           {
             sentence:
-              'Aby zainstalować na komputerze klienckim system windows używając mechanizmu WDS należy ustawić w biosie boot\'owanie rozpoczynające się od karty sieciowej\n',
+              "Aby zainstalować na komputerze klienckim system windows używając mechanizmu WDS należy ustawić w biosie boot'owanie rozpoczynające się od karty sieciowej\n",
             answer: true
           }
         ]
@@ -6672,7 +6672,7 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "windows",
+    category: 'windows',
     name: 'Windows RAID',
     questions: [
       {
@@ -7088,7 +7088,7 @@ const data: IModule[] = [
           {
             sentence: 'Odporność na awarię 1 dysków w dyskowej macierzy.\n',
             answer: true
-          },
+          }
         ]
       },
       {
@@ -7413,7 +7413,7 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "windows",
+    category: 'windows',
     name: 'PowerShell',
     questions: [
       {
@@ -8924,7 +8924,7 @@ const data: IModule[] = [
             answer: false
           },
           {
-            sentence: 'Zmienne oznacza się znakiem dolara \'$\'\n',
+            sentence: "Zmienne oznacza się znakiem dolara '$'\n",
             answer: true
           },
           {
@@ -9197,7 +9197,7 @@ const data: IModule[] = [
     ]
   },
   {
-    category: "windows",
+    category: 'windows',
     name: 'Windows API',
     questions: [
       {
@@ -9413,7 +9413,7 @@ const data: IModule[] = [
           },
           {
             sentence:
-              'Jest wywołaniem blokującym (blokuje wykonanie dalszej części kodu aż do zamknięcia Message Box\'a)\n',
+              "Jest wywołaniem blokującym (blokuje wykonanie dalszej części kodu aż do zamknięcia Message Box'a)\n",
             answer: true
           },
           {

@@ -1,19 +1,19 @@
-import { Component, OnInit, ChangeDetectorRef, OnDestroy, Inject } from "@angular/core";
-import { QuestionsService } from "./core/questions.service";
-import { IQuestion } from "./core/types";
-import { MediaMatcher } from "@angular/cdk/layout";
-import { MatIconRegistry, MAT_DIALOG_DATA, MatDialogRef, MatDialog } from "@angular/material";
-import { DomSanitizer } from "@angular/platform-browser";
-import { Router, ActivatedRoute, RouterOutlet } from "@angular/router";
-import { TitleService } from "./core/title.service";
-import { Observable } from "rxjs";
 import {
-  trigger,
-  transition,
-  query,
-  style,
-  animate
-} from "@angular/animations";
+  Component,
+  OnInit,
+  ChangeDetectorRef,
+  OnDestroy,
+} from '@angular/core';
+import { QuestionsService } from './core/questions.service';
+import { IQuestion } from './core/types';
+import { MediaMatcher } from '@angular/cdk/layout';
+import {
+  MatIconRegistry
+} from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
+import { Router } from '@angular/router';
+import { TitleService } from './core/title.service';
+import { Observable } from 'rxjs';
 
 export interface DialogData {
   animal: string;
@@ -21,9 +21,9 @@ export interface DialogData {
 }
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
   questions: IQuestion[] = [];
@@ -51,23 +51,23 @@ export class AppComponent implements OnInit, OnDestroy {
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer
   ) {
-    this.mobileQuery = media.matchMedia("(max-width: 425px)");
+    this.mobileQuery = media.matchMedia('(max-width: 425px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
 
     iconRegistry.addSvgIcon(
-      "windows",
-      sanitizer.bypassSecurityTrustResourceUrl("assets/img/icons/windows.svg")
+      'windows',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/windows.svg')
     );
 
     iconRegistry.addSvgIcon(
-      "ubuntu",
-      sanitizer.bypassSecurityTrustResourceUrl("assets/img/icons/ubuntu.svg")
+      'ubuntu',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/ubuntu.svg')
     );
 
     iconRegistry.addSvgIcon(
-      "linux",
-      sanitizer.bypassSecurityTrustResourceUrl("assets/img/icons/linux.svg")
+      'linux',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/linux.svg')
     );
   }
 
@@ -76,6 +76,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   navigateHome() {
-    this.router.navigate(["/"]);
-  } 
+    this.router.navigate(['/']);
+  }
 }
