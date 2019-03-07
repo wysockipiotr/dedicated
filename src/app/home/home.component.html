@@ -6,19 +6,19 @@
   >
     <mat-grid-tile
       style="overflow: visible"
-      *ngFor="let i of questionsService.getModules(); index as idx"
+      *ngFor="let info of topicsInfo; index as idx"
     >
-      <mat-card matRipple (click)="topicPicked(i)">
+      <mat-card matRipple (click)="topicPicked(info)">
         <div class="mat-body-strong module-label noselect">
           <span>
             <mat-icon
-              [svgIcon]="i.category === 'windows' ? 'windows' : 'ubuntu'"
+              [svgIcon]="info.category === 'windows' ? 'windows' : 'ubuntu'"
             ></mat-icon>
           </span>
 
           <div class="topic-info">
-            <span>{{ i.name }}</span>
-            <span class="mat-caption">{{ i | topicInfo }}</span>
+            <span>{{ info.name }}</span>
+            <span class="mat-caption">{{ info | topicInfo }}</span>
           </div>
         </div>
       </mat-card>

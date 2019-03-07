@@ -1,14 +1,12 @@
 <main class="wrapper">
   <mat-card class="card">
-
-   
     <mat-card-content>
       <section class="question" *ngFor="let q of displayedQuestions">
         <h4 class="question-content mat-body-strong">{{ q.question }}</h4>
         <section class="answers-section">
           <span
             *ngFor="let a of q.answers"
-            [ngClass]="getColorClassForCheckResult(a.userAnswer, a.answer)"
+            [ngClass]="getColorClassForCheckResult(a.userAnswer, a.truth)"
           >
             <mat-checkbox
               class="mat-body"

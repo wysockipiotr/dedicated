@@ -1,11 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { IQuestion } from '../core/types';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { IQuestion } from '../_core/types';
 import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-questions',
   templateUrl: './questions.component.html',
-  styleUrls: ['./questions.component.scss']
+  styleUrls: ['./questions.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class QuestionsComponent implements OnInit {
   @Input() questions: IQuestion[];

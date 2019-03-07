@@ -27,7 +27,9 @@ import {
   MatBadgeModule,
   MatCheckboxModule,
   MatDialogModule,
-  MatRadioModule
+  MatRadioModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule
 } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { TopicComponent } from './topic/topic.component';
@@ -37,7 +39,7 @@ import { QuestionsComponent } from './questions/questions.component';
 import { FormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { TopicInfoPipe } from './core/topic-info.pipe';
+import { TopicInfoPipe } from './_pipes/topic-info.pipe';
 
 declare var Hammer: any;
 export class MyHammerConfig extends HammerGestureConfig {
@@ -73,6 +75,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     MatDividerModule,
     MatGridListModule,
     MatListModule,
+    MatProgressSpinnerModule,
     MatDialogModule,
     MatCardModule,
     MatRadioModule,

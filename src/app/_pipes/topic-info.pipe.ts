@@ -1,13 +1,13 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { IModuleInfo } from './types';
+import { ITopic, ITopicInfo } from '../_core/types';
 
 @Pipe({
   name: 'topicInfo'
 })
 export class TopicInfoPipe implements PipeTransform {
-  transform(value: IModuleInfo): string {
+  transform(topic: ITopicInfo): string {
     let label = null;
-    const digit = value.numberOfQuestions % 10;
+    const digit = topic.numberOfQuestions % 10;
 
     switch (digit) {
       case 1:
@@ -23,6 +23,10 @@ export class TopicInfoPipe implements PipeTransform {
         break;
     }
 
-    return `${value.numberOfQuestions} ${label}`;
+    if (topic.numberOfQuestions > 10 && topic.numberOfQuestions < 20) {
+      label = 'pytań';
+    }
+
+    return `${topic.numberOfQuestions} ${label}`;
   }
 }

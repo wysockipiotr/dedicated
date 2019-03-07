@@ -2,13 +2,13 @@
   <mat-card class="card">
     <div class="question" *ngFor="let q of questions">
       <h4 class="question-contents mat-body-strong">
-        {{ q.question }}
+        {{ q.questionNumber + 1 }}. {{ q.question }}
       </h4>
 
       <p
         class="answer mat-body"
         *ngFor="let a of q.answers"
-        [style.color]="a.answer ? '#81C784' : '#e57373'"
+        [style.color]="a.truth ? '#81C784' : '#e57373'"
       >
         {{ a.sentence }}
       </p>

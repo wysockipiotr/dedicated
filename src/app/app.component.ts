@@ -4,21 +4,15 @@ import {
   ChangeDetectorRef,
   OnDestroy,
 } from '@angular/core';
-import { QuestionsService } from './core/questions.service';
-import { IQuestion } from './core/types';
+import { IQuestion } from './_core/types';
 import { MediaMatcher } from '@angular/cdk/layout';
 import {
   MatIconRegistry
 } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { TitleService } from './core/title.service';
+import { TitleService } from './_core/title.service';
 import { Observable } from 'rxjs';
-
-export interface DialogData {
-  animal: string;
-  name: string;
-}
 
 @Component({
   selector: 'app-root',
@@ -36,22 +30,17 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.title$ = this.title.title$;
-
-    this.questions = this.questionsService.fromModule(
-      this.questionsService.getModules()[0].name
-    ).questions;
   }
 
   constructor(
     private router: Router,
     private title: TitleService,
-    private questionsService: QuestionsService,
     changeDetectorRef: ChangeDetectorRef,
     media: MediaMatcher,
     iconRegistry: MatIconRegistry,
     sanitizer: DomSanitizer
   ) {
-    this.mobileQuery = media.matchMedia('(max-width: 425px)');
+    this.mobileQuery = media.matchMedia('(max-width: 560px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
 

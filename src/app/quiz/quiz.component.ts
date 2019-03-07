@@ -1,14 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { IQuestion } from '../core/types';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { IQuestion } from '../_core/types';
 import * as _ from 'lodash';
 import {
   MAT_CHECKBOX_CLICK_ACTION,
   MatCheckboxChange
 } from '@angular/material';
-
-interface IAnsweredQuestion extends IQuestion {
-  userAnswer: boolean;
-}
 
 type QuizState = 'answer' | 'check';
 
@@ -16,7 +12,8 @@ type QuizState = 'answer' | 'check';
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.scss'],
-  providers: [{ provide: MAT_CHECKBOX_CLICK_ACTION, useValue: 'check' }]
+  providers: [{ provide: MAT_CHECKBOX_CLICK_ACTION, useValue: 'check' }],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class QuizComponent implements OnInit {
   @Input() questions: IQuestion[];

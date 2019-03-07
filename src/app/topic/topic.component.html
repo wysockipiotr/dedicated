@@ -7,20 +7,26 @@
     [active]="activeLink === link"
   >
     <mat-icon class="tab-icon">{{
-      link === links[0] ? "subject" : "done_all"
+      link === links[0] ? 'subject' : 'done_all'
     }}</mat-icon>
     {{ link }}
   </a>
 </nav>
 
 <div (swipeleft)="swipeLeft()" (swiperight)="swipeRight()">
-  <app-questions
-    *ngIf="activeLink === links[0]"
-    [questions]="topic.questions"
-  ></app-questions>
+  <ng-container *ngIf="(questions$ | async) as questions">
+    <app-questions
+      *ngIf="activeLink === links[0]"
+      [questions]="questions"
+    ></app-questions>
 
-  <app-quiz
-    *ngIf="activeLink === links[1]"
-    [questions]="topic.questions"
-  ></app-quiz>
+    <app-quiz
+      *ngIf="activeLink === links[1]"
+      [questions]="questions"
+    ></app-quiz>
+  </ng-container>
 </div>
+
+<!-- <ng-template #loading>
+  <mat-progress-spinner mode="indeterminate" ></mat-progress-spinner>
+</ng-template> -->

@@ -1,10 +1,9 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
-import { QuestionsService } from '../core/questions.service';
-import { IQuestion } from '../core/types';
-import { DomSanitizer } from '@angular/platform-browser';
+import { ITopicInfo } from '../_core/types';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
-import { TitleService } from '../core/title.service';
+import { TitleService } from '../_core/title.service';
+import { DataService } from '../_core/data.service';
 
 @Component({
   selector: 'app-home',
@@ -12,29 +11,26 @@ import { TitleService } from '../core/title.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  questions: IQuestion[] = [];
+
+  topicsInfo: ITopicInfo[] = [];
 
   mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
 
   ngOnInit() {
-    this.questions = this.questionsService.fromModule(
-      this.questionsService.getModules()[0].name
-    ).questions;
-
+    this.topicsInfo = this._data.getTopicsInfo();
     this.title.title$.next('');
   }
 
   constructor(
+    private _data: DataService, 
     private router: Router,
-    public questionsService: QuestionsService,
     private title: TitleService,
     changeDetectorRef: ChangeDetectorRef,
-    media: MediaMatcher,
-    sanitizer: DomSanitizer
+    media: MediaMatcher
   ) {
-    this.mobileQuery = media.matchMedia('(max-width: 425px)');
+    this.mobileQuery = media.matchMedia('(max-width: 560px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
@@ -43,7 +39,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  topicPicked(topic: any) {
+  topicPicked(topic: ITopicInfo) {
     this.router.navigate([`/${topic.slug}`]);
   }
 }

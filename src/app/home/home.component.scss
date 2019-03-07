@@ -4,11 +4,7 @@ nav {
   margin: 0rem auto;
 }
 
-mat-grid-list {
-  // margin: 5px;
-}
-
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 560px) {
   nav {
     margin-top: 2rem;
   }
@@ -36,14 +32,12 @@ mat-card {
   bottom: 0;
   left: 0;
   right: 0;
-  // z-index: 1000;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 424px) {
+@media only screen and (max-width: 559px) {
   mat-card {
     border-radius: 0;
-    // border: solid 0.5px #222;
   }
 }
 
