@@ -2,7 +2,9 @@
   <mat-card class="card">
     <div class="question" *ngFor="let q of questions">
       <h4 class="question-contents mat-body-strong">
-        {{ q.questionNumber + 1 }}. {{ q.question }}
+        <span *ngIf="(questionNumbersVisible$ | async)"
+          >{{ q.questionNumber + 1 }}. </span
+        >{{ q.question }}
       </h4>
 
       <p

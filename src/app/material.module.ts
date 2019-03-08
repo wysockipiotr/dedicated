@@ -11,7 +11,9 @@ import {
   MatGridListModule,
   MatCardModule,
   MatSelectModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatDialogModule,
+  MatSlideToggleModule
 } from '@angular/material';
 import { CommonModule } from '@angular/common';
 
@@ -19,6 +21,8 @@ const MATERIAL_MODULES = [
   MatButtonModule,
   MatToolbarModule,
   MatTabsModule,
+  MatDialogModule,
+  MatSlideToggleModule,
   MatIconModule,
   MatRippleModule,
   MatCheckboxModule,

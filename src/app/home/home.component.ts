@@ -11,22 +11,16 @@ import { DataService } from '../_core/data.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-
   topicsInfo: ITopicInfo[] = [];
 
   mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
 
-  ngOnInit() {
-    this.topicsInfo = this._data.getTopicsInfo();
-    this.title.title$.next('');
-  }
-
   constructor(
     private _data: DataService,
-    private router: Router,
-    private title: TitleService,
+    private _router: Router,
+    private _title: TitleService,
     changeDetectorRef: ChangeDetectorRef,
     media: MediaMatcher
   ) {
@@ -35,11 +29,16 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
 
+  ngOnInit() {
+    this.topicsInfo = this._data.getTopicsInfo();
+    this._title.title$.next('');
+  }
+
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
   topicPicked(topic: ITopicInfo) {
-    this.router.navigate([`/${topic.slug}`]);
+    this._router.navigate([`/${topic.slug}`]);
   }
 }

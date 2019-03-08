@@ -3,16 +3,21 @@
     <h1 class="app-name noselect" (click)="navigateHome()">
       dedicated
     </h1>
-    <div class="spacer"></div>
     <span class="mat-small topic-name noselect">{{ title$ | async }}</span>
-    <!-- <button class="more-btn" mat-icon-button matTooltip="Ustawienia" matTooltipPosition="before" matTooltipShowDelay="600">
-      <mat-icon>settings</mat-icon>
-    </button> -->
+    <div class="spacer"></div>
+    <button
+      class="more-btn"
+      (click)="openDialog()"
+      mat-icon-button
+      matTooltip="Ustawienia"
+    >
+      <mat-icon>tune</mat-icon>
+    </button>
   </mat-toolbar>
 
   <mat-sidenav-container>
-    <mat-sidenav-content >
-        <router-outlet></router-outlet>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

@@ -1,18 +1,12 @@
-import {
-  Component,
-  OnInit,
-  ChangeDetectorRef,
-  OnDestroy,
-} from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { IQuestion } from './_core/types';
 import { MediaMatcher } from '@angular/cdk/layout';
-import {
-  MatIconRegistry
-} from '@angular/material';
+import { MatIconRegistry, MatDialog } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { TitleService } from './_core/title.service';
 import { Observable } from 'rxjs';
+import { SettingsDialogComponent } from './settings-dialog/settings-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -29,12 +23,13 @@ export class AppComponent implements OnInit, OnDestroy {
   title$: Observable<string>;
 
   ngOnInit() {
-    this.title$ = this.title.title$;
+    this.title$ = this._title.title$;
   }
 
   constructor(
-    private router: Router,
-    private title: TitleService,
+    private _dialog: MatDialog,
+    private _router: Router,
+    private _title: TitleService,
     changeDetectorRef: ChangeDetectorRef,
     media: MediaMatcher,
     iconRegistry: MatIconRegistry,
@@ -65,6 +60,17 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   navigateHome() {
-    this.router.navigate(['/']);
+    this._router.navigate(['/']);
+  }
+
+  openDialog(): void {
+    const dialogRef = this._dialog.open(SettingsDialogComponent, {
+      width: '20rem',
+      data: { name: 'name', animal: 'this.animal' }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 }

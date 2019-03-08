@@ -20,6 +20,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { TopicInfoPipe } from './_pipes/topic-info.pipe';
 import { MaterialModule } from './material.module';
+import { SettingsDialogComponent } from './settings-dialog/settings-dialog.component';
 
 declare var Hammer: any;
 export class MyHammerConfig extends HammerGestureConfig {
@@ -37,6 +38,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     HomeComponent,
     QuizComponent,
     QuestionsComponent,
+    SettingsDialogComponent,
     TopicInfoPipe
   ],
   imports: [
@@ -55,7 +57,7 @@ export class MyHammerConfig extends HammerGestureConfig {
       useClass: MyHammerConfig
     }
   ],
-  entryComponents: [],
+  entryComponents: [SettingsDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

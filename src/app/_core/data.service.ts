@@ -4,14 +4,14 @@ import { BehaviorSubject, combineLatest, from } from 'rxjs';
 import { TOPICS } from './data';
 import { ITopicInfo } from './types';
 import { slugify } from '../_utils/slugify';
-import { LocalStorage } from '@ngx-pwa/local-storage';
+// import { LocalStorage } from '@ngx-pwa/local-storage';
 import { map } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { TitleService } from './title.service';
 
-interface IQuestionsStats {
-  [key: string]: number;
-}
+// interface IQuestionsStats {
+//   [key: string]: number;
+// }
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +37,19 @@ export class DataService {
     );
   }
 
+  loadTopicWithIndex(index: number) {
+    if (index < 0 || index >= TOPICS.length) {
+      this._router.navigate(['/']);
+    } else {
+      this._activeTopicId$.next(index);
+    }
+  }
+
+  loadTopicWithSlug(slug: string) {
+    const index = TOPICS.findIndex(topic => slugify(topic) === slug);
+    this.loadTopicWithIndex(index);
+  }
+
   getActiveTopic$ = () =>
     from(this._activeTopicId$).pipe(
       map(activeTopicId => {
@@ -44,7 +57,7 @@ export class DataService {
         this._title.title$.next(topic.name);
         return topic;
       })
-    )
+    );
   // combineLatest(
   //   this._activeTopicId$,
   //   this._storage.getItem<IQuestionsStats>('stats')
@@ -83,17 +96,4 @@ export class DataService {
   //     };
   //   })
   // )
-
-  loadTopicWithIndex(index: number) {
-    if (index < 0 || index >= TOPICS.length) {
-      this._router.navigate(['/']);
-    } else {
-      this._activeTopicId$.next(index);
-    }
-  }
-
-  loadTopicWithSlug(slug: string) {
-    const index = TOPICS.findIndex(topic => slugify(topic) === slug);
-    this.loadTopicWithIndex(index);
-  }
 }

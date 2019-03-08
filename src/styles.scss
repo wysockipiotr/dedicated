@@ -1,16 +1,17 @@
-
 html,
 body {
   height: 100%;
+  width: 100%;
 }
+
 body {
   background-color: #212121;
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
 
-@import "~@angular/material/theming";
+@import '~@angular/material/theming';
 
 .mat-checkbox-layout {
   white-space: normal !important;
@@ -22,10 +23,8 @@ body {
 
 @include mat-core();
 
-
 $candy-app-primary: mat-palette($mat-gray);
-$candy-app-accent: mat-palette($mat-gray, 500);
-
+$candy-app-accent: mat-palette($mat-gray, 200);
 $candy-app-warn: mat-palette($mat-red);
 
 $candy-app-theme: mat-dark-theme(
@@ -41,16 +40,13 @@ $wrong-accent: mat-palette($mat-red, 300);
 
 .correct {
   color: mat-color($correct-accent);
-  // @include angular-material-theme(
-  //   mat-dark-theme($correct-accent, $correct-accent, $correct-accent)
-  // );
 }
 
 .correct-border {
-    @include angular-material-theme(
+  @include angular-material-theme(
     mat-dark-theme($correct-accent, $correct-accent, $correct-accent)
   );
-   & .mat-checkbox .mat-checkbox-frame {
+  & .mat-checkbox .mat-checkbox-frame {
     border-color: mat-color($correct-accent);
   }
 }
@@ -67,10 +63,6 @@ $wrong-accent: mat-palette($mat-red, 300);
 
 .wrong {
   color: mat-color($wrong-accent);
-
-  // @include mat-checkbox-theme(
-  //   mat-dark-theme($wrong-accent, $wrong-accent, $wrong-accent)
-  // );
 }
 
 .noselect {
@@ -78,12 +70,11 @@ $wrong-accent: mat-palette($mat-red, 300);
 }
 
 ::selection {
-  background: #bdbdbd; /* WebKit/Blink Browsers */
+  background: #bdbdbd;
   color: white;
 }
 
 ::-moz-selection {
-  background: #bdbdbd; /* Gecko Browsers */
+  background: #bdbdbd;
   color: white;
 }
-

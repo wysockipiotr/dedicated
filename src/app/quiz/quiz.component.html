@@ -1,8 +1,18 @@
 <main class="wrapper">
   <mat-card class="card">
     <mat-card-content>
-      <section class="question" *ngFor="let q of displayedQuestions">
-        <h4 class="question-content mat-body-strong">{{ q.question }}</h4>
+      <section
+        *ngFor="let q of displayedQuestions"
+        [ngClass]="[
+          'question',
+          (fabButtonsEnabled$ | async) ? 'answers-section-fabs-enabled' : ''
+        ]"
+      >
+        <h4 class="question-content mat-body-strong">
+          <span *ngIf="(questionNumbersVisible$ | async)"
+            >{{ q.questionNumber + 1 }}. </span
+          >{{ q.question }}
+        </h4>
         <section class="answers-section">
           <span
             *ngFor="let a of q.answers"
@@ -19,7 +29,7 @@
         </section>
       </section>
 
-      <div class="actions">
+      <div *ngIf="!(fabButtonsEnabled$ | async)" class="actions">
         <button
           *ngIf="quizState === 'answer'"
           mat-button
@@ -28,14 +38,24 @@
           <mat-icon>playlist_add_check</mat-icon> Sprawdź
         </button>
 
-        <button mat-button (click)="pickNext()" >
+        <button mat-button (click)="pickNext()">
           <mat-icon>autorenew</mat-icon> Wylosuj
         </button>
       </div>
-
     </mat-card-content>
   </mat-card>
 </main>
 
-
-
+<div *ngIf="(fabButtonsEnabled$ | async)" class="fabs">
+  <button
+    class="fab"
+    *ngIf="quizState === 'answer'"
+    mat-fab
+    (click)="checkAnswers()"
+  >
+    <mat-icon>playlist_add_check</mat-icon>
+  </button>
+  <button class="fab" mat-fab (click)="pickNext()">
+    <mat-icon>autorenew</mat-icon>
+  </button>
+</div>

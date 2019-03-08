@@ -1,0 +1,9 @@
+section.toggles {
+  height: 5rem;
+  display: flex;
+  flex-flow: column nowrap;
+
+  & > *:not(:last-of-type) {
+    margin-bottom: 0.7rem;
+  }
+}

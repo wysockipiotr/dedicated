@@ -5,6 +5,8 @@ import {
   MAT_CHECKBOX_CLICK_ACTION,
   MatCheckboxChange
 } from '@angular/material';
+import { Observable } from 'rxjs';
+import { PreferencesService } from '../_core/preferences.service';
 
 type QuizState = 'answer' | 'check';
 
@@ -24,9 +26,16 @@ export class QuizComponent implements OnInit {
 
   quizState: QuizState = 'answer';
 
-  constructor() {}
+  fabButtonsEnabled$: Observable<boolean>;
+
+  questionNumbersVisible$: Observable<boolean>;
+
+  constructor(private _preferences: PreferencesService) {}
 
   ngOnInit() {
+    this.fabButtonsEnabled$ = this._preferences.fabButtons$;
+    this.questionNumbersVisible$ = this._preferences.questionNumbersVisible$;
+
     this.reloadAllQuestions_();
     this.pickNext();
   }

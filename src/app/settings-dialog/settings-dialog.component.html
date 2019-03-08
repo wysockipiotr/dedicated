@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Ustawienia</h1>
+<div mat-dialog-content class="dialog-content">
+  <section class="toggles mat-body">
+    <mat-checkbox
+      [(ngModel)]="questionNumbersVisible"
+      (change)="onQuestionNumbersVisibilityChange($event)"
+      color="primary"
+    >
+      Pokaż numery pytań
+    </mat-checkbox>
+
+    <mat-checkbox
+      [(ngModel)]="fabButtons"
+      (change)="onFabChange($event)"
+      color="primary"
+    >
+      Nieruchome przyciski w quizie
+    </mat-checkbox>
+  </section>
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="onOkClick()" cdkFocusInitial>Ok</button>
+</div>

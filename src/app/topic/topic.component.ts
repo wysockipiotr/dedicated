@@ -20,10 +20,10 @@ export class TopicComponent implements OnInit {
 
   activeLink = this.links[0];
 
-  constructor(private _data: DataService, private route: ActivatedRoute) {}
+  constructor(private _data: DataService, private _route: ActivatedRoute) {}
 
   ngOnInit() {
-    this._data.loadTopicWithSlug(this.route.snapshot.params.slug);
+    this._data.loadTopicWithSlug(this._route.snapshot.params.slug);
 
     this.questions$ = this._data
       .getActiveTopic$()
