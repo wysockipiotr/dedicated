@@ -11,27 +11,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
-import {
-  MatSelectModule,
-  MatButtonToggleModule,
-  MatSidenavModule,
-  MatToolbarModule,
-  MatIconModule,
-  MatListModule,
-  MatButtonModule,
-  MatDividerModule,
-  MatCardModule,
-  MatGridListModule,
-  MatRippleModule,
-  MatTabsModule,
-  MatBadgeModule,
-  MatCheckboxModule,
-  MatDialogModule,
-  MatRadioModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule
-} from '@angular/material';
-import { HttpClientModule } from '@angular/common/http';
 import { TopicComponent } from './topic/topic.component';
 import { HomeComponent } from './home/home.component';
 import { QuizComponent } from './quiz/quiz.component';
@@ -40,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { TopicInfoPipe } from './_pipes/topic-info.pipe';
+import { MaterialModule } from './material.module';
 
 declare var Hammer: any;
 export class MyHammerConfig extends HammerGestureConfig {
@@ -62,26 +42,9 @@ export class MyHammerConfig extends HammerGestureConfig {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MaterialModule,
     AppRoutingModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatTabsModule,
-    MatIconModule,
-    MatRippleModule,
-    MatBadgeModule,
-    HttpClientModule,
-    MatCheckboxModule,
     FormsModule,
-    MatDividerModule,
-    MatGridListModule,
-    MatListModule,
-    MatProgressSpinnerModule,
-    MatDialogModule,
-    MatCardModule,
-    MatRadioModule,
-    MatSelectModule,
-    MatSidenavModule,
-    MatButtonToggleModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
     })

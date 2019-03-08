@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   constructor(
-    private _data: DataService, 
+    private _data: DataService,
     private router: Router,
     private title: TitleService,
     changeDetectorRef: ChangeDetectorRef,

@@ -27,4 +27,3 @@ export interface ITopicInfo {
   numberOfQuestions: number;
   category: Category;
 }
-

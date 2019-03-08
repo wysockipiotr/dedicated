@@ -1,4 +1,9 @@
-import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  ChangeDetectionStrategy
+} from '@angular/core';
 import { IQuestion } from '../_core/types';
 import { ViewportScroller } from '@angular/common';
 
@@ -11,9 +16,9 @@ import { ViewportScroller } from '@angular/common';
 export class QuestionsComponent implements OnInit {
   @Input() questions: IQuestion[];
 
-  constructor(private scroller: ViewportScroller) {}
+  constructor() {}
 
   ngOnInit() {
-    this.scroller.scrollToPosition([0, 0]);
+    // this.scroller.scrollToPosition([0, 0]);
   }
 }
