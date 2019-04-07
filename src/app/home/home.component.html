@@ -2,26 +2,26 @@
   <mat-grid-list
     [cols]="mobileQuery.matches ? 2 : 2"
     [rowHeight]="mobileQuery.matches ? '8:4' : '7:2'"
-    [gutterSize]="mobileQuery.matches ? '1px' : '0.75rem'"
-  >
+    [gutterSize]="mobileQuery.matches ? '1px' : '0.75rem'">
     <mat-grid-tile
       style="overflow: visible"
-      *ngFor="let info of topicsInfo; index as idx"
-    >
-      <mat-card matRipple (click)="topicPicked(info)">
-        <div class="mat-body-strong module-label noselect">
-          <span>
-            <mat-icon
-              [svgIcon]="info.category === 'windows' ? 'windows' : 'ubuntu'"
-            ></mat-icon>
+      *ngFor="let info of topicsInfo; index as idx">
+
+      <a [routerLink]="getRouteForTopic(info)">
+        <mat-card matRipple>
+          <div class="mat-body-strong module-label noselect">
+            <span>
+            <mat-icon [svgIcon]="info.category === 'windows' ? 'windows' : 'ubuntu'"></mat-icon>
           </span>
 
-          <div class="topic-info">
-            <span>{{ info.name }}</span>
-            <span class="mat-caption">{{ info | topicInfo }}</span>
+            <div class="topic-info">
+              <span>{{ info.name }}</span>
+              <span class="mat-caption">{{ info | topicInfo }}</span>
+            </div>
           </div>
-        </div>
-      </mat-card>
+        </mat-card>
+      </a>
+
     </mat-grid-tile>
   </mat-grid-list>
 </nav>

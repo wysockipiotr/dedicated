@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  topicPicked(topic: ITopicInfo) {
-    this._router.navigate([`/${topic.slug}`]);
+  getRouteForTopic(topic: ITopicInfo) {
+    return `/${topic.slug}`;
   }
 }
