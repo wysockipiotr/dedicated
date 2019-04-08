@@ -1,6 +1,7 @@
 import { ITopic } from './types';
 
 export const TOPICS: ITopic[] = [
+  
   {
     _id: '6e6ba4d2-28ae-4009-873c-d2d89345e49e',
     category: 'linux',
@@ -5020,1793 +5021,121 @@ export const TOPICS: ITopic[] = [
     numberOfQuestions: 25
   },
   {
-    _id: 'a0705c5f-4a46-47bf-93cc-33441278eb04',
-    category: 'windows',
-    name: 'Usługi katalogowe',
+    _id: '6e6ba4d2-28ae-4009-1000-d2d89345e49e',
+    category: 'linux',
+    name: 'Zarządzanie kontenerami',
     questions: [
       {
-        _id: 'cf4b54e8-e8a8-4abe-bd8a-531c3f1e99db',
+        _id: '8a1d3243-f08c-444e-1001-f7099e7c8b2b',
         questionNumber: 0,
         question:
-          'Wykonanie kwerendy do wyszukiwania wyłączonych kont użytkowników jest możliwe za pomocą:\n',
+          'W jaki sposób można trwale przechowywać dane z kontenera?\n',
         answers: [
           {
-            sentence: 'polecenia ds-query\n',
+            sentence:
+              'nie ma takiej możliwości\n',
             truth: false
           },
           {
-            sentence: 'polecenia dsquery\n',
+            sentence:
+              'woluminem nazwanym\n',
             truth: true
           },
           {
-            sentence: 'konsoli Active Directory Users and Computers\n',
-            truth: true
+            sentence: 'woluminem anonimowym\n',
+            truth: false
           },
           {
-            sentence: 'polecenia ds-get\n',
+            sentence:
+              'poleceniem cp\n',
             truth: false
           }
         ]
       },
       {
-        _id: '61f1f459-d94b-42c3-8677-72e7fbccfd51',
-        questionNumber: 1,
-        question: 'Role FSMO można:\n',
-        answers: [
-          {
-            sentence: 'Przejmować\n',
-            truth: true
-          },
-          {
-            sentence: 'Filtrować\n',
-            truth: false
-          },
-          {
-            sentence: 'Nadpisywać\n',
-            truth: false
-          },
-          {
-            sentence: 'Transferować\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'd13adec9-8e21-4188-b6c7-78bde1d1fe47',
-        questionNumber: 2,
-        question:
-          'W jednostkach organizacyjnych (Organization Unit) można utworzyć:\n',
-        answers: [
-          {
-            sentence: 'Użytkownika\n',
-            truth: true
-          },
-          {
-            sentence: 'Grupę\n',
-            truth: true
-          },
-          {
-            sentence: 'Komputer\n',
-            truth: true
-          },
-          {
-            sentence: 'Drukarkę\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '8fb3ddb7-dc9c-4ac5-a53a-881a90a84d14',
-        questionNumber: 3,
-        question:
-          'Za pomocą jakiego polecenia można dodać obiekt określonego typu (korzystając z wiersza poleceń) w Active Directory\n',
-        answers: [
-          {
-            sentence: 'dscreate user\n',
-            truth: false
-          },
-          {
-            sentence: 'dsadd user\n',
-            truth: true
-          },
-          {
-            sentence: 'dsadd computer\n',
-            truth: true
-          },
-          {
-            sentence: 'dscreate computer\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '5d93bada-1588-43b1-8362-c135d117079f',
-        questionNumber: 4,
-        question:
-          'Wybierz prawidłowe odpowiedzi dotyczące struktury Active Directory:\n',
-        answers: [
-          {
-            sentence:
-              'Jeśli domeny wchodzące w skład lasu mają nieciągłe nazwy DNS, tworzą kilka odrębnych drzew w obrębie lasu\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Drzewo posiada zawsze przynajmniej jedną domenę - domenę najwyższego poziomu (ang. root) - korzeń drzewa\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Drzewo domen - domeny potomne mogą, ale nie muszą zawierać nazwy bezpośredniej domeny nadrzędnej\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Las jest zestawem przynajmniej dwóch lub więcej drzew, które formują zwartą, ciągłą przestrzeń nazw.}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '3e4413ee-455e-4ff0-8751-bdb22886fce9',
-        questionNumber: 5,
-        question: 'Do czego służy polecenie dsget?\n',
-        answers: [
-          {
-            sentence:
-              'Wyświetla różne właściwości grupy, włącznie z członkami grupy w katalogu\n',
-            truth: false
-          },
-          {
-            sentence: 'Wyświetla właściwości komputera w katalogu.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Umożliwia dodawanie użytkowników, grup, komputerów, kontaktów i jednostek organizacyjnych do usługi Active Directory.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Umożliwia tworzenie, modyfikowanie i usuwanie obiektów katalogu.}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '44f86d9f-66a6-447e-be87-9aba321842db',
-        questionNumber: 6,
-        question: 'Jakie obiekty można dodawać za pomocą polecenia dsadd?\n',
-        answers: [
-          {
-            sentence: 'Grupy\n',
-            truth: true
-          },
-          {
-            sentence: 'Użytkowników\n',
-            truth: true
-          },
-          {
-            sentence: 'Jednostki organizacyjne\n',
-            truth: true
-          },
-          {
-            sentence: 'Pliki\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '7411f736-cd90-4d8a-a7f1-6d2fdc899d92',
-        questionNumber: 7,
-        question: 'Wskaż zdania prawdziwe dotyczące usługi Active Directory:\n',
-        answers: [
-          {
-            sentence: 'Struktura Active Directory ma strukturę drzewiastą.\n',
-            truth: true
-          },
-          {
-            sentence: 'Liśćmi drzewa mogą być użytkownicy, grupy i \n',
-            truth: true
-          },
-          {
-            sentence:
-              'Nie ma możliwości nadania określonemu użytkownikowi praw do zarządzania użytkownikami w jednostce organizacyjnej bez nadawania (...)\n',
-            truth: false
-          },
-          {
-            sentence: 'Możliwe jest kopiowanie użytkowników.}\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'a400b70a-23bd-4b57-b416-7846182b3971',
-        questionNumber: 8,
-        question: 'Program dsget.exe:\n',
-        answers: [
-          {
-            sentence: 'wymaga praw administratora do działania\n',
-            truth: true
-          },
-          {
-            sentence:
-              'może być uruchomione w graficznym interfejsie użytkownika za pomocą odpowiedniej opcji linii poleceń.\n',
-            truth: false
-          },
-          {
-            sentence: 'ma tekstowy interfejs użytkownika.\n',
-            truth: true
-          },
-          {
-            sentence: 'umożliwia tworzenie jednostek organizacyjnych.}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '97e11bcf-7fd6-417d-ad8e-0ff82a0d823c',
-        questionNumber: 9,
-        question:
-          'Jakie możliwości daje użycie polecenia dsadd (jako polecenie dla Active Directory)? \n',
-        answers: [
-          {
-            sentence: 'Nie może dodawać obiektu typu Computer do katalogu\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Nie może dodać obiektu typu Doman Service do katalogu.\n',
-            truth: true
-          },
-          {
-            sentence: 'Może dodawać obiekt typu Computer do katalogu.\n',
-            truth: true
-          },
-          {
-            sentence: 'Może dodać obiekt typu Domain Service do katalogu.}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '7b39786f-1b51-45e7-ad47-a39efcdb52ae',
-        questionNumber: 10,
-        question:
-          'Różnica pomiędzy zaufaniem do domen forest i external polega na:\n',
-        answers: [
-          {
-            sentence:
-              'Zaufanie typu forest pozwala na korzystanie z zasobów tylko w obrębie danego drzewa, zaś external we wszystkich drzewach.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Zaufanie typu external pozwala większej liczby domen na korzystanie ze swoich zasobów niż typ forest.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Zaufanie typu forest pozwala na korzystanie z zasobów tylko w obrębie drzew połączonych tego typu zaufaniem, zaś external nie musi (...)\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Zaufanie typu external jest dwukierunkowe, typu forest tylko jednokierunkowe.}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '0b9f07e1-65d6-4482-bbbb-a709e39d59d2',
-        questionNumber: 11,
-        question: 'Polecenie dsquery:\n',
-        answers: [
-          {
-            sentence:
-              'Zgodnie z określonymi kryteriami wykonuje kwerendę dotyczącą drzewa usługi DNS.\n',
-            truth: false
-          },
-          {
-            sentence: 'Jest równoważne poleceniu dsget.\n',
-            truth: false
-          },
-          {
-            sentence: 'Wykonuje kwerendę na dowolnej bazie danych.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Zgodnie z określonymi kryteriami wykonuje kwerendę dotyczącą usługi Active Directory.}\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '5a93ebfa-c9ab-49e2-91fe-7e7769c9d900',
-        questionNumber: 12,
-        question: 'Dodać grupę można za pomocą:\n',
-        answers: [
-          {
-            sentence: 'Konsoli "Active directory users and computers".\n',
-            truth: true
-          },
-          {
-            sentence: 'Polecenia Addgroup.\n',
-            truth: false
-          },
-          {
-            sentence: 'Polecenia dsadd group.\n',
-            truth: true
-          },
-          {
-            sentence: 'Polecenia adadd group.}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '401119c1-cb94-42cc-8f79-cb3b0b36b489',
-        questionNumber: 13,
-        question: 'Jakie występują typy zaufania w Active Directory:\n',
-        answers: [
-          {
-            sentence: 'Lasu (forest)\n',
-            truth: true
-          },
-          {
-            sentence: 'Wewnętrzne (internal)\n',
-            truth: false
-          },
-          {
-            sentence: 'Zewnętrzne (external)\n',
-            truth: true
-          },
-          {
-            sentence: 'Płatka śniegu (snowflake)}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '9f4711cd-9fb7-4453-80bd-226f0c16212c',
-        questionNumber: 14,
-        question: 'Struktura Active Directory:\n',
-        answers: [
-          {
-            sentence:
-              'Podstawową jednostką jest tzw. liść, który położony jest w kontenerze w Active Directory nazywanym jednostką centralną.\n',
-            truth: true
-          },
-          {
-            sentence: 'Liście i kontenery zorganizowane są w domeny.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Domeny zorganizowane w drzewo reprezentowane są w rożnych przestrzeniach adresowych DNS.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Domena może istnieć samodzielnie, nie musi istnieć w jakimś drzewie i jakimś lesie\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'e05a4673-113f-4808-962c-7cffa5aad2f8',
-        questionNumber: 15,
-        question: 'Polecenie dsadd może posłużyć do:\n',
-        answers: [
-          {
-            sentence: 'Modyfikowania obiektów wewnątrz AD.\n',
-            truth: false
-          },
-          {
-            sentence: 'Dodawania grup do AD.\n',
-            truth: true
-          },
-          {
-            sentence: 'Dodawania użytkowników do AD.\n',
-            truth: true
-          },
-          {
-            sentence: 'Wyszukiwania informacji o obiektach AD.}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '73423209-008e-4402-ae8e-e3070ea309f8',
-        questionNumber: 16,
-        question:
-          'Za pomoca konsoli Active Directory Users and Computers wykonano polecenie "dsadd Ala -pwd makota". Wskaż poprawne odpowiedzi.\n',
-        answers: [
-          {
-            sentence:
-              'Jeżeli użytkownik "Ala" nie istnieje w systemie wykonanie polecenia nie powiedzie się.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Powodzenie operacji jest zależne od poziomu uprawnień wykonującego go użytkownika.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'W przypadku powodzenia operacji zostanie utworzony nowy użytkownik o nazwie "Ala" i haśle "makota".\n',
-            truth: true
-          },
-          {
-            sentence:
-              'W przypadku powodzenia operacji hasło istniejącego użytkownika "Ala" zostanie zmienione na "makota".}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '4ef6857c-e1d0-42fc-b030-84f021fcd2d8',
-        questionNumber: 17,
-        question: 'Za pomoca polecenia dsadd można:\n',
-        answers: [
-          {
-            sentence: 'Utworzyć grupę zabezpieczeń.\n',
-            truth: true
-          },
-          {
-            sentence: 'Utworzyć jednostkę organizacyjną.\n',
-            truth: true
-          },
-          {
-            sentence: 'Utworzyć konto użytkownika.\n',
-            truth: true
-          },
-          {
-            sentence: 'Utworzyć grupę dystrybucyjną.}\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '0e73fadc-08e4-4b7f-bb5c-d95a17814fee',
-        questionNumber: 18,
-        question: 'Czym jest Active Directory?\n',
-        answers: [
-          {
-            sentence: 'Narzędzie certyfikujące w Windows Server 2003.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Usługą w systemie Windows, która udostępnia środki pozwalające zarządzać tożsamościami i relacjami.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Jest to zbiór funkcji, która upraszczają zarządzanie użytkownikami i komputerem.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Nakładka na system Linux pozwalająca zarządzać komputerem.}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'e4f2def6-c55d-4821-a7c3-5b0726a8faf6',
-        questionNumber: 19,
-        question:
-          'Poznane w czasach laboratorium narzędzia pozwalające na zarządzanie Active Directory to:\n',
-        answers: [
-          {
-            sentence: 'netsh\n',
-            truth: false
-          },
-          {
-            sentence: 'dsget\n',
-            truth: true
-          },
-          {
-            sentence: 'dsadd\n',
-            truth: true
-          },
-          {
-            sentence: 'Przystawka Active Directory Users and Computers\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'e1ec01cf-2561-4a45-8a26-c084a72a6eb7',
-        questionNumber: 20,
-        question:
-          'Ile kontrolerów może działać dla domeny w usłudze Active Directory?\n',
-        answers: [
-          {
-            sentence: 'więcej niż 2\n',
-            truth: true
-          },
-          {
-            sentence: '2\n',
-            truth: true
-          },
-          {
-            sentence: '1\n',
-            truth: true
-          },
-          {
-            sentence: 'domena może nie posiadać komputera\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'cb6b655c-9a32-4d5e-bb78-d451ab6fe1db',
-        questionNumber: 21,
-        question: 'Które z typów relacji zaufania są dwukierunkowe?\n',
-        answers: [
-          {
-            sentence: 'Lasu (forest)\n',
-            truth: true
-          },
-          {
-            sentence: 'Zewnętrzne (external)\n',
-            truth: true
-          },
-          {
-            sentence: 'Obszaru (realm)\n',
-            truth: true
-          },
-          {
-            sentence: 'Skrótu (shortcut)}\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '2167994f-fd6b-4a6a-8f6c-432c6f3adc6f',
-        questionNumber: 22,
-        question: 'Aby uruchomić na serwerze usługę Active Directory należy:\n',
-        answers: [
-          {
-            sentence: 'Utworzyć użytkownika do zarządzania usługą.\n',
-            truth: false
-          },
-          {
-            sentence: 'Zainstalować serwer DNS.\n',
-            truth: true
-          },
-          {
-            sentence: 'Dodać rolę Active Directory Domain Services.\n',
-            truth: true
-          },
-          {
-            sentence: 'Zainstalować serwer DHCP.}\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '187d730f-8025-4228-b5d9-d228915b52fc',
-        questionNumber: 23,
-        question:
-          'Co to jest jednostka organizacyjna (Organization Unit, OU)?\n',
-        answers: [
-          {
-            sentence:
-              'Pojedynczy komputer wchodzący w skład domeny Active Directory.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Serwer pracujący pod kontrolą systemu Windows 2008 Server.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Kontener wykorzystywany do grupowania obiektów wewnątrz domeny w logiczne grupy, na których wykonywane są zadania administracyjne (...)\n',
-            truth: true
-          },
-          {
-            sentence: 'Serwer służący do zarządzania protokołem ldap\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'c3e62548-9a8a-4ead-bd66-bbe527acd0fd',
-        questionNumber: 24,
-        question:
-          'Jakie obiekty mogą być modyfikowane za pomocą usługi Active Directory Sites and Services?\n',
-        answers: [
-          {
-            sentence: 'Łącza lokacji i lokacje.\n',
-            truth: true
-          },
-          {
-            sentence: 'Tylko serwery i lokacje.\n',
-            truth: false
-          },
-          {
-            sentence: 'Serwery, lokacje, replikacje.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Serwery, podsieci, ustawienia usługi katalogowej (NTDS)\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '768d1501-a2b2-4c8a-b24a-32210820f556',
-        questionNumber: 25,
-        question: 'Wskaż zdania prawdziwe:\n',
-        answers: [
-          {
-            sentence:
-              'Usługa Active Directory dostępna jest w systemach Windows od wersji Vista.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Za pomocą polecenia dsadd user możliwe jest dodanie użytkownika do Active Directory.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Za pomocą polecenia dsadd group możliwe jest dodanie grupy do Active Directory.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Szablon konta użytkownika to konto zawierające wzorcowy zestaw najczęściej wykorzystywanych właściwości, odpowiednich dla danej grupy użytkowników.}\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'b9cd09f5-6a4d-4fbe-83dc-e903be41a7f0',
-        questionNumber: 26,
-        question:
-          'Które polecenie umożliwia usuwanie obiektów określonego typu?\n',
-        answers: [
-          {
-            sentence: 'dsmod\n',
-            truth: false
-          },
-          {
-            sentence: 'csvde\n',
-            truth: false
-          },
-          {
-            sentence: 'dsadd\n',
-            truth: false
-          },
-          {
-            sentence: 'dsrm\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'ea66ceea-be9b-46b2-8ccc-ff9582fe5244',
-        questionNumber: 27,
-        question:
-          'W Windows Server 2008 - Active Directory administrator edytując właściwości obiektu klasy Użytkownik, w zakładce Konto ma możliwość:\n',
-        answers: [
-          {
-            sentence:
-              'Wyznaczenia daty i godziny, w której konto Użytkownika zostanie usunięte z systemu.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Zablokowania Użytkownikowi możliwości samodzielnej zmiany hasła.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Ustalenia godzin w których Użytkownik będzie mógł lub nie będzie mógł zalogować się do systemu.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Określenia do jakich komputerów znajdujących się w domenie Użytkownik ma prawo do zalogowania się.\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '7f80c69c-fce6-45ba-b431-283632635755',
-        questionNumber: 28,
-        question: 'Za pomocą polecenia dsadd w systemie Windows można:\n',
-        answers: [
-          {
-            sentence: 'Zmodyfikować konto użytkownika\n',
-            truth: false
-          },
-          {
-            sentence: 'Utworzyć jednostkę organizacyjną\n',
-            truth: true
-          },
-          {
-            sentence: 'Utworzyć konto użytkownika\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Przenieść jednostkę organizacyjną z jednej domeny do drugiej\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '01431f52-bd3d-4de0-922c-f82ec47231bf',
-        questionNumber: 29,
-        question: 'Wskaż najważniejsze funkcje Active directory:\n',
-        answers: [
-          {
-            sentence: 'Obsługa LDAP\n',
-            truth: true
-          },
-          {
-            sentence: 'Obsługa DNS\n',
-            truth: true
-          },
-          {
-            sentence: 'Obsługa zabezpieczeń\n',
-            truth: true
-          },
-          {
-            sentence: 'Zgodność z TCP/IP\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '781ba6f2-e1e4-486c-9cad-111774f430c4',
-        questionNumber: 30,
-        question: 'W jednostce organizacyjnej można umieszczać:\n',
-        answers: [
-          {
-            sentence: 'Komputery\n',
-            truth: true
-          },
-          {
-            sentence: 'Użytkowników\n',
-            truth: true
-          },
-          {
-            sentence: 'Inne jednostki organizacyjne\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Obiekty z innych domen niż domena jednostki organizacyjnej\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '94a2f098-a401-4272-8001-29fb98d781c5',
-        questionNumber: 31,
-        question:
-          'Wskaż poprawne stwierdzenia na temat uprawnień w Active Directory:\n',
-        answers: [
-          {
-            sentence: 'Uprawnienia nie mogą być dziedziczone\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Istnieje możliwość nadania uprawnień administratora na danym komputerze bez posiadania uprawnień administratora w domenie\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Aby skopiować użytkownika, jego konto musi być uprzednio wyłączone\n',
-            truth: false
-          },
-          {
-            sentence: 'Użytkownik może należeć do wielu grup\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'd68f7048-4940-43c7-9804-eca558401e09',
-        questionNumber: 32,
-        question: 'Jakie protokoły są wykorzystywane przez Active Directory?\n',
-        answers: [
-          {
-            sentence: 'SSH\n',
-            truth: false
-          },
-          {
-            sentence: 'LDAP\n',
-            truth: true
-          },
-          {
-            sentence: 'Kerberos\n',
-            truth: true
-          },
-          {
-            sentence: 'DNS\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'c4057ea3-f2ba-49c9-8b95-ad12d0d2355a',
-        questionNumber: 33,
-        question: 'Do czego służy polecenie dsadd?\n',
-        answers: [
-          {
-            sentence:
-              'Dodaje możliwość zdalnego dostępu do elementu serwisu Active Directory\n',
-            truth: false
-          },
-          {
-            sentence: 'Dodaje atrybut do elementu serwisu Active Directory\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Dodaje połączenie do zarządzania elementem serwisu Active Directory\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Dodanie określony typ elementu do serwisu Active Directory\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '56390d28-aa79-4a86-8f0e-e8c950d8c4b0',
-        questionNumber: 34,
-        question:
-          'Wskaż prawdziwe zdania dotyczące jednostek organizacyjnych (Organizational Units):\n',
-        answers: [
-          {
-            sentence: 'Mogą tworzyć strukturę hierarchiczną\n',
-            truth: true
-          },
-          {
-            sentence: 'Grupują wyłącznie użytkowników\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Mogą być wykorzystane do delegowania uprawnień administracyjnych\n',
-            truth: true
-          },
-          {
-            sentence: 'Nie mogą być w sobie zagnieżdżane\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'c9feb539-c3b7-42f9-9667-c6c533b40571',
-        questionNumber: 35,
-        question:
-          'Za pomocą konsoli Active Directory Users and Computers wykonano polecenie: „dsmod group Alfa -addmbr Beta”. Wskaż wszystkie poprawne odpowiedzi.:\n',
-        answers: [
-          {
-            sentence:
-              'W przypadku powodzenia operacji do grupy Beta zostanie dodany obiekt Alfa.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'W przypadku powodzenia operacji do grupy Alfa zostanie dodany obiekt Beta.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Powodzenie operacji jest zależne od poziomu uprawnień wykonującego go użytkownika.\n',
-            truth: true
-          },
-          {
-            sentence: 'Obiekt o nazwie Beta może reprezentować użytkownika.}',
-            truth: true
-          }
-        ]
-      }
-    ],
-    numberOfQuestions: 36
-  },
-  {
-    _id: '1b605a48-ea27-4133-888b-7903151637a6',
-    category: 'windows',
-    name: 'Obiekty Zasad Grup',
-    questions: [
-      {
-        _id: '3fcff1a2-0898-42e5-ac49-c2cb1b2d9784',
-        questionNumber: 0,
-        question:
-          'Na jakich poziomach w Active Directory mogą być przypisywane obiekty GPO?\n',
-        answers: [
-          {
-            sentence: 'Lokalnie \n',
-            truth: true
-          },
-          {
-            sentence: 'Na poziomie lokacji\n',
-            truth: false
-          },
-          {
-            sentence: 'Na poziomie domeny\n',
-            truth: true
-          },
-          {
-            sentence: 'Na poziomie jednostki organizacyjnej\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '92e541b6-fd03-4f15-8e8e-fbdc0b85c3bc',
+        _id: '8a1d3243-f08c-444e-1002-f7099e7c8b2b',
         questionNumber: 1,
         question:
-          'Aby wyświetlić wynikowy zestaw zasad dla użytkownia Sysop należy użyć polecenia:\n',
+          'Które polecenie pozwala na wyświetlenie działających kontenerów?\n',
         answers: [
           {
-            sentence: 'gpresult /gpo Sysop\n',
+            sentence:
+              'docker processes\n',
             truth: false
           },
           {
-            sentence: 'gpresult /?\n',
-            truth: false
-          },
-          {
-            sentence: 'gpresult /user Sysop\n',
+            sentence:
+              'docker ps -a\n',
             truth: true
           },
           {
-            sentence: 'gpresult /u Sysop\n',
+            sentence: 'docker ps\n',
+            truth: true
+          },
+          {
+            sentence:
+              'docker list\n',
             truth: false
           }
         ]
       },
       {
-        _id: 'd4d0a35f-2962-44d7-a3d6-43d89f17cad1',
+        _id: '8a1d3243-f08c-444e-1003-f7099e7c8b2b',
         questionNumber: 2,
-        question: 'Wskaż prawdziwe zdania dotyczące GPO\n',
+        question:
+          'Obraz zbudowany na bazie innego obrazu:\n',
         answers: [
           {
-            sentence: 'Akronin GPO rozwija się jako Group Policy Operation\n',
+            sentence:
+              'niezależnie od dodanych instrukcji ma taki sam rozmiar jak obraz bazowy\n',
             truth: false
           },
           {
             sentence:
-              'Za pomocą GPO Standard Desktop można zabronić dostępu do Panelu Sterowania\n',
+              'tworzy się za pomocą Dockerfile\n',
             truth: true
           },
           {
-            sentence:
-              'Dane jednego GPO mogą być przypisane tylko jednej jednostce organizacyjnej\n',
+            sentence: 'nie ma takiej możliwości\n',
             truth: false
           },
           {
             sentence:
-              'Nie da się wyłączyć stosowania zasad GPO danej jednostki organizacyjnej bez usuwania GPO lu łącza obiektu\n',
-            truth: false
+              'jest obrazem pochodnym\n',
+            truth: true
           }
         ]
       },
       {
-        _id: '81579a8a-2f8f-4d85-8ca0-1cd2c39c826f',
+        _id: '8a1d3243-f08c-444e-1004-f7099e7c8b2b',
         questionNumber: 3,
         question:
-          'Gdzie w rejestrze systemowym można znaleźć wpisy wynikające z GPO?\n',
+          'Które polecenie umożliwi pobranie obrazy z repozytorium Dockera?\n',
         answers: [
           {
-            sentence: 'HKEY LOCAL MACHINE (HKLM)\n',
+            sentence:
+              'docker run\n',
             truth: true
           },
           {
-            sentence: 'HKEY CLASSES ROOT (HKCR)\n',
+            sentence:
+              'docker pull\n',
+            truth: true
+          },
+          {
+            sentence: 'docker images\n',
             truth: false
           },
           {
-            sentence: 'HKEY CURRENT USER (HKCU)\n',
-            truth: true
-          },
-          {
-            sentence: 'HKEY USERS (HKU)\n',
+            sentence:
+              'docker push\n',
             truth: false
           }
         ]
       },
-      {
-        _id: '796f8612-3b46-460f-898c-70f61b3bf107',
-        questionNumber: 4,
-        question:
-          'W jaki sposób można modyfikować domyślne przetwarzanie obiektów zasad grupy?\n',
-        answers: [
-          {
-            sentence: 'Blokując dziedziczenie zasad grupy\n',
-            truth: true
-          },
-          {
-            sentence: 'Definiując warunkowe wprowadzanie ustawień.\n',
-            truth: false
-          },
-          {
-            sentence: 'Wyłączając przetwarzanie konkretnego łącza GPO\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Wyłączając nadpisywanie ustawień wprowadzanych przez konkretne łącze GPO.\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '23eec51e-3ff9-4028-9cc3-465caba9cc89',
-        questionNumber: 5,
-        question: 'Group Policy Management Console umożliwia:\n',
-        answers: [
-          {
-            sentence:
-              'Wszystkie funkcje konsoli Power Shell, oraz dodatkowo funkcje zarządzania obiektami GPO\n',
-            truth: false
-          },
-          {
-            sentence: 'Stworzenie kopii zapasowej obiektów GPO\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Łatwiejsze zarządzanie obiektami GPO, dzięki graficznemu interfejsowi użytkownika\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Tworzenie logów każdej operacji użytkownika w wybranej przez administratora grupie\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '956be289-b562-41fb-b26d-05b5761c5f24',
-        questionNumber: 6,
-        question: 'System Windows w ramach zarządzania GPO umożliwia:\n',
-        answers: [
-          {
-            sentence:
-              'Filtrowanie ustawień GPO - wyłączenie stosowania określonych zasad GPO\n',
-            truth: true
-          },
-          {
-            sentence: 'Wymuszanie stosowania zasad GPO\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Przeglądanie wdrażania elementów GPO dla danej jednostki organizacyjnej\n',
-            truth: true
-          },
-          {
-            sentence: 'Blokowanie dziedziczenia ustawień obiektów GPO\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'c7af8747-49fc-405f-b406-3eb0ace3aad0',
-        questionNumber: 7,
-        question: 'Które narzędzia służą do tworzenia i zarządzania GPO?\n',
-        answers: [
-          {
-            sentence: 'Konsola Group Policy Management\n',
-            truth: true
-          },
-          {
-            sentence: 'narzędzie gpadd\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Group Policy Object Editor z Active Directory Users and Computers\n',
-            truth: true
-          },
-          {
-            sentence: 'narzędzie gpomod\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '238ea217-b448-420c-9db7-860e2125e2f0',
-        questionNumber: 8,
-        question: 'GPO jest to: Wskaż wszystkie poprawne odpowiedzi.\n',
-        answers: [
-          {
-            sentence:
-              'Zbiór ustawień, który określa jak będzie się zachowywał i wyglądał system, dla zdefiniowanych grup użytkowników.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Narzędzie administracyjne, służące do zarządzania zasadami grup.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Obiekt, mogący istnieć tylko lokalnie zawierający zasady działania systemu dla grup użytkowników.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Zbiór obiektów zawierający ustawienia dotyczące zasad działania systemu, po jednym obiekcie na każdego użytkownika.\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'c7186754-436e-4b65-b13c-e16506223615',
-        questionNumber: 9,
-        question:
-          'W jaki sposób można wyznaczyć efektywne ustawienia dla obiektów GPO?\n',
-        answers: [
-          {
-            sentence: 'Za pomocą polecenia gpoeffective\n',
-            truth: false
-          },
-          {
-            sentence: 'Za pomocą Group Policy Preferences\n',
-            truth: false
-          },
-          {
-            sentence: 'Za pomocą Group Policy Results Wizards\n',
-            truth: true
-          },
-          {
-            sentence: 'Za pomocą polecenia gpresult\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '9f48e448-f704-44f7-85a5-0c0e8db95a35',
-        questionNumber: 10,
-        question: 'Program "GPRESULT" służy do:\n',
-        answers: [
-          {
-            sentence: 'Zmiany zasad GPO\n',
-            truth: false
-          },
-          {
-            sentence: 'Zmiany efektywnych ustawień GPO\n',
-            truth: false
-          },
-          {
-            sentence: 'Usuwania zasad GPO\n',
-            truth: false
-          },
-          {
-            sentence: 'Przeglądania efektywnych ustawień GPO\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '6886c0e2-c588-4af2-bffb-c8f8f46e16cd',
-        questionNumber: 11,
-        question:
-          'Które z podanych funkcji może pełnić narzędzie Group Policy Results w kontekście zasad grup?\n',
-        answers: [
-          {
-            sentence:
-              'Generowanie raportów o wpływie zasad grupy na konkretnego użytkownika lub komputer.\n',
-            truth: true
-          },
-          {
-            sentence: 'Rejestrowanie prób ominięcia lokalnych zabezpieczeń\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Wyświetlanie informacji o efektywnych ustawieniach dla obiektów jednostki organizacyjnej.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Eksportowanie ustawień, aby umożliwić ich ponowne wdrożenie w dowolnym momencie.\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'cc3f80c3-4a17-4b27-9183-fbb737310241',
-        questionNumber: 12,
-        question: 'Które narzędzia służą do tworzenia i zarządzania GPO?\n',
-        answers: [
-          {
-            sentence: 'Narzędzia gpmod\n',
-            truth: false
-          },
-          {
-            sentence: 'Konsola Group Policy Management\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Group Policy Object Editor z Active Directory Users and Computers\n',
-            truth: true
-          },
-          {
-            sentence: 'Narzędzie gpadd\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '23ce129d-1392-4bc9-9dc9-145ffb9cac76',
-        questionNumber: 13,
-        question:
-          'Diagnozujesz problem z ustawieniami Zasad Grupy w dużej domenie. chcesz się dowiedzieć, jakie ustawienia są stosowane dla danego komputera.\n',
-        answers: [
-          {
-            sentence:
-              'Przeglądasz ustawienia zasad grupy w konsoli Active Directory Users and Computers\n',
-            truth: false
-          },
-          {
-            sentence: 'Korzystasz z narzędzia gpresult\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Korzystasz z  "Group Policy Result" w konsoli Group Policy Management\n',
-            truth: true
-          },
-          {
-            sentence: 'Nie jest możliwe uzyskanie takich informacji\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '47743e44-dec4-499d-ac34-c0d93c33ef87',
-        questionNumber: 14,
-        question: 'Jakimi narzędziami możesz konfigurować GPO?\n',
-        answers: [
-          {
-            sentence: 'Group Policy Management Console\n',
-            truth: true
-          },
-          {
-            sentence: 'Active Directory Sites and Services\n',
-            truth: true
-          },
-          {
-            sentence: 'Remote Desktop Assistance\n',
-            truth: false
-          },
-          {
-            sentence: 'Edytor obiektów zasad grup\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '4b2f741b-abd9-44a3-8053-beee42903b97',
-        questionNumber: 15,
-        question:
-          'Jaki będzie wynik polecenia gpresult /user user1 w Windows Serwer 2008?\n',
-        answers: [
-          {
-            sentence:
-              'Wyświetlenie rezultatu wykonania polecenia gpupdate dla użytkownika user1\n',
-            truth: false
-          },
-          {
-            sentence: 'Nie ma takiego polecenia\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Wyświetlenie ustawień zmiennych globalnych użytkownika user1\n',
-            truth: false
-          },
-          {
-            sentence: 'Wyświetlenie zasad grup dla użytkownika user1\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '359e6e6e-85a8-4d73-a973-82bb7a5ee634',
-        questionNumber: 16,
-        question: 'Wskaż prawdziwe zdania dotyczące Group Policy Objects\n',
-        answers: [
-          {
-            sentence:
-              'Dany obiekt GPO można przypisać tylko do jednej jednostki organizacyjnej\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Zasady zawarte w GPO przypisanym do domeny są domyślnie dziedziczone przez jednostki organizacyjne tej domeny\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Do jednej jednostki organizacyjnej można przypisać wiele różnych obiektów GPO\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Zasady obiektów GPO przypisanych jednostkom podrzędnym domyślnie nadpisują zasady odziedziczone z GPO jednostek nadrzędnych\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '58bc3c9e-ff53-4964-b951-24065c92e3f7',
-        questionNumber: 17,
-        question:
-          'Co się stanie, jeśli pewne ustawienia obiektu zasad grup ustawimy na poziomie domeny na pewną wartość, a na poziomie komputera ustawimy na przeciwną?\n',
-        answers: [
-          {
-            sentence:
-              'Zastosowane zostanie ustawienie na poziomie "komputera"\n',
-            truth: true
-          },
-          {
-            sentence: 'Wystąpu konflikt i zostanie zgłoszony błąd\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Poczas uruchamiania tego komputera losowo wybierana będzie wartość, która będzie się do niego stosować\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Zastosowane zostanie ustawienie ustalone na poziomie "domeny"\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '8c567eae-7fed-4dbf-9c46-989626424172',
-        questionNumber: 18,
-        question: 'Konsola Group Policy Managment\n',
-        answers: [
-          {
-            sentence: 'Umożliwia raportowanie ustawień GPO\n',
-            truth: true
-          },
-          {
-            sentence: 'Pozwala na łączenie jednostek organizacyjnych z GPO\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Jest domyślnie zainstalowana w każdej wersji Windowsa 7\n',
-            truth: false
-          },
-          {
-            sentence: 'Pozwala zmienić ustawienia dziedziczenia GPO\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'cd4fe351-d4e9-45f7-ae9c-8ebe550eb0a1',
-        questionNumber: 19,
-        question: 'Zasady grup (GPO) przypisane danemu komputerowi:\n',
-        answers: [
-          {
-            sentence: 'Dotyczą tylko administratoeów danego komputera.\n',
-            truth: false
-          },
-          {
-            sentence: 'Obowiązują wszystkich użytkowników komputera\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Nie istnieją. Zasady grup mogą zostać przypisane jedynie użytkownikowi.\n',
-            truth: false
-          },
-          {
-            sentence: 'Są stosowane podczas uruchamiania komputera\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '165974d4-6dfa-4da7-9609-d6fc4153881c',
-        questionNumber: 20,
-        question:
-          'Z jakich części składają się obiekty zasad grup (Group Policy Object)?\n',
-        answers: [
-          {
-            sentence: 'Ustawienia systemu\n',
-            truth: false
-          },
-          {
-            sentence: 'Ustawienia komputera\n',
-            truth: true
-          },
-          {
-            sentence: 'Ustawienia użytkownika\n',
-            truth: true
-          },
-          {
-            sentence: 'Ustawienie domyślne\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '1a9fc6f4-ea9e-4f44-a553-00ca065334a9',
-        questionNumber: 21,
-        question:
-          'Poniższy skrypt vbs wykonany po zalogowaniu użytkownika: Set objNetowrk = Wscript.CreateObject("Wscript.Network") objNetwork.NapNetworkDrive "S.:"\\ LondonPublic"\n',
-        answers: [
-          {
-            sentence: 'Udostępni dysk S jako London LondonPublic\n',
-            truth: false
-          },
-          {
-            sentence: 'Podmontuje zdalny zasób sieciowy\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Umożliwi dostęp do zdalnego zasobu sieciowego jako dysk S\n',
-            truth: true
-          },
-          {
-            sentence: 'Utworzy nowy zasób sieciowy London LondonPublic\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'e4067f51-5ff2-41ce-a01d-b8b47db159ff',
-        questionNumber: 22,
-        question:
-          'Aby sprawdzić wynikowe ustawienia GPO należy skorzystać z polecenia:\n',
-        answers: [
-          {
-            sentence: 'gpoutcome\n',
-            truth: false
-          },
-          {
-            sentence: 'gpsummary\n',
-            truth: false
-          },
-          {
-            sentence: 'gpupdate\n',
-            truth: false
-          },
-          {
-            sentence: 'gpresult\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '59e759f6-665d-41db-8cb0-207208433547',
-        questionNumber: 23,
-        question: 'Jakie narzędzia służą do konfigurowania Group Policy:\n',
-        answers: [
-          {
-            sentence: 'Narzędzi dsmod\n',
-            truth: false
-          },
-          {
-            sentence: 'Konsola Active Directory Users and Computers\n',
-            truth: false
-          },
-          {
-            sentence: 'Polecenie dsquery\n',
-            truth: false
-          },
-          {
-            sentence: 'Konsola Group Policy Managment\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'e2a0f543-05fd-4b26-9c4e-19bc7b11d031',
-        questionNumber: 24,
-        question:
-          'Czy dane GPO może być przypidane kilku różnym jednostkom organizacyjnym?\n',
-        answers: [
-          {
-            sentence:
-              'Tak, może być przypisane, jeżeli te jednostki organizacyjne są zawarte w jednej domenie dla której jest przypisane GPO\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Nie, nie może być przypisane, jeżeli jednostki te są zawarte w jednej domenie dla której jest przypisane GPO.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Nie, dane GPO zawsze jest przypisane tylko jednej jednostce organizacyjnej\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Dane GPO może być zawsze przypisane kilku różnym jednostkom organizacyjnym. W każdej sytuacji.\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'd06f4774-bebe-46b9-a382-54284859d7e3',
-        questionNumber: 25,
-        question: 'Opcja "Zablokuj dziedziczenie zasad"\n',
-        answers: [
-          {
-            sentence:
-              'blokuje obiekty zasad grupy, które są stosowane wyżej w hierarchii domen i jednostek organizacyjnych usługi Active Directory.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'może blokować obiekty zasad grupy, dla których włączono opcję "Nie zastępuj"\n',
-            truth: false
-          },
-          {
-            sentence: 'Może być ustawiona w jednostkach organizacyjnych\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Może być ustawiona w poszczególnych obiektach zasad grupy\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '7815d26e-d70c-4027-85a7-f2ef7c64e377',
-        questionNumber: 26,
-        question: 'Obiekt GPO może zostać przypisany bezpośrednio do:\n',
-        answers: [
-          {
-            sentence: 'Domeny\n',
-            truth: true
-          },
-          {
-            sentence: 'Jednostki organizacyjnej\n',
-            truth: true
-          },
-          {
-            sentence: 'Konkretnego komputera\n',
-            truth: false
-          },
-          {
-            sentence: 'Konkretnego użytkownika\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '3ad97387-7486-4958-8277-2efddc5c7279',
-        questionNumber: 27,
-        question:
-          'Wskaż poprawne zdania dotyczące dziedziczenia zasad grup w Windows Server 2008\n',
-        answers: [
-          {
-            sentence:
-              'Jawne określenie ustawienia zasad grupy w kontenerze podrzędnym zastępuje ustawienie odziedziczone z kontenera nadrzędnego\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Ustawienia zasad, które są wyłączone, są dziedziczone jako wyłączone\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Po zaznaczenia pola wyboru "Nie zastępuj" (wymuszanie dziedziczenia) kontenery podrzędne są zmuszane do dziedziczenia zasad, chyba że zasady te wchdzą w konflikt z zasadami kontenerów podrzędnych\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Nieskonfigurowane ustawienia zasad w jednostce nadrzędnej może być dziedziczone przez jednostkę podrzędną\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '18379c4b-de64-49a9-b917-0bd8c250bb33',
-        questionNumber: 28,
-        question:
-          'Które z podanych funkcji może pełnić narzędzie Group Policy Results w kontekście zasad grup?\n',
-        answers: [
-          {
-            sentence:
-              'Wyświetlanie informacji o efektywnych ustawieniach dla obiektów jednostki organizacyjnej.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Eksportowanie ustawień, aby umożliwić ich ponowne wdrożenie w dowolnym momencie\n',
-            truth: false
-          },
-          {
-            sentence: 'Rejestrowanie prób ominięcia lokalnych zabezpieczeń\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Generowanie raportów w wpływie zasad grupy na konkretnego użytkownika lub komputer\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '7c23d0d3-14de-45c6-8ae2-11a986d63025',
-        questionNumber: 29,
-        question: 'Ustawienia Group Policy są aplikowane w sytuacji, gdy:\n',
-        answers: [
-          {
-            sentence: 'Przy nawiązaniu połączenia VPN\n',
-            truth: true
-          },
-          {
-            sentence: 'Użytkownik się loguje\n',
-            truth: true
-          },
-          {
-            sentence: 'Co zadany czas\n',
-            truth: true
-          },
-          {
-            sentence: 'Komputer jest uruchamiany\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: '7955eede-7244-4780-b558-07e45d46de83',
-        questionNumber: 30,
-        question:
-          'Opcja "Zablokuj dziedziczenie zasad" w AD Users and Computers\n',
-        answers: [
-          {
-            sentence:
-              'nie blokuje dziedziczenia w obiektach zasad grupy, dla których ustawiono wymuszenie dziedziczenia\n',
-            truth: true
-          },
-          {
-            sentence:
-              'może być ustawiona tylko w domenach i jednostkach organizacyjnych\n',
-            truth: true
-          },
-          {
-            sentence:
-              'może być ustawiona w domenach, jednostkach organizacyjnych oraz w poszczególnych obiektach zasad grupy\n',
-            truth: false
-          },
-          {
-            sentence:
-              'może być ustawiona tylko w poszczególnych obiektach zasad grupy\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'd474f9b7-08eb-4ebe-974e-bd7cfe39ec5c',
-        questionNumber: 31,
-        question: 'Za pomocą GPO można uzyskać:\n',
-        answers: [
-          {
-            sentence: 'Przekierowanie folderu domowego "My Documents"\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Ograniczenie uprawnień dla wszystkich użytkowników, którzy są zalogowani na danym komputerze\n',
-            truth: true
-          },
-          {
-            sentence: 'Ograniczenie uprawnień dla jednostki organizacyjnej\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Ograniczenie uprawnień polegające na zabronieniu dostępu do panelu sterowania\n',
-            truth: true
-          }
-        ]
-      },
-      {
-        _id: 'a7f7fa22-0f26-49bc-a1d3-67a9f22d40cf',
-        questionNumber: 32,
-        question: 'Jak są dziedziczone uprawnienia wynikające z GPO?\n',
-        answers: [
-          {
-            sentence:
-              'Nie są dziedziczone. Każdemu obiektowi należy nadać uprawnienia osobno.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Są dziedziczone przez całą strukturę - jeśli dany obiekt ma rodzica, to jako domyślne przejmuje jego uprawnienia.\n',
-            truth: true
-          },
-          {
-            sentence:
-              'Domyślnie nie są dziedziczone, aby aktywować dziedziczenie należy dla OU ustawić opcję "Allow Privileges Inherintance"\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Dzieci dziedziczą jedynie najmniej restrykcyjne uprawnienia swoich rodziców\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: 'ddead5ae-16e2-4430-add5-cb202c7bda85',
-        questionNumber: 33,
-        question:
-          'Ustawienia Group Policy dla kont użytkowników mogą zawierać:\n',
-        answers: [
-          {
-            sentence: 'Skrypty logowania\n',
-            truth: true
-          },
-          {
-            sentence: 'Konfigurację ustawień pulpitu\n',
-            truth: true
-          },
-          {
-            sentence: 'Przekierowanie folderu\n',
-            truth: true
-          },
-          {
-            sentence: 'Prawa do dostępu do zasobów lokalnych\n',
-            truth: false
-          }
-        ]
-      },
-      {
-        _id: '5ab78cdf-7ae8-4b54-8b1f-fd68c2f113cc',
-        questionNumber: 34,
-        question: 'Za pomocą GPO można:\n',
-        answers: [
-          {
-            sentence: 'Zabronić dostepu do Panelu Sterowania\n',
-            truth: true
-          },
-          {
-            sentence: 'Zamontować folder sieciowy jako dysk\n',
-            truth: true
-          },
-          {
-            sentence: 'Usuwać kopmputery z domeny.\n',
-            truth: false
-          },
-          {
-            sentence:
-              'Wykonywać dedykowane skrypty podczas logowania użytkownika.',
-            truth: true
-          }
-        ]
-      }
-    ],
-    numberOfQuestions: 35
+    ], numberOfQuestions: 4
   },
+
   {
     _id: '2b71c91a-91b7-4a98-b514-141f6058004b',
     category: 'windows',
@@ -10347,5 +8676,150 @@ export const TOPICS: ITopic[] = [
       }
     ],
     numberOfQuestions: 13
-  }
+  },
+  {
+    _id: '6e6ba4d2-28a0-4009-2000-d2d89345e49e',
+    category: 'windows',
+    name: 'Rejestrowanie zdarzeń systemu',
+    questions: [
+      {
+        _id: '8a1d3243-f08c-444e-2001-f7099e7c8b2b',
+        questionNumber: 0,
+        question:
+          'Jakie poziomy ważności zdarzeń mogą wystąpić w dzienniku System\n',
+        answers: [
+          {
+            sentence:
+              'Informacje\n',
+            truth: true
+          },
+          {
+            sentence:
+              'Błędy\n',
+            truth: true
+          },
+          {
+            sentence: 'Sukcesy inspekcji\n',
+            truth: false
+          },
+          {
+            sentence:
+              'Niepowodzenia inspekcji\n',
+            truth: false
+          }
+        ]
+      },
+      {
+        _id: '8a1d3243-f08c-444e-2002-f7099e7c8b2b',
+        questionNumber: 1,
+        question:
+          'Jakie polecenie może służyć do utworzenia niestandardowego dziennika zdarzeń o nazwie MojeLogi, rejestrującego zdarzenia z aplikacji Apka\n',
+        answers: [
+          {
+            sentence:
+              'New-EventLog -Source MojeLogi -LogName Apka\n',
+            truth: false
+          },
+          {
+            sentence:
+              'Create-EventLog -Source MojeLogi -LogName Apka\n',
+            truth: false
+          },
+          {
+            sentence: 'Create-EventLog -Source Apka -LogName MojeLogi\n',
+            truth: false
+          },
+          {
+            sentence:
+              'New-EventLog -Source Apka -LogName MojeLogi\n',
+            truth: true
+          }
+        ]
+      },
+
+      {
+        _id: '8a1d3243-f08c-444e-2003-f7099e7c8b2b',
+        questionNumber: 2,
+        question:
+          'Jakie poziomy ważności zdarzeń mogą wystąpić w dzienniku System?\n',
+        answers: [
+          {
+            sentence:
+              'Sukcesy inspekcji\n',
+            truth: false
+          },
+          {
+            sentence:
+              'Ostrzeżenia\n',
+            truth: true
+          },
+          {
+            sentence: 'Krytyczne\n',
+            truth: true
+          },
+          {
+            sentence:
+              'Niepowodzenia inspekcji\n',
+            truth: false
+          }
+        ]
+      },
+      {
+        _id: '8a1d3243-f08c-444e-2004-f7099e7c8b2b',
+        questionNumber: 3,
+        question:
+          'Jakie właściwości zdarzenia są zapisywane w ramach opisu ogólnego?\n',
+        answers: [
+          {
+            sentence:
+              'poziom\n',
+            truth: true
+          },
+          {
+            sentence:
+              'identyfikator zdarzenia\n',
+            truth: true
+          },
+          {
+            sentence: 'źródło\n',
+            truth: true
+          },
+          {
+            sentence:
+              'polecenie\n',
+            truth: false
+          }
+        ]
+      },
+      {
+        _id: '8a1d3243-f08c-444e-2005-f7099e7c8b2b',
+        questionNumber: 4,
+        question:
+          'Wskaż zdania prawdziwe dotyczące rejestrowania zdarzeń czyszczenia logów za pomocą PowerShell:\n',
+        answers: [
+          {
+            sentence:
+              'Po skonfigurowaniu polecenie czyszczące logi jest rejestrowane w dzienniku Windows PowerShell\n',
+            truth: true
+          },
+          {
+            sentence:
+              'Do rejestracji komend konieczne jest włączenie inspekcji w ...?\n',
+            truth: true
+          },
+          {
+            sentence: 'Domyślnie wszystkie polecenia są zapisywane w dzienniku\n',
+            truth: false
+          },
+          {
+            sentence:
+              'Domyślnie polecenie czyszczące wszystkie logi nie zostanie zapisane w dzienniku\n',
+            truth: true
+          }
+        ]
+      },
+    ],
+    numberOfQuestions: 5
+  },
+
 ];
