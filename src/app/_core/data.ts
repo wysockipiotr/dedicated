@@ -1,7 +1,7 @@
 import { ITopic } from './types';
 
 export const TOPICS: ITopic[] = [
-  
+
   {
     _id: '6e6ba4d2-28ae-4009-873c-d2d89345e49e',
     category: 'linux',
@@ -5023,7 +5023,7 @@ export const TOPICS: ITopic[] = [
   {
     _id: '6e6ba4d2-28ae-4009-1000-d2d89345e49e',
     category: 'linux',
-    name: 'Zarządzanie kontenerami',
+    name: 'Docker / Konteneryzacja',
     questions: [
       {
         _id: '8a1d3243-f08c-444e-1001-f7099e7c8b2b',
@@ -5133,7 +5133,61 @@ export const TOPICS: ITopic[] = [
           }
         ]
       },
-    ], numberOfQuestions: 4
+      {
+        _id: '8a1d3243-f08c-444e-1005-f7099e7c8b2b',
+        questionNumber: 4,
+        question:
+          'Czym jest kontener w systemie Linux?\n',
+        answers: [
+          {
+            sentence:
+              'Maszyną wirtualną\n',
+            truth: false
+          },
+          {
+            sentence:
+              'Izolowaną grupą procesów zarządzaną przez współdzielone jądro hosta\n',
+            truth: true
+          },
+          {
+            sentence: 'Uruchomioną instancją obrazu kontenera\n',
+            truth: true
+          },
+          {
+            sentence:
+              'Szablonem spakowanej aplikacji wraz z jej zależnościami\n',
+            truth: false
+          },
+        ]
+      },
+      {
+        _id: '8a1d3243-f08c-444e-1006-f7099e7c8b2b',
+        questionNumber: 5,
+        question:
+          'Które polecenie pozwala na usunięcie kontenera?\n',
+        answers: [
+          {
+            sentence:
+              'docker remove\n',
+            truth: false
+          },
+          {
+            sentence:
+              'docker rm\n',
+            truth: true
+          },
+          {
+            sentence: 'docker delete\n',
+            truth: false
+          },
+          {
+            sentence:
+              'docker rmi\n',
+            truth: false
+          }
+        ]
+      },
+    ], numberOfQuestions: 6
   },
 
   {
