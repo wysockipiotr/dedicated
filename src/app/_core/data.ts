@@ -5023,7 +5023,7 @@ export const TOPICS: ITopic[] = [
   {
     _id: '6e6ba4d2-28ae-4009-1000-d2d89345e49e',
     category: 'linux',
-    name: 'Docker / Konteneryzacja',
+    name: 'Docker',
     questions: [
       {
         _id: '8a1d3243-f08c-444e-1001-f7099e7c8b2b',
